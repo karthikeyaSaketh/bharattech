@@ -3,11 +3,15 @@ import { useState } from 'react'
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
+import img1 from '../data/img4.jpg'
+import img2 from '../data/img5.jpeg'
+import img3 from '../data/img6.jpeg'
+import img4 from '../data/img7.jpeg'
 
 const Events = () => {
   const text = "EVENTS - 2024"
   const text2 = "Co-ordinators"
-  const images = ['/img4.jpg', '/img5.jpeg', '/img6.jpeg', '/img7.jpeg'];
+  const images = [img1,img2,img3,img4];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleLeft = () => {

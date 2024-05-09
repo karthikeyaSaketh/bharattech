@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../data/btl_logo.png'
 
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState([false, false, false, false, false,false]);
@@ -18,7 +19,7 @@ const Navbar = () => {
   return (
     <div className='relative flex justify-between w-full pr-20 pl-20  items-center h-16'>
       <div className='h-full'>
-        <img src='/btl_logo.png' alt='logo' className='p-1 w-full h-full'/>
+        <img src={logo} alt='logo' className='p-1 w-full h-full'/>
       </div>  
       <div className='flex justify-end align-middle gap-20'>
         <div
