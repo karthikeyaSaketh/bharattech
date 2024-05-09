@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bharattech/static/css/main.c6c7887f.css",
+    "main.js": "/bharattech/static/js/main.7ff5c4df.js",
+    "index.html": "/bharattech/index.html",
+    "main.c6c7887f.css.map": "/bharattech/static/css/main.c6c7887f.css.map",
+    "main.7ff5c4df.js.map": "/bharattech/static/js/main.7ff5c4df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6c7887f.css",
+    "static/js/main.7ff5c4df.js"
+  ]
+}
