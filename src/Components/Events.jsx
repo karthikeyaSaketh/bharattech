@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
 import img1 from '../data/img4.jpg'
 import img2 from '../data/img5.jpeg'
 import img3 from '../data/img6.jpeg'
 import img4 from '../data/img7.jpeg'
+import calender from '../data/JAN_F.jpg'
 
 const Events = () => {
   const text = "EVENTS - 2024"
@@ -39,22 +39,12 @@ const Events = () => {
           ))}
         </h1>
       </div>
-      <div className='realtive pt-4 flex my-6 h-[320px] mx-[100px] gap-20'>
-        <div className='mt-6 h-full flex flex-col p-10 justify-center items-center'>
-          <Calendar defaultValue={new Date(2024, 5, 30)}
-            className="border rounded-2xl shadow-lg p-4"
-            calendarClassName="p-4"
-            tileClassName="rounded-full text-center"
-            prev2Label={null}
-            next2Label={null}
-            locale="en-US"
-            formatShortWeekday={(locale, date) =>
-              ['M', 'T', 'W', 'T', 'F', 'S', 'S'][date.getDay()]
-            }
-            />
+      <div className='relative pt-4 flex m-10 h-auto mx-[100px] gap-20'>
+        <div className='w-[900px] h-[400px] mx-10'>
+          <img src={calender} className='w-full h-full' alt="calender"/>
         </div>
         <div className='flex flex-col p-8 justify-center items-center flex-wrap'>
-          <p className='text-xl font-normal'>
+          <p className=' text-lg font-normal text-black text-opacity-80'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant cras morbi hendrerit nunc vel sapien. In habitasse at diam suspendisse non vitae fermentum, pharetra arcu. Viverra a morbi ut donec in. Ac diam, at sed cras nisi.<br /><br/><br/>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant cras morbi hendrerit nunc vel sapien. In habitasse at diam suspendisse non vitae fermentum, pharetra arcu. Viverra a morbi ut donec in. Ac diam, at sed cras nisi.
           </p>
@@ -63,7 +53,7 @@ const Events = () => {
 
 
       <div className='relative flex flex-col mt-6 w-full'>
-        <div className='mt-20 h-20 flex justify-center items-center'
+        <div className='mt-10 h-20 flex justify-center items-center'
           style={{ 'backgroundImage': '-webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 2%, rgba(253, 108, 0, 1) 30%, rgba(241, 102, 0, 1) 70%, rgba(255, 255, 255, 1) 98%)' }}
 
         >
