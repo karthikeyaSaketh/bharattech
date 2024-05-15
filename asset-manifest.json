@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/bharattech/static/css/main.8c445c71.css",
-    "main.js": "/bharattech/static/js/main.2118fc6f.js",
+    "main.css": "/bharattech/static/css/main.422f4f16.css",
+    "main.js": "/bharattech/static/js/main.d2ba89c1.js",
+    "static/media/AU.png": "/bharattech/static/media/AU.562302db4c2f2353b325.png",
+    "static/media/image1.jpeg": "/bharattech/static/media/image1.89384b91e3a52eb0425f.jpeg",
+    "static/media/image2.jpeg": "/bharattech/static/media/image2.0441e1cd9ecc770bba2d.jpeg",
     "static/media/gradient_img.png": "/bharattech/static/media/gradient_img.a52b61e2033b5c75bad5.png",
-    "static/media/img7.jpeg": "/bharattech/static/media/img7.6a1a871bf921799fa709.jpeg",
     "static/media/JAN_F.jpg": "/bharattech/static/media/JAN_F.7fe04a9e3f40ce54b026.jpg",
-    "static/media/img5.jpeg": "/bharattech/static/media/img5.dce95c55d60350d3a99b.jpeg",
-    "static/media/img4.jpg": "/bharattech/static/media/img4.7621f46ba14e06ed1251.jpg",
-    "static/media/img6.jpeg": "/bharattech/static/media/img6.83818d14a74f2698179b.jpeg",
+    "static/media/TIE.png": "/bharattech/static/media/TIE.5feddf30e8a5a5d4e669.png",
+    "static/media/AHUB.png": "/bharattech/static/media/AHUB.113acd79643056b2c4f3.png",
     "static/media/btl_logo.png": "/bharattech/static/media/btl_logo.193592395c7adf9395f1.png",
     "index.html": "/bharattech/index.html",
-    "main.8c445c71.css.map": "/bharattech/static/css/main.8c445c71.css.map",
-    "main.2118fc6f.js.map": "/bharattech/static/js/main.2118fc6f.js.map"
+    "main.422f4f16.css.map": "/bharattech/static/css/main.422f4f16.css.map",
+    "main.d2ba89c1.js.map": "/bharattech/static/js/main.d2ba89c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c445c71.css",
-    "static/js/main.2118fc6f.js"
+    "static/css/main.422f4f16.css",
+    "static/js/main.d2ba89c1.js"
   ]
 }
