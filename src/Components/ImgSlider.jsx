@@ -23,7 +23,7 @@ useEffect(()=>{
   };
 },)
   return (
-    <div className='relative mt-1 flex justify-center items-center h-[600px] w-full'>
+    <div className='relative mt-1 flex justify-center items-center h-[300px] w-full md:h-[450px] xl:h-[600px]'>
       <BsArrowLeftCircleFill className='arrow absolute w-8 h-8 text-white 
           filter drop-shadow-lg cursor-pointer left-4' onClick={handlePrevious}/>
       {
