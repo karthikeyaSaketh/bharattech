@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/bharattech/static/css/main.c9de2840.css",
-    "main.js": "/bharattech/static/js/main.515d82e9.js",
+    "main.css": "/bharattech/static/css/main.a9cbcd06.css",
+    "main.js": "/bharattech/static/js/main.c7bb5146.js",
     "static/media/AU.png": "/bharattech/static/media/AU.562302db4c2f2353b325.png",
     "static/media/image1.jpeg": "/bharattech/static/media/image1.89384b91e3a52eb0425f.jpeg",
     "static/media/image2.jpeg": "/bharattech/static/media/image2.0441e1cd9ecc770bba2d.jpeg",
     "static/media/gradient_img.png": "/bharattech/static/media/gradient_img.a52b61e2033b5c75bad5.png",
+    "static/media/instagram.png": "/bharattech/static/media/instagram.e719d8b29f452a16302d.png",
     "static/media/JAN_F.jpg": "/bharattech/static/media/JAN_F.7fe04a9e3f40ce54b026.jpg",
     "static/media/TIE.png": "/bharattech/static/media/TIE.5feddf30e8a5a5d4e669.png",
     "static/media/AHUB.png": "/bharattech/static/media/AHUB.113acd79643056b2c4f3.png",
+    "static/media/link.png": "/bharattech/static/media/link.2b7f296876b70af1ebab.png",
+    "static/media/whatsapp.png": "/bharattech/static/media/whatsapp.c826b0165560636baf0b.png",
     "static/media/btl_logo.png": "/bharattech/static/media/btl_logo.193592395c7adf9395f1.png",
+    "static/media/placeholder.png": "/bharattech/static/media/placeholder.64cdcb0ef97818161310.png",
+    "static/media/phone.png": "/bharattech/static/media/phone.19cbd0c47a64a5098a5e.png",
+    "static/media/youtube.png": "/bharattech/static/media/youtube.bc069a2b5e1ecdb5e06e.png",
+    "static/media/linkedin.png": "/bharattech/static/media/linkedin.f249b38224ca41a0b909.png",
+    "static/media/email.png": "/bharattech/static/media/email.9082177d266cee25a57b.png",
     "index.html": "/bharattech/index.html",
-    "main.c9de2840.css.map": "/bharattech/static/css/main.c9de2840.css.map",
-    "main.515d82e9.js.map": "/bharattech/static/js/main.515d82e9.js.map"
+    "main.a9cbcd06.css.map": "/bharattech/static/css/main.a9cbcd06.css.map",
+    "main.c7bb5146.js.map": "/bharattech/static/js/main.c7bb5146.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9de2840.css",
-    "static/js/main.515d82e9.js"
+    "static/css/main.a9cbcd06.css",
+    "static/js/main.c7bb5146.js"
   ]
 }
