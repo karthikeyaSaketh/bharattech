@@ -3,10 +3,10 @@ import React from 'react';
 import facebook from '../data/footer_img/facebook.png';
 import instagram from '../data/footer_img/instagram.png';
 import linkedin from '../data/footer_img/linkedin.png';
-import links from '../data/footer_img/links.png';
-import location from '../data/footer_img/location.png';
-import mail from '../data/footer_img/mail.png';
-import mobile from '../data/footer_img/mobile.png';
+import links from '../data/footer_img/link.png';
+import location from '../data/footer_img/placeholder.png';
+import mail from '../data/footer_img/email.png';
+import mobile from '../data/footer_img/phone.png';
 import whatsapp from '../data/footer_img/whatsapp.png';
 import youtube from '../data/footer_img/youtube.png';
 
@@ -15,7 +15,7 @@ const Footer = () => {
         <div className='flex flex-col mt-6 justify-center content-center px-4 sm:px-0' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
             <div className='flex flex-wrap md:p-8 lg:p-4 lg:justify-around mt-10 gap-6 items-start'>
                 <div className='flex items-baseline gap-5 text-blue-900 w-full sm:w-auto mb-8 sm:mb-0'>
-                    <img src={links} alt='links' />
+                    <img src={links} alt='links' className='h-[20px] w-[20px]'/>
                     <div className='flex flex-col gap-8'>
                         <h1 className='font-bold text-lg sm:text-2xl'>
                             Quick Links
@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex items-baseline gap-5 text-blue-900 w-full sm:w-auto mb-8 sm:mb-0'>
-                    <img src={location} alt='location' />
+                    <img src={location} alt='location' className='h-[20px] w-[20px]'/>
                     <div className='flex flex-col gap-6'>
                         <h1 className='font-bold text-lg sm:text-2xl'>
                             Andhra University Incubation Hub
@@ -53,19 +53,19 @@ const Footer = () => {
 
                 <div className='flex flex-col items-start justify-start gap-6 text-base font-medium text-blue-900 w-full sm:w-auto'>
                     <div className='flex items-baseline gap-5'>
-                        <img src={mail} alt='mail' />
+                        <img src={mail} alt='mail' className='h-[20px] w-[20px]'/>
                         <div className='font-bold text-lg sm:text-2xl'>bharattechleague@gmail.com</div>
                     </div>
                     <div className='flex items-baseline gap-5'>
-                        <img src={mobile} alt='mobile' />
+                        <img src={mobile} alt='mobile' className='h-[20px] w-[20px]'/>
                         <div className='font-bold text-lg sm:text-2xl'>77999 11213 / 77999 11214</div>
                     </div>
                     <div className='flex items-baseline gap-6 text-xl sm:text-2xl'>
-                        <img src={facebook} alt='facebook' />
-                        <img src={whatsapp} alt='whatsapp' />
-                        <img src={instagram} alt='instagram' />
-                        <img src={linkedin} alt='linkedin' />
-                        <img src={youtube} alt='youtube' />
+                        <img src={facebook} alt='facebook' className='h-[25px] w-[25px]'/>
+                        <img src={whatsapp} alt='whatsapp' className='h-[25px] w-[25px]'/>
+                        <img src={instagram} alt='instagram' className='h-[25px] w-[25px]'/>
+                        <img src={linkedin} alt='linkedin' className='h-[25px] w-[25px]' />
+                        <img src={youtube} alt='youtube' className='h-[25px] w-[25px]'/>
                     </div>
                 </div>
             </div >
