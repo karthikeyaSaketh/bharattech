@@ -14,7 +14,7 @@ const Juniors = () => {
     <div className='flex flex-col'>
       <div className='my-6 flex justify-around w-full h-[590px]'>
         <div className='flex flex-col w-[60%] h-full'>
-          <div className='flex justify-between w-full h-full mx-4 gap-6'>
+          <div className='flex justify-between w-full h-full mx-4 gap-6 text-sm'>
             <div className='w-[50%] p-4'>
               <form>
                 <div className='flex justify-between'>
@@ -145,7 +145,7 @@ const Juniors = () => {
             </div>
           </div>
           <button type='submit'
-            className="rounded-xl w-[98%] py-4 px-3 mx-6 mb-10 leading-tight font-normal text-white"
+            className="rounded-xl w-[98%] py-4 px-3 mx-6 mb-10 leading-tight text-[18px] font-normal text-white"
             style={{ background: "linear-gradient(90deg, rgba(0, 119, 181, 1) 0%, rgba(0, 189, 232, 1) 100%)" }}
           >
             Submit your response
