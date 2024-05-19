@@ -12,21 +12,21 @@ import youtube from '../data/footer_img/youtube.png';
 
 const Footer = () => {
     return (
-        <div className='flex flex-col mt-6 justify-center content-center px-4 sm:px-0' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
-            <div className='flex flex-wrap md:p-8 lg:p-4 lg:justify-around mt-10 gap-6 items-start'>
-                <div className='flex items-baseline gap-5 text-blue-900 w-full sm:w-auto mb-8 sm:mb-0'>
+        <div className='flex flex-col justify-center content-center px-4 sm:px-0' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+            <div className='flex flex-wrap md:p-8 lg:p-4 lg:justify-around mt-4 gap-4 items-start'>
+                <div className='flex items-baseline gap-5 text-blue-900 w-full sm:w-auto mb-6 sm:mb-0'>
                     <img src={links} alt='links' className='h-[20px] w-[20px]'/>
-                    <div className='flex flex-col gap-8'>
+                    <div className='flex flex-col gap-6'>
                         <h1 className='font-bold text-lg sm:text-2xl'>
                             Quick Links
                         </h1>
                         <div className='flex justify-between align-center gap-8 text-base font-medium'>
-                            <div className='flex flex-col gap-8'>
+                            <div className='flex flex-col gap-4'>
                                 <p>Home</p>
                                 <p>About Event</p>
                                 <p>Competitions</p>
                             </div>
-                            <div className='flex flex-col gap-8'>
+                            <div className='flex flex-col gap-4'>
                                 <p>Andhra Tech League</p>
                                 <p>Himachal Tech league</p>
                                 <p>Contact Us</p>
@@ -34,14 +34,14 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-baseline gap-5 text-blue-900 w-full sm:w-auto mb-8 sm:mb-0'>
+                <div className='flex items-baseline gap-5 text-blue-900 w-full sm:w-auto mb-6 sm:mb-0'>
                     <img src={location} alt='location' className='h-[20px] w-[20px]'/>
-                    <div className='flex flex-col gap-6'>
+                    <div className='flex flex-col gap-4'>
                         <h1 className='font-bold text-lg sm:text-2xl'>
                             Andhra University Incubation Hub
                         </h1>
                         <div className='flex justify-between align-center gap-8 text-base font-medium '>
-                            <div className='flex flex-col gap-6'>
+                            <div className='flex flex-col gap-4'>
                                 <p>Andhra University College of Engineering,</p>
                                 <p>A-Hub, Andhra University North Campus</p>
                                 <p>Maddilapalem,Visakhapatnam,</p>
@@ -70,8 +70,8 @@ const Footer = () => {
                 </div>
             </div >
 
-            <div className='flex justify-center my-10'>
-                <div className='w-full sm:w-[1180px] h-1' style={{ background: '-webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 119, 181, 1) 19%, rgba(241, 102, 0, 1) 52%, rgba(27, 133, 52, 1) 84%, rgba(255, 255, 255, 1) 100%)' }}>
+            <div className='flex justify-center my-6'>
+                <div className='w-full sm:w-[90%] h-1' style={{ background:"linear-gradient(90deg, rgba(241, 102, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(27, 133, 52, 1) 100%)"}}>
                 </div>
             </div>
         </div >

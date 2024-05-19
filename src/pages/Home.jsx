@@ -6,7 +6,7 @@ import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col mt-4'>
       <ImgSlider/>
       <Description/>
       <Events/>

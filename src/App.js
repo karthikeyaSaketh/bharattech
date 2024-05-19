@@ -7,6 +7,9 @@ import ContactUs from './pages/ContactUs'
 import Eventpage from './pages/Eventpage'
 import Gallery from './pages/Gallery'
 import Registration from './pages/Registration'
+import Juniors from './pages/Juniors';
+import Seniors from './pages/Seniors';
+import Confirmation from './pages/Confirmation';
 
 const App = () => {
   return (
@@ -22,6 +25,9 @@ const App = () => {
           <Route path='/bharattech/Gallery' element={<Gallery />} />
           <Route path='/bharattech/Registration' element={<Registration />} />
           <Route path='/bharattech/ContactUs' element={<ContactUs />} />
+          <Route path='/bharattech/Registration/Juniors' element={<Juniors/>}/>
+          <Route path='/bharattech/Registration/Seniors' element={<Seniors/>}/>
+          <Route path='/bharattech/Registration/Confirmation' element={<Confirmation/>}/>
         </Routes>
       </BrowserRouter>
     </div>
