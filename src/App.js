@@ -10,6 +10,7 @@ import Registration from './pages/Registration'
 import Juniors from './pages/Juniors';
 import Seniors from './pages/Seniors';
 import Confirmation1 from './pages/Confirmation1';
+import Confirmation2 from './pages/Confirmation2';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path='/bharattech/Registration/Juniors' element={<Juniors/>}/>
           <Route path='/bharattech/Registration/Seniors' element={<Seniors/>}/>
           <Route path='/bharattech/Registration/Juniors/Confirmation' element={<Confirmation1/>}/>
+          <Route path='/bharattech/Registration/Seniors/Confirmation' element={<Confirmation2/>}/>
         </Routes>
       </BrowserRouter>
     </div>
