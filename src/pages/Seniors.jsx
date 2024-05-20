@@ -312,7 +312,7 @@ const Seniors = () => {
                   <option value="3dprinting">3D Printing</option>
                   <option value="renewableenergy">Renewable Energy</option>
                 </select>
-                <div className='w-[85%] sm:w-[50%]'>
+                <div className='w-full sm:w-[50%]'>
                   <NavLink to='/bharattech/Registration/Seniors/Confirmation' className='flex flex-col items-center content-center sm:flex-row justify-around' >
                     <button type='submit'
                       className="rounded-xl w-[85%] py-4 px-3 my-4 leading-tight text-[18px] font-normal text-white"
