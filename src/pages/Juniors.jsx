@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import Footer from '../Components/Footer'
 import Junior from '../data/junior.png'
 
@@ -161,14 +162,15 @@ const Juniors = () => {
                   ))}
                 </select>
               </div>
-              <div className='flex flex-col items-center content-center sm:flex-row justify-around' >
+              <NavLink to='/bharattech/Registration/Juniors/Confirmation' className='flex flex-col items-center content-center sm:flex-row justify-around' >
               <button type='submit'
                 className="rounded-xl w-[85%] sm:w-full py-4 px-3 my-6 leading-tight text-[18px] font-normal text-white"
                 style={{ background: "linear-gradient(90deg, rgba(0, 119, 181, 1) 0%, rgba(0, 189, 232, 1) 100%)" }}
               >
                 Submit your response
               </button>
-              </div>
+              </NavLink>
+              
             </div>
           </form>
 

@@ -9,7 +9,7 @@ import Gallery from './pages/Gallery'
 import Registration from './pages/Registration'
 import Juniors from './pages/Juniors';
 import Seniors from './pages/Seniors';
-import Confirmation from './pages/Confirmation';
+import Confirmation1 from './pages/Confirmation1';
 
 const App = () => {
   return (
@@ -27,7 +27,7 @@ const App = () => {
           <Route path='/bharattech/ContactUs' element={<ContactUs />} />
           <Route path='/bharattech/Registration/Juniors' element={<Juniors/>}/>
           <Route path='/bharattech/Registration/Seniors' element={<Seniors/>}/>
-          <Route path='/bharattech/Registration/Confirmation' element={<Confirmation/>}/>
+          <Route path='/bharattech/Registration/Juniors/Confirmation' element={<Confirmation1/>}/>
         </Routes>
       </BrowserRouter>
     </div>
