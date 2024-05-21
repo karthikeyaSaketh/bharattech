@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='relative flex justify-center sm:justify-between w-full pr-4 pl-4 xl:pr-20 xl:pl-20 items-center h-16'
+    <div className='relative flex justify-center sm:justify-between w-full pr-4 pl-4 xl:pr-20 xl:pl-20 items-center h-16 z-20'
       style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
       <div className='h-full'>
         <img src={logo} alt='logo' className='p-1 w-full h-full' />
