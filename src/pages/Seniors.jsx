@@ -28,10 +28,10 @@ const Seniors = () => {
 
 
   const [formData, setFormData] = useState({
-    participant1: { name: '', class: '' },
-    participant2: { name: '', class: '' },
-    participant3: { name: '', class: '' },
-    participant4: { name: '', class: '' },
+    participant1: { name: '', year: '' },
+    participant2: { name: '', year: '' },
+    participant3: { name: '', year: '' },
+    participant4: { name: '', year: '' },
     education: '',
     institution: '',
     state: '',
@@ -87,15 +87,15 @@ const Seniors = () => {
                   <select
                     className="py-3 my-4 border-2 border-[#0077B5] rounded-xl focus:outline-none
                      focus:border-blue-900 font-normal"
-                    name={`participant1.class`}
-                    value={formData[`participant1`].class}
+                    name={`participant1.year`}
+                    value={formData[`participant1`].year}
                     onChange={handleChange}
                     required
                   >
                     <option value="" disabled>
-                      Class
+                      Year
                     </option>
-                    {[6, 7, 8, 9, 10].map((number) => (
+                    {[1,2,3,4].map((number) => (
                       <option key={number} value={number}>
                         {number}
                       </option>
@@ -114,20 +114,20 @@ const Seniors = () => {
                   <select
                     className="py-3 my-4 border-2 border-[#0077B5] rounded-xl focus:outline-none
                      focus:border-blue-900 font-normal"
-                    name={`participant2.class`}
-                    value={formData[`participant2`].class}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="" disabled>
-                      Class
-                    </option>
-                    {[6, 7, 8, 9, 10].map((number) => (
-                      <option key={number} value={number}>
-                        {number}
-                      </option>
-                    ))}
-                  </select>
+                     name={`participant2.year`}
+                     value={formData[`participant2`].year}
+                     onChange={handleChange}
+                     required
+                   >
+                     <option value="" disabled>
+                       Year
+                     </option>
+                     {[1,2,3,4].map((number) => (
+                       <option key={number} value={number}>
+                         {number}
+                       </option>
+                     ))}
+                   </select>
                 </div>
               </div>
 
@@ -144,20 +144,20 @@ const Seniors = () => {
                   <select
                     className="py-3 my-4 border-2 border-[#0077B5] rounded-xl focus:outline-none
                      focus:border-blue-900 font-normal"
-                    name={`participant3.class`}
-                    value={formData[`participant3`].class}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="" disabled>
-                      Class
-                    </option>
-                    {[6, 7, 8, 9, 10].map((number) => (
-                      <option key={number} value={number}>
-                        {number}
-                      </option>
-                    ))}
-                  </select>
+                     name={`participant3.year`}
+                     value={formData[`participant3`].year}
+                     onChange={handleChange}
+                     required
+                   >
+                     <option value="" disabled>
+                       Year
+                     </option>
+                     {[1,2,3,4].map((number) => (
+                       <option key={number} value={number}>
+                         {number}
+                       </option>
+                     ))}
+                   </select>
                 </div>
                 <div className='flex justify-between w-[85%]'>
                   <input id="name4" type="text" placeholder='Enter name of 4th participant'
@@ -171,20 +171,20 @@ const Seniors = () => {
                   <select
                     className="py-3 my-4 border-2 border-[#0077B5] rounded-xl focus:outline-none
                      focus:border-blue-900 font-normal"
-                    name={`participant4.class`}
-                    value={formData[`participant4`].class}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="" disabled>
-                      Class
-                    </option>
-                    {[6, 7, 8, 9, 10].map((number) => (
-                      <option key={number} value={number}>
-                        {number}
-                      </option>
-                    ))}
-                  </select>
+                     name={`participant4.year`}
+                     value={formData[`participant4`].year}
+                     onChange={handleChange}
+                     required
+                   >
+                     <option value="" disabled>
+                       Year
+                     </option>
+                     {[1,2,3,4].map((number) => (
+                       <option key={number} value={number}>
+                         {number}
+                       </option>
+                     ))}
+                   </select>
                 </div>
               </div>
 
@@ -193,7 +193,7 @@ const Seniors = () => {
                 <div className='w-[85%] sm:w-[50%]'>
                   <select
                     className="w-full overflow-hidden py-3 my-4 border-2 border-[#0077B5] rounded-xl focus:outline-none focus:border-blue-900 font-normal text-center"
-                    name={`Education`}
+                    name={`education`}
                     value={formData.education}
                     onChange={handleChange}
                     required
@@ -266,7 +266,7 @@ const Seniors = () => {
                   <input type="text" placeholder='Contact of the 1st participant'
                     className="appearance-none border-2 border-[#0077B5] rounded-xl w-[100%] py-3 px-3 my-4 text-center
                      text-gray-700 leading-tight focus:outline-none  focus:border-blue-900 font-normal"
-                    name="participantContact"
+                    name="participant1Contact"
                     value={formData.participant1Contact}
                     onChange={handleChange}
                     required
