@@ -6,7 +6,7 @@ const Confirmation1 = () => {
   return (
     <div className='flex flex-col'>
       <div className='flex flex-col lg:flex-row lg:justify-around w-full lg:h-[630px] mb-10'>
-        <div className='flex justify-center xl:justify-end items-center w-full lg:w-[40%] h-[300px] sm:h-[550px] lg:h-full'>
+        <div className='flex justify-center xl:justify-end items-center w-full lg:w-[40%] h-[350px] sm:h-[550px] lg:h-full'>
           <img src={img1} alt='conf_img_1' className='w-[80%] h-[80%]' />
         </div>
         <div className='flex flex-col justify-center w-full lg:w-[60%] h-full text-center p-2 sm:p-0 lg:mx-8 my-6 sm:my-12'>
