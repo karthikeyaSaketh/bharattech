@@ -27,7 +27,7 @@ const Registration = () => {
               </div>
             </NavLink>
 
-            <NavLink to='/bharattech/Registration/Seniors' className='flex flex-col items-center my-4 gap-4 lg:gap-6 rounded-xl w-[250px] h-[350px] lg:w-[320px] lg:h-[440px]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+            <NavLink to='/bharattech/Registration/Seniors' className='flex flex-col items-center pb-4 sm:pb-0 my-4 gap-4 lg:gap-6 rounded-xl w-[250px] h-[350px] lg:w-[320px] lg:h-[440px]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
               <img src={senior} alt='senior' className='h-[58%] sm:h-[50%] w-[98%] p-2' />
               <div className='flex flex-col items-center p-2 lg:p-4 sm:gap-2 lg:gap-4 h-full rounded-b-xl text-white'
                   style={{background: "linear-gradient(150deg, rgba(1, 105, 193, 1) 0%, rgba(1, 105, 193, 0.8) 100%)"}}>
