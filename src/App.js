@@ -17,7 +17,7 @@ const App = () => {
 
     <div className='flex flex-col align-center justify-center w-full'>
       <BrowserRouter>
-        <Navbar />
+        <Navbar/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/bharattech' element={<Home />} />
