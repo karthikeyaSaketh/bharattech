@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bharattech/static/css/main.f5e5978f.css",
-    "main.js": "/bharattech/static/js/main.713156cf.js",
+    "main.css": "/bharattech/static/css/main.48d4314d.css",
+    "main.js": "/bharattech/static/js/main.1738f3a3.js",
     "static/media/conf_img_2.png": "/bharattech/static/media/conf_img_2.d6f5d49535fd4f258919.png",
     "static/media/conf_img_1.png": "/bharattech/static/media/conf_img_1.396adc63dc6391c649c7.png",
     "static/media/8.png": "/bharattech/static/media/8.6b868a4a856c7fb3a209.png",
@@ -30,11 +30,11 @@
     "static/media/linkedin.png": "/bharattech/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/email.png": "/bharattech/static/media/email.9082177d266cee25a57b.png",
     "index.html": "/bharattech/index.html",
-    "main.f5e5978f.css.map": "/bharattech/static/css/main.f5e5978f.css.map",
-    "main.713156cf.js.map": "/bharattech/static/js/main.713156cf.js.map"
+    "main.48d4314d.css.map": "/bharattech/static/css/main.48d4314d.css.map",
+    "main.1738f3a3.js.map": "/bharattech/static/js/main.1738f3a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5e5978f.css",
-    "static/js/main.713156cf.js"
+    "static/css/main.48d4314d.css",
+    "static/js/main.1738f3a3.js"
   ]
 }
