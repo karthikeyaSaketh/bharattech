@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/bharattech/static/css/main.d0b48dcb.css",
-    "main.js": "/bharattech/static/js/main.59b704d0.js",
+    "main.css": "/bharattech/static/css/main.79341061.css",
+    "main.js": "/bharattech/static/js/main.0284846f.js",
+    "static/media/senior.png": "/bharattech/static/media/senior.b51f78780322b7000f4c.png",
+    "static/media/junior.png": "/bharattech/static/media/junior.f192d72fe4c7b9b69c48.png",
     "static/media/conf_img_2.png": "/bharattech/static/media/conf_img_2.d6f5d49535fd4f258919.png",
     "static/media/conf_img_1.png": "/bharattech/static/media/conf_img_1.396adc63dc6391c649c7.png",
     "static/media/8.png": "/bharattech/static/media/8.6b868a4a856c7fb3a209.png",
@@ -15,8 +17,6 @@
     "static/media/3.png": "/bharattech/static/media/3.62caf4086d736bac7717.png",
     "static/media/2.png": "/bharattech/static/media/2.6c55a9194197ecc42ebf.png",
     "static/media/image1.jpeg": "/bharattech/static/media/image1.89384b91e3a52eb0425f.jpeg",
-    "static/media/junior.png": "/bharattech/static/media/junior.25534b7f0f3f79185f40.png",
-    "static/media/senior.png": "/bharattech/static/media/senior.fe0ae8ce21f56e2de2d5.png",
     "static/media/image2.jpeg": "/bharattech/static/media/image2.0441e1cd9ecc770bba2d.jpeg",
     "static/media/instagram.png": "/bharattech/static/media/instagram.e719d8b29f452a16302d.png",
     "static/media/TIE.png": "/bharattech/static/media/TIE.5feddf30e8a5a5d4e669.png",
@@ -30,11 +30,11 @@
     "static/media/linkedin.png": "/bharattech/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/email.png": "/bharattech/static/media/email.9082177d266cee25a57b.png",
     "index.html": "/bharattech/index.html",
-    "main.d0b48dcb.css.map": "/bharattech/static/css/main.d0b48dcb.css.map",
-    "main.59b704d0.js.map": "/bharattech/static/js/main.59b704d0.js.map"
+    "main.79341061.css.map": "/bharattech/static/css/main.79341061.css.map",
+    "main.0284846f.js.map": "/bharattech/static/js/main.0284846f.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0b48dcb.css",
-    "static/js/main.59b704d0.js"
+    "static/css/main.79341061.css",
+    "static/js/main.0284846f.js"
   ]
 }
