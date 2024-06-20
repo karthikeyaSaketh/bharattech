@@ -1,9 +1,10 @@
 import React from 'react'
+import Open from './Open'
 
 const Gallery = () => {
   return (
     <div>
-      Gallery
+      <Open/>
     </div>
   )
 }
