@@ -333,7 +333,7 @@ const Seniors = () => {
           <h1 className='text-5xl font-bold'>SENIOR LEVEL</h1>
           <p className='text-sm mt-6'>&#40;Diploma/Degree/B.Tech  students are eligible for participation&#41;</p>
           <div className='m-10 flex justify-center items-center w-[285px] h-[285px] xl:w-[385px] xl:h-[385px] rounded-xl' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
-            <img src={Senior} alt='junior' className='w-[70%] h-[70%]' />
+            <img src={Senior} alt='junior' className='w-[90%] h-[90%]' />
           </div>
         </div>
       </div>
