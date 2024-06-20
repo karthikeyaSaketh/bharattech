@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import swal from 'sweetalert';
+import { useNavigate} from 'react-router-dom';
 import img1 from '../data/contactUs/1.png'
 import img2 from '../data/contactUs/2.png'
 import img3 from '../data/contactUs/3.png'
@@ -10,6 +11,7 @@ const ContactUs = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [emailError, setEmailError] = useState('');
+  const navigate = useNavigate();
 
   const validateEmail = (email) => {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -25,7 +27,8 @@ const ContactUs = () => {
         icon: "success",
         button: "OK"
       }).then(() => {
-        window.location.reload();
+        // window.location.reload();
+        navigate('/');
       });
     } else {
       setEmailError('Invalid email format');
