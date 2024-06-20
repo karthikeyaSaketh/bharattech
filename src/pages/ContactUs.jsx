@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import swal from 'sweetalert';
+import img1 from '../data/contactUs/1.png'
+import img2 from '../data/contactUs/2.png'
+import img3 from '../data/contactUs/3.png'
+import img4 from '../data/contactUs/4.png'
 
 const ContactUs = () => {
   const [name, setName] = useState('');
@@ -14,7 +19,14 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateEmail(email)) {
-      console.log('Form submitted:', { name, email, message });
+      swal({
+        title: "Message Sent!",
+        text: "Your message has been sent successfully.",
+        icon: "success",
+        button: "OK"
+      }).then(() => {
+        window.location.reload();
+      });
     } else {
       setEmailError('Invalid email format');
     }
@@ -31,11 +43,11 @@ const ContactUs = () => {
   };
 
   return (
-    <div className='m-4 sm:m-24 lg:mt-8 lg:mb-4 flex justify-center content-center'>
-      <div className='flex w-full sm:w-[95%] h-[700px] sm:h-[760px] lg:h-[580px]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
-        <div className='flex flex-col items-center w-[380px] sm:w-[500px] lg:w-[700px] xl:w-[800px] text-[#0077B5] font-medium'>
-          <h1 className='mt-12 lg:mt-10 lg:mb-4 text-5xl sm:text-7xl lg:text-[64px] text-center'>Get in touch</h1>
-          <div className='mt-8 lg:mt-4 flex flex-col items-start pl-5 sm:pl-0 lg:text-sm'>
+    <div className='m-4 sm:m-24 lg:mt-12 lg:mb-4 flex justify-center content-center'>
+      <div className='flex flex-col align-center items-center lg:flex-row w-full sm:w-[95%]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+        <div className='flex flex-col align-center items-center w-[90%] lg:w-[60%] h-[650px] lg:h-[500px] text-[#0077B5] font-medium'>
+          <h1 className='flex lg:hidden mt-12 lg:mt-10 lg:mb-4 text-5xl sm:text-7xl lg:text-[64px] text-center'>Get in touch</h1>
+          <div className='mt-8 sm:mt-12 flex flex-col items-start pl-5 sm:pl-0 lg:text-sm'>
             <form onSubmit={handleSubmit}>
               <label htmlFor='name'>Name :</label><br />
               <input
@@ -83,8 +95,33 @@ const ContactUs = () => {
             </form>
           </div>
         </div>
-        <div className='flex-grow h-[700px] sm:h-[760px] lg:h-[580px]' style={{ background: "linear-gradient(147deg, rgba(0, 119, 181, 1) 35%, rgba(0, 173, 221, 1) 80%, rgba(0, 192, 234, 1) 100%)" }}>
+
+
+        <div className='hidden lg:flex flex-col gap-8 w-[40%] h-[700px] sm:h-[760px] lg:h-[500px]' style={{ background: "linear-gradient(147deg, rgba(0, 119, 181, 1) 35%, rgba(0, 173, 221, 1) 80%, rgba(0, 192, 234, 1) 100%)" }}>
+          <h1 className='hidden sm:block mt-12 lg:mt-10 lg:mb-4 text-5xl sm:text-7xl lg:text-[48px] xl:text-[60px] text-center text-white'>Get in touch</h1>
+          <div className='flex justify-around w-full my-8'>
+            <img src={img1} alt="img1" className='w-[50px] h-[50px]' />
+            <img src={img2} alt="img2" className='w-[50px] h-[50px]' />
+          </div>
+          <div className='flex justify-around w-full my-8'>
+            <img src={img3} alt="img3" className='w-[50px] h-[50px]' />
+            <img src={img4} alt="img4" className='w-[50px] h-[50px]' />
+          </div>
         </div>
+        <div className='flex lg:hidden flex-col gap-2 w-full h-[250px]' style={{ background: "linear-gradient(147deg, rgba(0, 119, 181, 1) 35%, rgba(0, 173, 221, 1) 80%, rgba(0, 192, 234, 1) 100%)" }}>
+          <div className='flex justify-around w-full my-8'>
+            <img src={img1} alt="img1" className='w-[50px] h-[50px]' />
+            <img src={img2} alt="img2" className='w-[50px] h-[50px]' />
+          </div>
+          <div className='flex justify-around w-full my-8'>
+            <img src={img3} alt="img3" className='w-[50px] h-[50px]' />
+            <img src={img4} alt="img4" className='w-[50px] h-[50px]' />
+          </div>
+        </div>
+
+
+
+
       </div>
     </div>
   );

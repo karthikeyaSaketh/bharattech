@@ -15,7 +15,7 @@ const Events = () => {
   return (
     <div className='flex flex-col relative items-center my-4 w-full'>
       <div className='my-4 sm:my-6 lg:mt-20 h-20 flex justify-center items-center'>
-        <h1 style={{ color: '#F47923' }} className='text-[40px] sm:text-[70px] lg:text-[90px] xl:text-[128px] tracking-widest font-bold'>
+        <h1 style={{ color: '#F47923' }} className='text-[40px] text-center sm:text-[70px] lg:text-[90px] xl:text-[128px] tracking-widest font-bold'>
           {text.split('').map((letter, index) => (
             <span key={index} style={{ "text-shadow": "0px 4px 10px rgba(0,0,0, 0.2)" }}>{letter}</span>
           ))}
