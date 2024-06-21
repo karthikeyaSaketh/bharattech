@@ -1,15 +1,10 @@
 // src/components/Events.js
-import React, { useState } from 'react';
-import './Flipcard.css';
+import React from 'react';
 import img1 from '../data/timeline/1.png';
 
 const Events = () => {
-  const text = "EVENT TIMELINE";
-  const [isFlipped, setIsFlipped] = useState(false);
+  const text = "EVENT TIMELINE"
 
-  const handleFlip = () => {
-    setIsFlipped(!isFlipped);
-  };
 
   return (
     <div className="flex flex-col relative items-center my-4 w-full">
@@ -26,22 +21,27 @@ const Events = () => {
         </h1>
       </div>
 
-      <div className="flip-card-container w-80 h-96" onClick={handleFlip} style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
-        <div className={`flip-card ${isFlipped ? 'flipped' : ''}`}>
-          <div className="flip-card-front w-full h-full">
-            <img src={img1} alt="Front" className="w-full h-full" />
-          </div>
-          <div className="flip-card-back w-full h-full p-6 flex flex-col gap-4 justify-center items-center">
-            <h1 className="text-3xl font-medium text-left">
-              Problem Statements Launch
-            </h1>
-            <div className="h-[3px] w-full my-4" style={{ backgroundColor: "#F47923" }}></div>
-            <p className="text-center px-4">
-              Problem statements for both junior and senior level can be found in the Events section, under competitions.
-            </p>
+      <div className='flex flex-col lg:flex-row my-6 sm:my-10 w-[80%] h-[600px] lg:h-[500px] gap-8 lg:gap-0 justify-center items-center' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+        <div className='flex flex-col lg:flex-row justify-center items-center lg:w-[60%] h-[350px] lg:h-full'>
+          <div className='flex justify-center items-center w-[95%] h-[95%] lg:h-full'><img src={img1} alt='img1' className='w-[500px] h-full'/></div>
+          <div className='w-[95%] h-[2px] lg:w-[2px] lg:h-[90%]' style={{backgroundColor : "#8F8F8F"}}>
+
           </div>
         </div>
+        <div className='flex flex-col w-[95%] lg:w-[40%] justify-center items-center gap-8 lg:gap-16'>
+          <div className='lg:w-[90%] gap-6 sm:gap-10 lg:gap-16'>
+            <h1 className='text-xl sm:text-2xl xl:text-3xl font-medium text-center sm:text-left'>
+              Problem Statements Launch
+            </h1>
+            <div className='h-[3px] w-full my-4' style={{ backgroundColor: "#F47923" }}>
+            </div>
+          </div>
+          <p className='text-center px-10 sm:px-16 pb-10 sm:pb-16 lg:pb-0 xl:px-24'>
+            Problem statements for both junior and senior level can be found in the Events section, under competitions.
+          </p>
+        </div>
       </div>
+
     </div>
   );
 };
