@@ -21,24 +21,23 @@ const Events = () => {
         </h1>
       </div>
 
-      <div className='flex flex-col lg:flex-row my-6 sm:my-10 w-[80%] h-[600px] lg:h-[500px] gap-8 lg:gap-0 justify-center items-center' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
-        <div className='flex flex-col lg:flex-row justify-center items-center lg:w-[60%] h-[350px] lg:h-full'>
-          <div className='flex justify-center items-center w-[95%] h-[95%] lg:h-full'><img src={img1} alt='img1' className='w-[500px] h-full'/></div>
-          <div className='w-[95%] h-[2px] lg:w-[2px] lg:h-[90%]' style={{backgroundColor : "#8F8F8F"}}>
-
+      <div className='flex flex-col sm:flex-row my-4 sm:my-10 w-[70%] h-[280px] sm:h-[220px] justify-center items-center rounded-[20px] px-4' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+        <div className='flex flex-col sm:flex-row justify-around sm:justify-between items-center w-[90%] sm:w-[50%] lg:w-[45%] h-[60%] sm:h-full xl:gap-16'>
+          <div className='flex justify-around items-center w-full sm:w-[90%] lg:w-[80%] h-[98%] lg:pl-4 sm:h-full'>
+            <img src={img1} alt='img1' className='w-full sm:w-[400px] h-[95%]' />
+          </div>
+          <div className='w-[95%] h-[2px] sm:w-[2px] sm:h-[80%]' style={{ backgroundColor: "#8F8F8F", opacity: "0.3" }}>
           </div>
         </div>
-        <div className='flex flex-col w-[95%] lg:w-[40%] justify-center items-center gap-8 lg:gap-16'>
-          <div className='lg:w-[90%] gap-6 sm:gap-10 lg:gap-16'>
-            <h1 className='text-xl sm:text-2xl xl:text-3xl font-medium text-center sm:text-left'>
+        <div className='flex flex-col w-[95%] sm:w-[50%] lg:w-[55%] h-[40%] sm:pl-4 lg:pl-8 xl:px-0 sm:h-full justify-center items-center sm:items-start'>
+          <div className='flex flex-col sm:w-[90%] sm:gap-6 justify-center items-center sm:items-start'>
+            <h1 className='text-xl lg:text-2xl xl:text-3xl font-medium text-center sm:text-left xl:px-16'>
               Problem Statements Launch
             </h1>
-            <div className='h-[3px] w-full my-4' style={{ backgroundColor: "#F47923" }}>
-            </div>
           </div>
-          <p className='text-center px-10 sm:px-16 pb-10 sm:pb-16 lg:pb-0 xl:px-24'>
-            Problem statements for both junior and senior level can be found in the Events section, under competitions.
-          </p>
+          <div className='h-[3px] w-[90%] sm:w-full lg:w-[80%] my-4 xl:mx-16' style={{ backgroundColor: "#F47923" }}>
+          </div>
+
         </div>
       </div>
 

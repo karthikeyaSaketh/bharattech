@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import facebook from '../data/footer_img/facebook.png';
 import instagram from '../data/footer_img/instagram.png';
@@ -23,12 +24,12 @@ const Footer = () => {
                         <div className='flex justify-between align-center gap-8 text-base font-medium'>
                             <div className='flex flex-col gap-4'>
                                 <p>Home</p>
-                                <p>About Event</p>
-                                <p>Competitions</p>
+                                <NavLink to='/bharattech/AboutBTL'>About Btl</NavLink>
+                                <p>Events</p>
                             </div>
                             <div className='flex flex-col gap-4'>
-                                <p>Andhra Tech League</p>
-                                <p>Himachal Tech league</p>
+                                <p>Gallery</p>
+                                <p>Registration</p>
                                 <p>Contact Us</p>
                             </div>
                         </div>
