@@ -28,7 +28,7 @@ const ContactUs = () => {
         button: "OK"
       }).then(() => {
         // window.location.reload();
-        navigate('/');
+        navigate('/bharattech');
       });
     } else {
       setEmailError('Invalid email format');
