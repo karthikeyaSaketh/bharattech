@@ -1,6 +1,15 @@
 // src/components/Events.js
 import React from 'react';
+import Card from './Card';
 import img1 from '../data/timeline/1.png';
+import img2 from '../data/timeline/2.png';
+import img3 from '../data/timeline/3.png';
+import img4 from '../data/timeline/4.png';
+import img5 from '../data/timeline/5.png';
+import img6 from '../data/timeline/6.png';
+import img7 from '../data/timeline/7.png';
+import img8 from '../data/timeline/8.png';
+import img9 from '../data/timeline/9.png';
 
 const Events = () => {
   const text = "EVENT TIMELINE"
@@ -21,25 +30,15 @@ const Events = () => {
         </h1>
       </div>
 
-      <div className='flex flex-col sm:flex-row my-4 sm:my-10 w-[70%] h-[280px] sm:h-[220px] justify-center items-center rounded-[20px] px-4' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
-        <div className='flex flex-col sm:flex-row justify-around sm:justify-between items-center w-[90%] sm:w-[50%] lg:w-[45%] h-[60%] sm:h-full xl:gap-16'>
-          <div className='flex justify-around items-center w-full sm:w-[90%] lg:w-[80%] h-[98%] lg:pl-4 sm:h-full'>
-            <img src={img1} alt='img1' className='w-full sm:w-[400px] h-[95%]' />
-          </div>
-          <div className='w-[95%] h-[2px] sm:w-[2px] sm:h-[80%]' style={{ backgroundColor: "#8F8F8F", opacity: "0.3" }}>
-          </div>
-        </div>
-        <div className='flex flex-col w-[95%] sm:w-[50%] lg:w-[55%] h-[40%] sm:pl-4 lg:pl-8 xl:px-0 sm:h-full justify-center items-center sm:items-start'>
-          <div className='flex flex-col sm:w-[90%] sm:gap-6 justify-center items-center sm:items-start'>
-            <h1 className='text-xl lg:text-2xl xl:text-3xl font-medium text-center sm:text-left xl:px-16'>
-              Problem Statements Launch
-            </h1>
-          </div>
-          <div className='h-[3px] w-[90%] sm:w-full lg:w-[80%] my-4 xl:mx-16' style={{ backgroundColor: "#F47923" }}>
-          </div>
-
-        </div>
-      </div>
+      <Card img={img1} text="Problem Statements Launch" color="#F47923" />
+      <Card img={img2} text="Registrations Close" color="#0169C1" />
+      <Card img={img3} text="Results of Preliminary Participants" color="#1B8534"/>
+      <Card img={img4} text="Zonal for Himachal Pradesh Particiapnts" color="#F47923"/>
+      <Card img={img5} text="Zonal for Telangana Participants" color="#0169C1" />
+      <Card img={img6} text="Finalists Announcement (Himachal Pradesh)" color="#1B8534"/>
+      <Card img={img7} text="Finalists Announcement (Telangana)" color="#F47923"/>
+      <Card img={img8} text="Zonal for Andhra Pradesh Participants" color="#0169C1"/>
+      <Card img={img9} text="Finalists Announcement (Andhra Pradesh)" color="#1B8534"/>
 
     </div>
   );

@@ -9,8 +9,12 @@ import img6 from '../data/events/6.png'
 import img7 from '../data/events/7.png'
 import img8 from '../data/events/8.png'
 import arrow from '../data/events/arrow.png'
+import img9 from '../data/events/9.png'
+import img10 from '../data/events/10.png'
+import img11 from '../data/events/11.png'
 import vr from '../data/events/vr.png'
 import d from '../data/events/3d.png'
+import teckybot from '../data/events/teckybot.png'
 
 const Eventpage = () => {
   return (
@@ -110,7 +114,7 @@ const Eventpage = () => {
 
 
       <div className='flex flex-col text-center mt-12'>
-        <div className='w-full h-auto' style={{ background: "linear-gradient(0deg, rgba(27, 133, 52, 0.5) 0%, rgba(27, 133, 52, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
+        <div className='w-full h-auto' style={{ background: "linear-gradient(0deg, rgba(95, 95, 95, 1) 0%, rgba(0, 0, 0, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
           <h1 className='text-[40px] sm:text-[48px] lg:text-[64px] xl:text-[96px] font-bold'>
             TECK SHOWS
           </h1>
@@ -120,10 +124,26 @@ const Eventpage = () => {
         </p>
       </div><br />
 
+      <div className='flex flex-wrap justify-around w-full gap-6 mt-10'>
+        <div className='flex flex-col items-center gap-4'>
+          <img src={img9} alt="img9" className='w-[300px] h-[300px] rounded-[20px]' />
+          <p className='text-[30px] font-semibold'>DRONE SHOW</p>
+        </div>
+        <div className='flex flex-col items-center gap-4'>
+          <img src={img10} alt="img10" className='w-[300px] h-[300px] rounded-[20px]' />
+          <p className='text-[30px] font-semibold'>ROBOTICS SHOW</p>
+        </div>
+        <div className='flex flex-col items-center gap-4'>
+          <img src={img11} alt="img11" className='w-[300px] h-[300px] rounded-[20px]' />
+          <p className='text-[30px] font-semibold'>AI SHOW</p>
+        </div>
+        
+      </div>
 
-      <div className='flex flex-col text-center mt-12'>
+
+      <div className='flex flex-col text-center mt-16'>
         <div className='w-full h-auto'>
-          <h1 className='inline-block text-[40px] sm:text-[48px] lg:text-[64px] xl:text-[96px] font-bold'  style={{ background: "linear-gradient(270deg, rgba(1, 105, 193, 1) 0%, rgba(255, 114, 31, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
+          <h1 className='inline-block text-[40px] sm:text-[48px] lg:text-[64px] xl:text-[96px] font-bold' style={{ background: "linear-gradient(270deg, rgba(1, 105, 193, 1) 0%, rgba(255, 114, 31, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
             TECK ZONES
           </h1>
         </div>
@@ -133,30 +153,46 @@ const Eventpage = () => {
       </div><br />
 
 
-      <div className='flex flex-col xl:flex-row w-[300px] sm:w-[550px] xl:w-[1280px] h-[650px] sm:h-[800px] xl:h-[400px] rounded-[20px] my-4 sm:my-10' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+
+      <div className='flex flex-col xl:flex-row-reverse w-[300px] sm:w-[550px] xl:w-[1280px] h-[650px] sm:h-[800px] xl:h-[400px] rounded-[20px] my-4 sm:my-10' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
         <div className='w-full sm:w-[550px] h-auto sm:h-[400px] xl:h-full flex-shrink-0'>
-          <img src={d} alt="3d" className='h-full w-full relative top-0'/>
+          <img src={teckybot} alt="teckybot" className='h-full w-full relative top-0' />
         </div>
         <div className='flex flex-col w-auto h-full items-center justify-center sm:gap-4 xl:gap-12'>
           <h1 className='text-[34px] sm:text-[48px] font-semibold'>
-          <span className='text-[#FF721F]'>3D TECH </span><span className='text-[#0169C1]'>ZONE</span>
+            <span className='text-[#FF721F]'>TECKYBOT </span><span className='text-[#0169C1]'>ZONE</span>
           </h1>
           <p className='text-[16px] px-6 sm:px-20 leading-[40px] text-justify'>
-          Discover the fascinating world of 3D printing at the 3D Zone. Here, you'll find 3D printers and a variety of 3D printed objects that showcase applications across different domains. See how 3D printing is transforming industries and sparking new possibilities.
+            Experience the vision of Teckybot and explore our innovative products. The Teckybot Zone is where technology and creativity come together, offering a glimpse into the future with our latest advancements and solutions for everyone.
+          </p>
+        </div>
+      </div>
+
+
+      <div className='flex flex-col xl:flex-row w-[300px] sm:w-[550px] xl:w-[1280px] h-[650px] sm:h-[800px] xl:h-[400px] rounded-[20px] my-4 sm:my-10' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+        <div className='w-full sm:w-[550px] h-auto sm:h-[400px] xl:h-full flex-shrink-0'>
+          <img src={d} alt="3d" className='h-full w-full relative top-0' />
+        </div>
+        <div className='flex flex-col w-auto h-full items-center justify-center sm:gap-4 xl:gap-12'>
+          <h1 className='text-[34px] sm:text-[48px] font-semibold'>
+            <span className='text-[#FF721F]'>3D TECH </span><span className='text-[#0169C1]'>ZONE</span>
+          </h1>
+          <p className='text-[16px] px-6 sm:px-20 leading-[40px] text-justify'>
+            Discover the fascinating world of 3D printing at the 3D Zone. Here, you'll find 3D printers and a variety of 3D printed objects that showcase applications across different domains. See how 3D printing is transforming industries and sparking new possibilities.
           </p>
         </div>
       </div>
 
       <div className='flex flex-col xl:flex-row-reverse w-[300px] sm:w-[550px] xl:w-[1280px] h-[650px] sm:h-[800px] xl:h-[400px] rounded-[20px] my-4 sm:my-10' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
         <div className='w-full sm:w-[550px] h-auto sm:h-[400px] xl:h-full flex-shrink-0'>
-          <img src={vr} alt="vr" className='h-full w-full relative top-0'/>
+          <img src={vr} alt="vr" className='h-full w-full relative top-0' />
         </div>
         <div className='flex flex-col w-auto h-full items-center justify-center sm:gap-4 xl:gap-12'>
           <h1 className='text-[34px] sm:text-[48px] font-semibold'>
-          <span className='text-[#FF721F]'>AR/VR </span><span className='text-[#0169C1]'>ZONE</span>
+            <span className='text-[#FF721F]'>AR/VR </span><span className='text-[#0169C1]'>ZONE</span>
           </h1>
           <p className='text-[16px] px-6 sm:px-20 leading-[40px] text-justify'>
-          Step into the future with our AR/VR Zone, where you can experience the incredible potential of augmented reality and virtual reality. Explore how AR and VR technologies will revolutionize everyday life and create new opportunities for innovation and interaction.
+            Step into the future with our AR/VR Zone, where you can experience the incredible potential of augmented reality and virtual reality. Explore how AR and VR technologies will revolutionize everyday life and create new opportunities for innovation and interaction.
           </p>
         </div>
       </div>

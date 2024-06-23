@@ -58,7 +58,7 @@ const AboutBtl = () => {
       </div>
 
       <div className='w-full my-10'>
-        <img src={img2} alt='img2' className='h-[300px] sm:h-[400px] lg:h-[600px] xl:h-[800px] w-full' />
+        <img src={img2} alt='img2' className='h-[300px] sm:h-[400px] lg:h-[600px] xl:h-[700px] w-full' />
       </div>
 
       <div className='flex flex-col items-center my-6'>
@@ -104,6 +104,49 @@ const AboutBtl = () => {
           </div>
         </div>
 
+
+        <div className='flex flex-col sm:flex-row my-6 sm:my-16 sm:h-[200px] w-full sm:w-[90%] justify-around items-center tracking-widest text-center gap-10 sm:gap-0'>
+          <div className='w-[80%] sm:w-[40%] sm:h-full flex flex-col justify-evenly items-center'>
+            <p className='text-[#0169C1] font-bold text-[30px] lg:text-[36px]'>HIMACHAL PRADESH</p>
+            <p className='text-[20px] lg:text-[24px] font-medium text-[#5F5F5F]'>ZONAL (17-08-2024)</p>
+          </div>
+          <div className='w-[80%] sm:w-[40%] h-[150px] sm:h-full flex flex-col justify-evenly items-center bg-[#0169C1] text-white rounded-[20px]'>
+            <p className='font-bold text-[30px] lg:text-[36px] tracking-widest'>SHIMLA</p>
+            <p className='font-bold text-[30px] lg:text-[36px] tracking-widest'>CHANDIGARH</p>
+          </div>
+        </div>
+
+        <div className='flex flex-col sm:flex-row my-6 sm:my-16 sm:h-[200px] w-full sm:w-[90%] justify-around items-center tracking-widest text-center gap-10 sm:gap-0'>
+          <div className='w-[80%] sm:w-[40%] sm:h-full flex flex-col justify-evenly items-center'>
+            <p className='text-[#0169C1] font-bold text-[30px] lg:text-[36px]'>TELANGANA</p>
+            <p className='text-[20px] lg:text-[24px] font-medium text-[#5F5F5F]'>ZONAL (24-08-2024)</p>
+          </div>
+          <div className='w-[80%] sm:w-[40%] h-[150px] sm:h-full flex flex-col justify-evenly items-center bg-[#0169C1] text-white rounded-[20px]'>
+            <p className='font-bold text-[30px] lg:text-[36px] tracking-widest'>HYDERABAD</p>
+            <p className='font-bold text-[30px] lg:text-[36px] tracking-widest'>WARANGAL</p>
+          </div>
+        </div>
+
+
+        <div className='flex flex-col sm:flex-row my-6 sm:my-16 w-full sm:w-[90%] justify-around items-center sm:items-start tracking-widest text-center gap-10 sm:gap-0'>
+          <div className='w-[80%] sm:w-[40%] sm:h-[200px] flex flex-col justify-evenly items-center'>
+            <p className='text-[#0169C1] font-bold text-[30px] lg:text-[36px]'>ANDHRA PRADESH</p>
+            <p className='text-[20px] lg:text-[24px] font-medium text-[#5F5F5F]'>ZONAL (05-09-2024)</p>
+          </div>
+          <div className='w-[80%] sm:w-[40%] h-[250px] sm:h-[400px] flex flex-col justify-evenly items-center bg-[#0169C1] text-white rounded-[20px]'>
+            <p className='font-bold text-[26px] lg:text-[36px] tracking-widest'>VISAKHAPATNAM</p>
+            <p className='font-bold text-[26px] lg:text-[36px] tracking-widest'>RAJAHMUNDRY</p>
+            <p className='font-bold text-[26px] lg:text-[36px] tracking-widest'>VIJAYAWADA</p>
+            <p className='font-bold text-[26px] lg:text-[36px] tracking-widest'>NELLORE</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-16" style={{ background: "linear-gradient(90deg, rgba(255, 114, 31, 1) 0%, rgba(255, 114, 31, 1) 20%, rgba(1, 105, 193, 1) 40%, rgba(1, 105, 193, 1) 60%, rgba(27, 133, 52, 1) 80%, rgba(27, 133, 52, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
+        <h1 className='text-[36px] sm:text-[48px] lg:text-[64px] font-bold text-center px-4 sm:px-0'>
+        FINAL EVENT VENUE<br/>
+        WILL BE ANNOUNCED SHORTLY
+        </h1>
       </div>
 
 
