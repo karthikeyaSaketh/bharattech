@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import swal from 'sweetalert';
-import { useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import img1 from '../data/contactUs/1.png'
 import img2 from '../data/contactUs/2.png'
 import img3 from '../data/contactUs/3.png'
@@ -103,22 +103,22 @@ const ContactUs = () => {
         <div className='hidden lg:flex flex-col gap-8 w-[40%] h-[700px] sm:h-[760px] lg:h-[500px]' style={{ background: "linear-gradient(147deg, rgba(0, 119, 181, 1) 35%, rgba(0, 173, 221, 1) 80%, rgba(0, 192, 234, 1) 100%)" }}>
           <h1 className='hidden sm:block mt-12 lg:mt-10 lg:mb-4 text-5xl sm:text-7xl lg:text-[48px] xl:text-[60px] text-center text-white'>Get in touch</h1>
           <div className='flex justify-around w-full my-8'>
-            <img src={img1} alt="img1" className='w-[50px] h-[50px]' />
-            <img src={img2} alt="img2" className='w-[50px] h-[50px]' />
+            <a href='https://instagram.com/teckybot/' target='_blank'><img src={img1} alt="img1" className='w-[50px] h-[50px]' /></a>
+            <a href='https://www.linkedin.com/company/teckybot/' target='_blank'><img src={img2} alt="img2" className='w-[50px] h-[50px]' /></a>
           </div>
           <div className='flex justify-around w-full my-8'>
-            <img src={img3} alt="img3" className='w-[50px] h-[50px]' />
-            <img src={img4} alt="img4" className='w-[50px] h-[50px]' />
+            <a href='https://www.facebook.com/teckybot?mibextid=ZbWKwL' target='_blank'><img src={img3} alt="img3" className='w-[50px] h-[50px]' /></a>
+            <a href='https://www.youtube.com/@teckybot23' target='_blank'><img src={img4} alt="img4" className='w-[50px] h-[50px]' /></a>
           </div>
         </div>
         <div className='flex lg:hidden flex-col gap-2 w-full h-[250px]' style={{ background: "linear-gradient(147deg, rgba(0, 119, 181, 1) 35%, rgba(0, 173, 221, 1) 80%, rgba(0, 192, 234, 1) 100%)" }}>
           <div className='flex justify-around w-full my-8'>
-            <img src={img1} alt="img1" className='w-[50px] h-[50px]' />
-            <img src={img2} alt="img2" className='w-[50px] h-[50px]' />
+            <a href='https://instagram.com/teckybot/' target='_blank'><img src={img1} alt="img1" className='w-[50px] h-[50px]' /></a>
+            <a href='https://www.linkedin.com/company/teckybot/' target='_blank'><img src={img2} alt="img2" className='w-[50px] h-[50px]' /></a>
           </div>
           <div className='flex justify-around w-full my-8'>
-            <img src={img3} alt="img3" className='w-[50px] h-[50px]' />
-            <img src={img4} alt="img4" className='w-[50px] h-[50px]' />
+            <a href='https://www.facebook.com/teckybot?mibextid=ZbWKwL' target='_blank'><img src={img3} alt="img3" className='w-[50px] h-[50px]' /></a>
+            <a href='https://www.youtube.com/@teckybot23' target='_blank'><img src={img4} alt="img4" className='w-[50px] h-[50px]' /></a>
           </div>
         </div>
 

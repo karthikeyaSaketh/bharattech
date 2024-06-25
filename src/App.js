@@ -11,13 +11,16 @@ import Juniors from './pages/Juniors';
 import Seniors from './pages/Seniors';
 import Confirmation1 from './pages/Confirmation1';
 import Confirmation2 from './pages/Confirmation2';
+import ScrollToTop from './Components/ScrollToTop';
+import NotFound from './Components/NotFound';
 
 const App = () => {
   return (
 
     <div className='flex flex-col align-center justify-center w-full'>
       <BrowserRouter>
-        <Navbar/>
+        <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/bharattech' element={<Home />} />
@@ -26,10 +29,12 @@ const App = () => {
           <Route path='/bharattech/Gallery' element={<Gallery />} />
           <Route path='/bharattech/Registration' element={<Registration />} />
           <Route path='/bharattech/ContactUs' element={<ContactUs />} />
-          <Route path='/bharattech/Registration/Juniors' element={<Juniors/>}/>
-          <Route path='/bharattech/Registration/Seniors' element={<Seniors/>}/>
-          <Route path='/bharattech/Registration/Juniors/Confirmation' element={<Confirmation1/>}/>
-          <Route path='/bharattech/Registration/Seniors/Confirmation' element={<Confirmation2/>}/>
+          <Route path='/bharattech/Registration/Juniors' element={<Juniors />} />
+          <Route path='/bharattech/Registration/Seniors' element={<Seniors />} />
+          <Route path='/bharattech/Registration/Juniors/Confirmation' element={<Confirmation1 />} />
+          <Route path='/bharattech/Registration/Seniors/Confirmation' element={<Confirmation2 />} />
+          <Route path='/404' element={NotFound} />
+          <Route element={NotFound} />
         </Routes>
       </BrowserRouter>
     </div>

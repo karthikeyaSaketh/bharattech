@@ -57,7 +57,7 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <div
                 key={index}
-                className={`relative h-1/2 pt-3 p-1 hover:text-blue-500 ${isActive[index] ? 'text-blue-500' : 'text-gray-500'}`}
+                className={`relative h-1/2 pt-3 p-1 hover:text-[#0169C1] ${isActive[index] ? 'text-[#0169C1]' : 'text-gray-500'}`}
                 onMouseEnter={() => handleHover(index)}
                 onMouseLeave={() => handleHoverLeave(index)}
               >
@@ -65,7 +65,7 @@ const Navbar = () => {
                   {item.label}
                 </NavLink>
                 {(isHovered[index] || isActive[index]) && (
-                  <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-white via-blue-500 to-white"></div>
+                  <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-white via-[#0169C1] to-white"></div>
                 )}
               </div>
             ))}
@@ -83,7 +83,7 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <div
                 key={index}
-                className={`mb-3 ${isActive[index] ? 'text-blue-500' : 'text-gray-500'}`}
+                className={`mb-3 ${isActive[index] ? 'text-[#0169C1]' : 'text-gray-500'}`}
                 onClick={() => { handleItemClick(index); toggleMenu(); }}
               >
                 <NavLink to={item.path}>
