@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 Not Found</title>
-  <meta http-equiv="refresh" content="0; URL=/#/404" />
-</head>
-<body>
-</body>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // Redirect the user to the correct URL path.
+      (function () {
+        var pathname = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        var newUrl = '/' + pathname + search + hash;
+        window.location.href = newUrl;
+      })();
+    </script>
+  </head>
+  <body></body>
 </html>

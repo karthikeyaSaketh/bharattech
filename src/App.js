@@ -33,8 +33,8 @@ const App = () => {
           <Route path='/bharattech/Registration/Seniors' element={<Seniors />} />
           <Route path='/bharattech/Registration/Juniors/Confirmation' element={<Confirmation1 />} />
           <Route path='/bharattech/Registration/Seniors/Confirmation' element={<Confirmation2 />} />
-          <Route path='/404' element={NotFound} />
-          <Route element={NotFound} />
+          <Route path='/404' element={<NotFound/>} />
+          <Route path='*' element={<NotFound/>} />
         </Routes>
       </BrowserRouter>
     </div>
