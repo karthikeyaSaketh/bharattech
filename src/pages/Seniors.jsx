@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import swal from 'sweetalert';
 import { NavLink } from 'react-router-dom';
 import Footer from '../Components/Footer'
 import Senior from '../data/senior.png'
@@ -64,6 +65,19 @@ const Seniors = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const participants = [formData.participant1, formData.participant2, formData.participant3, formData.participant4];
+    const filledParticipants = participants.filter(p => p.name && p.class);
+
+    if (filledParticipants.length !== 2 && filledParticipants.length !== 4) {
+      swal({
+        title: "Warning!!!",
+        text: "Participants count must be 2 or 4",
+        icon: "warning",
+        button: "OK"
+      })
+    }
+
     console.log('Form Data:', formData);
   };
 
@@ -72,7 +86,7 @@ const Seniors = () => {
     <div className='flex flex-col'>
       <div className='mt-10 mb-6 flex flex-col-reverse lg:flex-row lg:justify-around w-full lg:h-[590px]'>
         <div className='flex flex-col mt-10 lg:w-[60%] h-full text-sm'>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className='flex flex-col justify-center align-baseline w-full sm:w-[95%] h-full sm:mx-[20px]'>
               <div className='flex flex-col items-center sm:flex-row justify-around sm:gap-8'>
                 <div className='flex justify-around sm:justify-between w-[85%]'>
@@ -95,7 +109,7 @@ const Seniors = () => {
                     <option value="" disabled>
                       Year
                     </option>
-                    {[1,2,3,4].map((number) => (
+                    {[1, 2, 3, 4].map((number) => (
                       <option key={number} value={number}>
                         {number}
                       </option>
@@ -114,20 +128,20 @@ const Seniors = () => {
                   <select
                     className="py-3 my-4 border-2 border-[#0077B5] rounded-xl focus:outline-none
                      focus:border-blue-900 font-normal"
-                     name={`participant2.year`}
-                     value={formData[`participant2`].year}
-                     onChange={handleChange}
-                     required
-                   >
-                     <option value="" disabled>
-                       Year
-                     </option>
-                     {[1,2,3,4].map((number) => (
-                       <option key={number} value={number}>
-                         {number}
-                       </option>
-                     ))}
-                   </select>
+                    name={`participant2.year`}
+                    value={formData[`participant2`].year}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="" disabled>
+                      Year
+                    </option>
+                    {[1, 2, 3, 4].map((number) => (
+                      <option key={number} value={number}>
+                        {number}
+                      </option>
+                    ))}
+                  </select>
                 </div>
               </div>
 
@@ -139,25 +153,23 @@ const Seniors = () => {
                     name={`participant3.name`}
                     value={formData[`participant3`].name}
                     onChange={handleChange}
-                    required
                   />
                   <select
                     className="py-3 my-4 border-2 border-[#0077B5] rounded-xl focus:outline-none
                      focus:border-blue-900 font-normal"
-                     name={`participant3.year`}
-                     value={formData[`participant3`].year}
-                     onChange={handleChange}
-                     required
-                   >
-                     <option value="" disabled>
-                       Year
-                     </option>
-                     {[1,2,3,4].map((number) => (
-                       <option key={number} value={number}>
-                         {number}
-                       </option>
-                     ))}
-                   </select>
+                    name={`participant3.year`}
+                    value={formData[`participant3`].year}
+                    onChange={handleChange}
+                  >
+                    <option value="" disabled>
+                      Year
+                    </option>
+                    {[1, 2, 3, 4].map((number) => (
+                      <option key={number} value={number}>
+                        {number}
+                      </option>
+                    ))}
+                  </select>
                 </div>
                 <div className='flex justify-between w-[85%]'>
                   <input id="name4" type="text" placeholder='Enter name of 4th participant'
@@ -166,25 +178,23 @@ const Seniors = () => {
                     name={`participant4.name`}
                     value={formData[`participant4`].name}
                     onChange={handleChange}
-                    required
                   />
                   <select
                     className="py-3 my-4 border-2 border-[#0077B5] rounded-xl focus:outline-none
                      focus:border-blue-900 font-normal"
-                     name={`participant4.year`}
-                     value={formData[`participant4`].year}
-                     onChange={handleChange}
-                     required
-                   >
-                     <option value="" disabled>
-                       Year
-                     </option>
-                     {[1,2,3,4].map((number) => (
-                       <option key={number} value={number}>
-                         {number}
-                       </option>
-                     ))}
-                   </select>
+                    name={`participant4.year`}
+                    value={formData[`participant4`].year}
+                    onChange={handleChange}
+                  >
+                    <option value="" disabled>
+                      Year
+                    </option>
+                    {[1, 2, 3, 4].map((number) => (
+                      <option key={number} value={number}>
+                        {number}
+                      </option>
+                    ))}
+                  </select>
                 </div>
               </div>
 
@@ -309,18 +319,17 @@ const Seniors = () => {
                   </option>
                   <option value="drone">Drone Competitions</option>
                   <option value="robotics">Robotics</option>
-                  <option value="3dprinting">3D Printing</option>
-                  <option value="renewableenergy">Renewable Energy</option>
+                  <option value="3dprinting">Artificial Intelligence</option>
+                  <option value="renewableenergy">Internet of Things</option>
                 </select>
                 <div className='w-full sm:w-[50%]'>
-                  <NavLink to='/bharattech/Registration/Seniors/Confirmation' className='flex flex-col items-center content-center sm:flex-row justify-around' >
-                    <button type='submit'
-                      className="rounded-xl w-[85%] py-4 px-3 my-4 leading-tight text-[18px] font-normal text-white"
-                      style={{ background: "linear-gradient(90deg, rgba(0, 119, 181, 1) 0%, rgba(0, 189, 232, 1) 100%)" }}
-                    >
-                      Submit your response
-                    </button>
-                  </NavLink>
+                  <div className='flex justify-center w-full'><button type='submit'
+                    className="rounded-xl w-[85%] py-4 px-3 my-4 leading-tight text-[18px] font-normal text-white"
+                    style={{ background: "linear-gradient(90deg, rgba(0, 119, 181, 1) 0%, rgba(0, 189, 232, 1) 100%)" }}
+                  >
+                    Submit your response
+                  </button>
+                  </div>
                 </div>
               </div>
 

@@ -66,7 +66,6 @@ const Footer = () => {
                     </div>
                     <div className='flex items-baseline gap-6 text-xl sm:text-2xl'>
                         <a href='https://www.facebook.com/teckybot?mibextid=ZbWKwL' target='_blank'><img src={facebook} alt='facebook' className='h-[25px] w-[25px]' /></a>
-                        <img src={whatsapp} alt='whatsapp' className='h-[25px] w-[25px]' />
                         <a href='https://instagram.com/teckybot/' target='_blank'><img src={instagram} alt='instagram' className='h-[25px] w-[25px]' /></a>
                         <a href='https://www.linkedin.com/company/teckybot/' target='_blank'><img src={linkedin} alt='linkedin' className='h-[25px] w-[25px]' /></a>
                         <a href='https://www.youtube.com/@teckybot23' target='_blank'><img src={youtube} alt='youtube' className='h-[25px] w-[25px]' /></a>

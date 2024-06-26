@@ -27,9 +27,9 @@ import sc12 from '../data/Gallery/s12.png'
 const Gallery = () => {
   const text = "RECAP OF 2023"
   return (
-    <div className='flex flex-col w-full mt-4'>
+    <div className='flex flex-col w-full mt-2'>
       <div className='flex justify-center items-center w-full'>
-        <h1 className='text-[40px] sm:text-[80px] xl:text-[128px] font-black text-[#F16600CC] text-center' style={{ fontFamily: "Nunito Sans, sans-serif", fontStyle: "italic" }}>
+        <h1 className='text-[40px] sm:text-[76px] font-black text-[#F16600CC] text-center' style={{ fontFamily: "Nunito Sans, sans-serif", fontStyle: "italic" }}>
           {text.split('').map((letter, index) => (
             <span key={index} style={{ textShadow: "0px 4px 10px rgba(0,0,0, 0.2)" }}>
               {letter}
@@ -39,9 +39,9 @@ const Gallery = () => {
       </div>
 
 
-      <div className='flex justify-center my-8 sm:my-16'>
-        <div className='flex w-[80%] justify-center items-center rounded-[20px]' style={{ boxShadow: '2px 2px 40px rgba(0,0,0, 0.25)' }}>
-        <iframe className="w-full h-[300px] sm:h-[400px] lg:h-[500px] rounded-[20px]" src="https://www.youtube.com/embed/MukwVizWaSw?si=DbZgZP3uDNzJfdob" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div className='flex justify-center my-8 sm:my-4'>
+        <div className='flex w-[80%] sm:w-[75%] justify-center items-center rounded-[20px]' style={{ boxShadow: '2px 2px 40px rgba(0,0,0, 0.25)' }}>
+        <iframe className="w-full h-[300px] sm:h-[400px] lg:h-[450px] rounded-[20px]" src="https://www.youtube.com/embed/MukwVizWaSw?si=DbZgZP3uDNzJfdob" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -74,13 +74,13 @@ const Gallery = () => {
       </div>
 
       <div className='relative flex items-center justify-center h-[230px] sm:h-[320px] w-full overflow-x-auto'>
-        <div className='flex items-center h-[200px] sm:h-[250px] mt-4 sm:mt-0 overflow-hidden'>
-          <div className='flex animate-loop-scroll' style={{ animationDelay: '-1.7s' }}>
+        <div className='flex flex-row-reverse items-center h-[200px] sm:h-[250px] mt-4 sm:mt-0 overflow-hidden'>
+          <div className='flex animate-reverse-loop-scroll'>
             <img src={sc4} alt='img1' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />
             <img src={sc5} alt='img2' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />
             <img src={sc6} alt='img3' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />
           </div>
-          <div className='flex animate-loop-scroll' aria-hidden="true" style={{ animationDelay: '-1.7s' }}>
+          <div className='flex animate-reverse-loop-scroll' aria-hidden="true">
             <img src={sc4} alt='img1' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />
             <img src={sc5} alt='img2' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />
             <img src={sc6} alt='img3' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />
@@ -116,13 +116,13 @@ const Gallery = () => {
       </div>
 
       <div className='relative flex items-center justify-center h-[230px] sm:h-[320px] w-full overflow-x-auto'>
-        <div className='flex items-center h-[200px] sm:h-[250px] mt-4 sm:mt-0 overflow-hidden'>
-          <div className='flex animate-loop-scroll' style={{ animationDelay: '-1.7s' }}>
+        <div className='flex flex-row-reverse items-center h-[200px] sm:h-[250px] mt-4 sm:mt-0 overflow-hidden'>
+          <div className='flex animate-reverse-loop-scroll'>
             <img src={sc10} alt='img1' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />
             <img src={sc11} alt='img2' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />
             <img src={sc12} alt='img3' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />
           </div>
-          <div className='flex animate-loop-scroll' aria-hidden="true" style={{ animationDelay: '-1.7s' }}>
+          <div className='flex animate-reverse-loop-scroll' aria-hidden="true">
             <img src={sc10} alt='img1' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />
             <img src={sc11} alt='img2' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />
             <img src={sc12} alt='img3' className='w-[250px] sm:w-[370px] h-[200px] sm:h-[270px]  max-w-none mx-4 sm:mx-16 xl:mx-20' />

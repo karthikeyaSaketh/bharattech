@@ -5,28 +5,32 @@ import img2 from '../data/aboutbtl/2.png'
 import img3 from '../data/aboutbtl/3.png'
 import img4 from '../data/aboutbtl/4.png'
 import img5 from '../data/aboutbtl/5.png'
+import logo from '../data/aboutbtl/logo.png'
 
 const AboutBtl = () => {
   return (
     <div className='flex flex-col w-full mt-4'>
-      <div className='flex justify-center items-center w-full' style={{ background: "linear-gradient(180deg, rgba(0, 0, 0, 1) 20%, rgba(255, 255, 255, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
-        <h1 className='text-[40px] sm:text-[80px] xl:text-[128px] font-bold'>
-          ORIGIN OF BTL
+      <div className='flex justify-center items-center w-full' >
+        <h1 className='text-[40px] xl:text-[76px] font-bold text-center' style={{ background: "linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%", backgroundClip: "text", color: "transparent" }}>
+          ORIGIN OF BHARAT TECK LEAGUE
         </h1>
       </div>
 
-      <div className='mt-6 w-full p-10 sm:p-16 text-left' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
-        <p className='text-[18px] sm:text-[24px] text-justify'>
-          <b>Bharat Teck League 2024</b> (BTL 2024) was initiated with the vision of promoting and encouraging young minds to develop an interest in technology
-          and prepare for the future. This event aims to be the largest technical league in Bharat, dedicated to Bharat's students. By uniting young innovators from across the nation, BTL 2024 is not just a competition but a platform for growth,
-          technological awareness, and future readiness. Join us in this monumental event as we celebrate and cultivate the burgeoning technological landscape of our country, preparing the next generation of tech leaders for the future. Let's embark on this exciting journey together,
-          inspiring and nurturing tomorrow's innovators.
-        </p>
+      <div className='mt-6 w-full p-8 pt-0 sm:p-16 sm:pt-0 xl:pt-16 text-left' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+        <div className='flex flex-col-reverse xl:flex-row w-full justify-around items-center'>
+          <p className='text-[18px] sm:text-[24px] text-justify'>
+            <b>Bharat Teck League 2024</b> (BTL 2024) was initiated with the vision of promoting and encouraging young minds to develop an interest in technology
+            and prepare for the future. This event aims to be the largest technical league in Bharat, dedicated to Bharat's students. By uniting young innovators from across the nation, BTL 2024 is not just a competition but a platform for growth,
+            technological awareness, and future readiness. Join us in this monumental event as we celebrate and cultivate the burgeoning technological landscape of our country, preparing the next generation of tech leaders for the future. Let's embark on this exciting journey together,
+            inspiring and nurturing tomorrow's innovators.
+          </p>
+          <img src={logo} alt='logo' className='w-[80%] xl:w-[40%]' />
+        </div>
       </div>
 
       <div className='flex flex-col my-10 w-full h-auto bg-top bg-contain p-8' style={{ backgroundImage: `url(${img1})` }}>
         <h1 className='text-center text-white text-[36px] sm:text-[48px] lg:text-[64px] xl:text-[96px] font-bold'>
-          BACKGROUND & EVOLUTION
+          EVOLUTION OF BTL
         </h1>
         <div className='flex flex-col items-start pt-8 sm:pt-0 leading-loose sm:px-12'>
           <p className='text-white text-left text-[20px] sm:text-[24px]'>
@@ -67,7 +71,7 @@ const AboutBtl = () => {
             BHARAT TECH LEAGUE 2024
           </h1>
         </div>
-        <p className='text-[18px] sm:text-[24px] lg:text-[30px] xl:text-[36px] p-6 sm:p-12 lg:p-16'>
+        <p className='text-[18px] sm:text-[24px] lg:text-[30px] xl:text-[36px] p-6 sm:p-12 lg:p-16 text-justify'>
           Building on the success of the Andhra Teck League, BTL 2024 will cover three states: Andhra Pradesh, Telangana, and Himachal Pradesh. The event is organized by Teckybot and will include more than 1500 participants. The competition is structured in three phases.
         </p>
 
@@ -144,8 +148,8 @@ const AboutBtl = () => {
 
       <div className="mb-16" style={{ background: "linear-gradient(90deg, rgba(255, 114, 31, 1) 0%, rgba(255, 114, 31, 1) 20%, rgba(1, 105, 193, 1) 40%, rgba(1, 105, 193, 1) 60%, rgba(27, 133, 52, 1) 80%, rgba(27, 133, 52, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
         <h1 className='text-[36px] sm:text-[48px] lg:text-[64px] font-bold text-center px-4 sm:px-0'>
-        FINAL EVENT VENUE<br/>
-        WILL BE ANNOUNCED SHORTLY
+          FINAL EVENT VENUE<br />
+          WILL BE ANNOUNCED SHORTLY
         </h1>
       </div>
 

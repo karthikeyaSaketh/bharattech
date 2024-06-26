@@ -46,11 +46,34 @@ const ContactUs = () => {
   };
 
   return (
-    <div className='m-4 sm:m-24 lg:mt-12 lg:mb-4 flex justify-center content-center'>
-      <div className='flex flex-col align-center items-center lg:flex-row w-full sm:w-[95%]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
-        <div className='flex flex-col align-center items-center w-[90%] lg:w-[60%] h-[650px] lg:h-[500px] text-[#0077B5] font-medium'>
-          <h1 className='flex lg:hidden mt-12 lg:mt-10 lg:mb-4 text-5xl sm:text-7xl lg:text-[64px] text-center'>Get in touch</h1>
-          <div className='mt-8 sm:mt-12 flex flex-col items-start pl-5 sm:pl-0 lg:text-sm'>
+    <div className='m-4 sm:m-24 lg:mt-8 lg:mb-4 flex justify-center content-center'>
+      <div className='flex flex-col align-center items-center lg:flex-row w-full xl:w-[80%]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+
+
+        <div className='flex flex-col w-[80%] lg:w-[50%] justify-center items-center pt-12 lg:pt-0 px-0 sm:px-10 xl:px-20 gap-12'>
+          <h1 className='text-[32px] sm:text-[40px] text-[#1B8534] font-bold'>
+            Connect With Us
+          </h1>
+          <p>
+            Feel free to reach out to us any time. Fill up 
+            the form to contact us or connect with us 
+            on our social media.
+          </p>
+          <div className='flex flex-wrap gap-8 sm:gap-16'>
+          <a href='https://www.facebook.com/teckybot?mibextid=ZbWKwL' target='_blank'><img src={img1} alt='img1' className='w-[30xp] h-[30px]' /></a>
+          <a href='https://instagram.com/teckybot/' target='_blank'><img src={img2} alt='img2' className='w-[30xp] h-[30px]' /></a>
+          <a href='https://www.linkedin.com/company/teckybot/' target='_blank'><img src={img3} alt='img3' className='w-[30xp] h-[30px]' /></a>
+          <a href='https://www.youtube.com/@teckybot23' target='_blank'><img src={img4} alt='img4' className='w-[30xp] h-[30px]' /></a>
+          </div>
+
+          <div className='w-[340px] h-[1px] bg-[#B1B1B1]'>
+          </div>
+
+        </div>
+
+
+        <div className='flex flex-col justify-evenly items-center w-[90%] lg:w-[50%] h-[550px] lg:h-[580px] text-[#1B8534] font-medium'>
+          <div className='sm:mt-12 flex flex-col items-start pl-5 sm:pl-0 lg:text-sm'>
             <form onSubmit={handleSubmit}>
               <label htmlFor='name'>Name :</label><br />
               <input
@@ -90,39 +113,14 @@ const ContactUs = () => {
               <br />
               <button
                 type='submit'
-                className="rounded-xl w-[90%] sm:w-full py-4 px-3 my-4 leading-tight text-lg font-normal text-white"
-                style={{ background: "linear-gradient(90deg, rgba(0, 119, 181, 1) 0%, rgba(0, 189, 232, 1) 100%)" }}
+                className="rounded-xl w-[90%] sm:w-full py-3 px-3 my-4 leading-tight text-lg font-normal text-white"
+                style={{ background: "linear-gradient(134deg, rgba(27, 133, 52, 1) 0%, rgba(32, 194, 71, 1) 100%)" }}
               >
                 Submit your response
               </button>
             </form>
           </div>
         </div>
-
-
-        <div className='hidden lg:flex flex-col gap-8 w-[40%] h-[700px] sm:h-[760px] lg:h-[500px]' style={{ background: "linear-gradient(147deg, rgba(0, 119, 181, 1) 35%, rgba(0, 173, 221, 1) 80%, rgba(0, 192, 234, 1) 100%)" }}>
-          <h1 className='hidden sm:block mt-12 lg:mt-10 lg:mb-4 text-5xl sm:text-7xl lg:text-[48px] xl:text-[60px] text-center text-white'>Get in touch</h1>
-          <div className='flex justify-around w-full my-8'>
-            <a href='https://instagram.com/teckybot/' target='_blank'><img src={img1} alt="img1" className='w-[50px] h-[50px]' /></a>
-            <a href='https://www.linkedin.com/company/teckybot/' target='_blank'><img src={img2} alt="img2" className='w-[50px] h-[50px]' /></a>
-          </div>
-          <div className='flex justify-around w-full my-8'>
-            <a href='https://www.facebook.com/teckybot?mibextid=ZbWKwL' target='_blank'><img src={img3} alt="img3" className='w-[50px] h-[50px]' /></a>
-            <a href='https://www.youtube.com/@teckybot23' target='_blank'><img src={img4} alt="img4" className='w-[50px] h-[50px]' /></a>
-          </div>
-        </div>
-        <div className='flex lg:hidden flex-col gap-2 w-full h-[250px]' style={{ background: "linear-gradient(147deg, rgba(0, 119, 181, 1) 35%, rgba(0, 173, 221, 1) 80%, rgba(0, 192, 234, 1) 100%)" }}>
-          <div className='flex justify-around w-full my-8'>
-            <a href='https://instagram.com/teckybot/' target='_blank'><img src={img1} alt="img1" className='w-[50px] h-[50px]' /></a>
-            <a href='https://www.linkedin.com/company/teckybot/' target='_blank'><img src={img2} alt="img2" className='w-[50px] h-[50px]' /></a>
-          </div>
-          <div className='flex justify-around w-full my-8'>
-            <a href='https://www.facebook.com/teckybot?mibextid=ZbWKwL' target='_blank'><img src={img3} alt="img3" className='w-[50px] h-[50px]' /></a>
-            <a href='https://www.youtube.com/@teckybot23' target='_blank'><img src={img4} alt="img4" className='w-[50px] h-[50px]' /></a>
-          </div>
-        </div>
-
-
 
 
       </div>

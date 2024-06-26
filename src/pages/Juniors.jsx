@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import swal from 'sweetalert';
 import { NavLink } from 'react-router-dom';
 import Footer from '../Components/Footer'
 import Junior from '../data/junior.png'
@@ -65,15 +66,28 @@ const Juniors = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const participants = [formData.participant1, formData.participant2, formData.participant3, formData.participant4];
+    const filledParticipants = participants.filter(p => p.name && p.class);
+
+    if (filledParticipants.length !== 2 && filledParticipants.length !== 4) {
+      swal({
+        title: "Warning!!!",
+        text: "Participants count must be 2 or 4",
+        icon: "warning",
+        button: "OK"
+      })
+    }
+
     console.log('Form Data:', formData);
   };
 
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col '>
       <div className='mt-10 mb-6 flex flex-col-reverse lg:flex-row lg:justify-around w-full lg:h-[590px]'>
         <div className='flex flex-col lg:w-[60%] h-full text-sm'>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className='flex flex-col justify-center align-baseline w-full sm:w-[95%] h-full sm:mx-[20px]'>
               <div className='flex flex-col items-center sm:flex-row justify-around sm:gap-8'>
                 <div className='flex justify-around sm:justify-between w-[85%]'>
@@ -140,7 +154,6 @@ const Juniors = () => {
                     name={`participant3.name`}
                     value={formData[`participant3`].name}
                     onChange={handleChange}
-                    required
                   />
                   <select
                     className="py-3 my-4 border-2 border-[#F16600] rounded-xl focus:outline-none
@@ -148,7 +161,6 @@ const Juniors = () => {
                     name={`participant3.class`}
                     value={formData[`participant3`].class}
                     onChange={handleChange}
-                    required
                   >
                     <option value="" disabled>
                       Class
@@ -167,7 +179,6 @@ const Juniors = () => {
                     name={`participant4.name`}
                     value={formData[`participant4`].name}
                     onChange={handleChange}
-                    required
                   />
                   <select
                     className="py-3 my-4 border-2 border-[#F16600] rounded-xl focus:outline-none
@@ -175,7 +186,6 @@ const Juniors = () => {
                     name={`participant4.class`}
                     value={formData[`participant4`].class}
                     onChange={handleChange}
-                    required
                   >
                     <option value="" disabled>
                       Class
@@ -317,14 +327,14 @@ const Juniors = () => {
                   <option value="renewableenergy">Renewable Energy</option>
                 </select>
               </div>
-              <NavLink to='/bharattech/Registration/Juniors/Confirmation' className='flex flex-col items-center content-center sm:flex-row justify-around' >
+              <div className='flex justify-center w-full'>
                 <button type='submit'
                   className="rounded-xl w-[85%] sm:w-full py-4 px-3 my-6 leading-tight text-[18px] font-normal text-white"
                   style={{ background: "linear-gradient(89deg, rgba(241, 102, 0, 1) 19%, rgba(250, 185, 16, 1) 100%)" }}
                 >
                   Submit your response
                 </button>
-              </NavLink>
+              </div>
 
             </div>
           </form>

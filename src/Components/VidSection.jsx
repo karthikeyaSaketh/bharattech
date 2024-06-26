@@ -4,7 +4,8 @@ const VidSection = () => {
   return (
     <div className='flex justify-center mt-16'>
       <div className='flex w-[80%] justify-center items-center rounded-[20px]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
-        <iframe className='w-full h-[300px] sm:h-[400px] lg:h-[500px] rounded-[20px]' src="https://www.youtube.com/embed/etgeqBj5Qi0?si=T7V9wqT06OgOcXJ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe className='w-full h-[300px] sm:h-[400px] lg:h-[500px] rounded-[20px]' src="https://www.youtube.com/embed/_1C8yNyuh7k?si=dLMVcMxhbHkwrqpW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
       </div>
     </div>
   )

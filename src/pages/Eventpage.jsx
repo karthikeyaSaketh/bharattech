@@ -104,7 +104,7 @@ const Eventpage = () => {
             <div className='flex flex-col gap-4'>
               <img src={img8} alt="img8" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
-                <p className='text-[16px]'>EV Technology</p>
+                <p className='text-[16px]'>Internet of Things</p>
                 <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
               </div>
             </div>

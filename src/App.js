@@ -13,6 +13,8 @@ import Confirmation1 from './pages/Confirmation1';
 import Confirmation2 from './pages/Confirmation2';
 import ScrollToTop from './Components/ScrollToTop';
 import NotFound from './Components/NotFound';
+import ScrollToTopButton from './Components/ScrollToTopButton';
+import Competitions from './Components/Competitions';
 
 const App = () => {
   return (
@@ -26,6 +28,10 @@ const App = () => {
           <Route path='/bharattech' element={<Home />} />
           <Route path='/bharattech/AboutBTL' element={<AboutBtl />} />
           <Route path='/bharattech/Events' element={<Eventpage />} />
+          <Route path='/bharattech/Events/3dprinting' element={<Competitions/>} />
+          <Route path='/bharattech/Events/RoboticsJunior' element={<Eventpage />} />
+          <Route path='/bharattech/Events/DroneTechnologyJunior' element={<Eventpage />} />
+          <Route path='/bharattech/Events/RenewableEnergy' element={<Eventpage />} />
           <Route path='/bharattech/Gallery' element={<Gallery />} />
           <Route path='/bharattech/Registration' element={<Registration />} />
           <Route path='/bharattech/ContactUs' element={<ContactUs />} />
@@ -36,6 +42,7 @@ const App = () => {
           <Route path='/404' element={<NotFound/>} />
           <Route path='*' element={<NotFound/>} />
         </Routes>
+        <ScrollToTopButton />
       </BrowserRouter>
     </div>
 
