@@ -15,6 +15,7 @@ import img11 from '../data/events/11.png'
 import vr from '../data/events/vr.png'
 import d from '../data/events/3d.png'
 import teckybot from '../data/events/teckybot.png'
+import { NavLink } from 'react-router-dom'
 
 const Eventpage = () => {
   return (
@@ -40,7 +41,9 @@ const Eventpage = () => {
               <img src={img1} alt="img1" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>3D printing technology</p>
-                <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                <NavLink to='/bharattech/events/3dprinting'>
+                  <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                </NavLink>
               </div>
             </div>
             <div className='flex flex-col gap-4'>
@@ -137,7 +140,7 @@ const Eventpage = () => {
           <img src={img11} alt="img11" className='w-[300px] h-[300px] rounded-[20px]' />
           <p className='text-[30px] font-semibold'>AI SHOW</p>
         </div>
-        
+
       </div>
 
 
