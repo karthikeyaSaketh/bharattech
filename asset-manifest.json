@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/bharattech/static/css/main.544ede1d.css",
-    "main.js": "/bharattech/static/js/main.41fe80c2.js",
+    "main.js": "/bharattech/static/js/main.f2ebbb5d.js",
     "static/media/1.png": "/bharattech/static/media/1.57a2f10d20ab6ee896cb.png",
+    "static/media/image2.jpg": "/bharattech/static/media/image2.c195f8f8b593e0109c23.jpg",
+    "static/media/image1.jpg": "/bharattech/static/media/image1.9538c656e9fa0e6fdf12.jpg",
     "static/media/teckybot.png": "/bharattech/static/media/teckybot.a02f9d82eaff92d02618.png",
     "static/media/11.png": "/bharattech/static/media/11.a119a5fd4abf70a68511.png",
     "static/media/2.png": "/bharattech/static/media/2.6153186145ee028d9ff5.png",
@@ -34,9 +36,7 @@
     "static/media/conf_img_1.png": "/bharattech/static/media/conf_img_1.396adc63dc6391c649c7.png",
     "static/media/logo.png": "/bharattech/static/media/logo.4c13ab22c9ebab9cb331.png",
     "static/media/AU.png": "/bharattech/static/media/AU.562302db4c2f2353b325.png",
-    "static/media/image1.jpeg": "/bharattech/static/media/image1.89384b91e3a52eb0425f.jpeg",
     "static/media/RRDroneJunior.pdf": "/bharattech/static/media/RRDroneJunior.95cbea8d2f9b9741868e.pdf",
-    "static/media/image2.jpeg": "/bharattech/static/media/image2.0441e1cd9ecc770bba2d.jpeg",
     "static/media/PSDroneJunior.pdf": "/bharattech/static/media/PSDroneJunior.d030c30ddb61537873b1.pdf",
     "static/media/instagram.png": "/bharattech/static/media/instagram.e719d8b29f452a16302d.png",
     "static/media/TIE.png": "/bharattech/static/media/TIE.5feddf30e8a5a5d4e669.png",
@@ -51,10 +51,10 @@
     "static/media/email.png": "/bharattech/static/media/email.9082177d266cee25a57b.png",
     "index.html": "/bharattech/index.html",
     "main.544ede1d.css.map": "/bharattech/static/css/main.544ede1d.css.map",
-    "main.41fe80c2.js.map": "/bharattech/static/js/main.41fe80c2.js.map"
+    "main.f2ebbb5d.js.map": "/bharattech/static/js/main.f2ebbb5d.js.map"
   },
   "entrypoints": [
     "static/css/main.544ede1d.css",
-    "static/js/main.41fe80c2.js"
+    "static/js/main.f2ebbb5d.js"
   ]
 }
