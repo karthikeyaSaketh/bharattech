@@ -25,7 +25,7 @@ const ImgSlider = () => {
   }, [images.length]);
 
   return (
-    <div className="relative flex justify-center items-center h-[300px] w-full md:h-[450px] xl:h-[600px]">
+    <div className="relative flex justify-center items-center h-[270px] w-full sm:h-[450px] xl:h-[600px]">
       <BsArrowLeftCircleFill
         className="arrow absolute w-8 h-8 text-white filter drop-shadow-lg cursor-pointer left-4 z-10"
         onClick={handlePrevious}
