@@ -55,7 +55,7 @@ const AboutBtl = () => {
           <p className='text-white text-[16px] text-justify'>
             The success of Andhra Teck League 2023 was made possible by the invaluable support from key figures and organizations. Distinguished supporters included <b>Shri Dr. Prasad Reddy, Vice Chancellor of Andhra University,</b>
             and <b>Shri Ravi Eswarapu, AHUB CEO</b>. Additionally, partnerships with <b>Alcove Partners</b> and <b>TIE Vizag</b> significantly contributed to the event's success. The league was structured in several stages, starting with preliminary online registrations.
-            Zonal level competitions were held in four major cities: Visakhapatnam at <b>NSRIT Engineering College</b>, Kakinada at <b>Aditya Engineering College</b>, Vijayawada at <b>Potti Sri Chadalavada Mallikarjun College of Engineering and Technology</b>, and Nellore at
+            Zonal level competitions were held in four major cities: Visakhapatnam at <b>NSRIT Engineering College</b>, Kakinada at <b>Aditya Engineering College</b>, Vijayawada at <b>Potti Sriramulu Chalavadi Mallikarjunarao College of Engineering & Technology</b>, and Nellore at
             <b> Narayana Engineering College</b>. The grand finale took place at <b>AHUB</b> on the <b>Andhra University</b> campus, providing a fitting conclusion to a highly competitive and inspiring event. This meticulously organized event not only highlighted the region’s technological prowess but also set the stage for the upcoming Bharat Teck League 2024, promising to unite and inspire young innovators across the nation.
           </p>
         </div>
@@ -68,7 +68,7 @@ const AboutBtl = () => {
       <div className='flex flex-col items-center my-6'>
         <div className='flex justify-center items-center w-full' style={{ background: "linear-gradient(90deg, rgba(255, 114, 31, 1) 0%, rgba(255, 114, 31, 1) 20%, rgba(1, 105, 193, 1) 40%, rgba(1, 105, 193, 1) 60%, rgba(27, 133, 52, 1) 80%, rgba(27, 133, 52, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
           <h1 className='text-center text-[36px] sm:text-[48px] lg:text-[64px] xl:text-[96px] font-bold'>
-            BHARAT TECH LEAGUE 2024
+            BHARAT TECK LEAGUE 2024
           </h1>
         </div>
         <p className='text-[18px] sm:text-[24px] lg:text-[30px] xl:text-[36px] p-6 sm:p-12 lg:p-16 text-justify'>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from 'react-icons/bs';
-import image1 from '../data/image1.jpeg';
-import image2 from '../data/image2.jpeg';
+import image1 from '../data/image1.jpg';
+import image2 from '../data/image2.jpg';
 
 const ImgSlider = () => {
   const images = [image1, image2];
