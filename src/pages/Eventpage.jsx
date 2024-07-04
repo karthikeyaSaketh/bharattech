@@ -41,9 +41,7 @@ const Eventpage = () => {
               <img src={img1} alt="img1" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>3D Printing</p>
-                <NavLink to='/bharattech/events/3dprinting'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
-                </NavLink>
               </div>
             </div>
             <div className='flex flex-col gap-4'>
@@ -60,7 +58,9 @@ const Eventpage = () => {
               <img src={img3} alt="img3" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Drone Technology</p>
-                <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                <NavLink to='/bharattech/events/dronetechnology'>
+                  <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                </NavLink>
               </div>
             </div>
             <div className='flex flex-col gap-4'>

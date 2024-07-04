@@ -29,7 +29,7 @@ const Open = () => {
   });
 
   const renderTimerUnit = (value, label) => (
-    <div className="flex flex-col items-center rounded-xl p-4 sm:p-8 lg:p-10 mx-4 my-8 sm:m-8 bg-white text-[#0169C1]">
+    <div className="flex flex-col items-center rounded-xl p-4 sm:p-8 lg:p-10 mx-4 my-8 sm:m-8 bg-white text-[#0F82C4]">
       <span className="text-4xl sm:text-5xl xl:text-7xl font-bold">{value}</span>
       <span className="text-xl xl:text-2xl">{label}</span>
     </div>
@@ -39,9 +39,9 @@ const Open = () => {
     <div className='flex flex-col w-full'>
       <div className='flex justify-center items-center w-full lg:[800px] xl:h-[600px]'>
         <div className='flex flex-col relative m-10 gap-6 xl:gap-20 items-center w-[85%] h-[80%] rounded-[20px]' style={{ background: "linear-gradient(147deg, rgba(0, 119, 181, 1) 35%, rgba(0, 173, 221, 1) 80%, rgba(0, 192, 234, 1) 100%)" }}>
-          <div className='mt-10 text-white text-[20px] p-4  sm:p-0 sm:text-[24px] lg:text-[30px] tracking-widest text-center'>
-            <h1>
-              REGISTRATIONS WILL OPEN ON 30-06-2024
+          <div className='mt-10 text-white text-[20px] p-4  sm:p-0 sm:text-[24px] lg:text-[36px] tracking-widest text-center'>
+            <h1 className='font-semibold'>
+              REGISTRATIONS WILL OPEN ON 06-JUL-2024
             </h1>
           </div>
           <div className='text-white flex flex-col xl:flex-row justify-center '>

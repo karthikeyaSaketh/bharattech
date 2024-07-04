@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer'
 import img from '../data/events/back.png'
-import img1 from '../data/events/1.png'
+import img1 from '../data/events/3.png'
 import PSDroneJunior from '../data/documents/PSDroneJunior.pdf'
 import RRDroneJunior from '../data/documents/RRDroneJunior.pdf'
 
@@ -21,12 +21,12 @@ const Competitions = () => {
                 </div>
 
                 <div className='flex flex-col xl:flex-row justify-around w-full'>
-                    <div className='w-full xl:w-[40%] flex flex-col justify-start items-center'>
-                        <img src={img1} alt='img1' className='w-[350px] sm:w-[400px] h-[250px]' />
+                    <div className='w-full xl:w-[40%] flex flex-col justify-start items-center xl:pl-20'>
+                        <img src={img1} alt='img1' className='w-[350px] sm:w-[300px] h-[300px]' />
                     </div>
                     <div className='flex flex-col w-full xl:w-[60%] justify-evenly items-center gap-4 text-center'>
                         <h1 className='text-[32px] sm:text-[48px] text-[#FF721F] font-bold'>
-                            3D PRINTING TECHNOLOGY
+                            DRONE TECHNOLOGY
                         </h1>
                         <p className='text-[16px] tracking-[0.4em] sm:tracking-[0.8em]'>
                             JUNIOR LEVEL PROBLEM STATEMENT
@@ -46,8 +46,8 @@ const Competitions = () => {
                     </div>
                 </div>
 
-                <h1 className='text-[32px] sm:text-[40px] font-bold mt-12 text-center'>DRONE JUNIOR LEVEL</h1>
-                <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+                {/* <h1 className='text-[32px] sm:text-[40px] font-bold mt-12 text-center'>DRONE JUNIOR LEVEL</h1> */}
+                <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify mt-12'>
                     <p className='text-[20px] text-center'>
                         Enhancing Farming with Agricultural Drones:
                     </p>

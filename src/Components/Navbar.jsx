@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import logo from '../data/btl_logo.png';
+import logo2 from '../data/teckybot_logo.png'
 import { NavbarContext } from './NavbarContext';
 
 const Navbar = () => {
@@ -79,7 +80,7 @@ const Navbar = () => {
             className={`absolute top-16 left-0 w-1/2 flex-col items-center bg-white border border-gray-300 rounded-3xl p-2 z-10 text-gray-500 ${
               isMenuOpen ? 'flex' : 'hidden'
             } sm:hidden`}
-          >
+            >
             {navItems.map((item, index) => (
               <div
                 key={index}
@@ -93,6 +94,10 @@ const Navbar = () => {
             ))}
           </div>
         </div>
+
+        {/* <div className='absolute right-2 sm:relative sm:right-auto h-full'>
+          <a href='http://teckybot.com/' target='_blank'><img src={logo2} alt='logo' className='w-full h-full' /></a>
+        </div> */}
       </div>
     </div>
   );
