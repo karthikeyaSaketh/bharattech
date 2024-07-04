@@ -9,7 +9,6 @@ import links from '../data/footer_img/link.png';
 import location from '../data/footer_img/placeholder.png';
 import mail from '../data/footer_img/email.png';
 import mobile from '../data/footer_img/phone.png';
-import whatsapp from '../data/footer_img/whatsapp.png';
 import youtube from '../data/footer_img/youtube.png';
 
 const Footer = () => {
@@ -62,7 +61,7 @@ const Footer = () => {
                     </div>
                     <div className='flex items-baseline gap-5'>
                         <img src={mobile} alt='mobile' className='h-[20px] w-[20px]' />
-                        <div className='font-bold text-lg sm:text-2xl'>77999 11213 / 77999 11214</div>
+                        <div className='font-bold text-lg sm:text-2xl'>88861 22887 / 88861 22889</div>
                     </div>
                     <div className='flex items-baseline gap-6 text-xl sm:text-2xl'>
                         <a href='https://www.facebook.com/teckybot?mibextid=ZbWKwL' target='_blank'><img src={facebook} alt='facebook' className='h-[25px] w-[25px]' /></a>

@@ -363,9 +363,9 @@ const Juniors = () => {
                   <option value="" disabled>
                     Select a competition
                   </option>
-                  <option value="drone">Drone Competitions</option>
+                  <option value="drone">3D Printing</option>
                   <option value="robotics">Robotics</option>
-                  <option value="3dprinting">3D Printing</option>
+                  <option value="3dprinting">Drone Competitions</option>
                   <option value="renewableenergy">Renewable Energy</option>
                 </select>
               </div>

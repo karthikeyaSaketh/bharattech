@@ -40,7 +40,7 @@ const Eventpage = () => {
             <div className='flex flex-col gap-4'>
               <img src={img1} alt="img1" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
-                <p className='text-[16px]'>3D printing technology</p>
+                <p className='text-[16px]'>3D Printing</p>
                 <NavLink to='/bharattech/events/3dprinting'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
@@ -165,7 +165,7 @@ const Eventpage = () => {
           <h1 className='text-[34px] sm:text-[48px] font-semibold'>
             <span className='text-[#FF721F]'>TECKYBOT </span><span className='text-[#0169C1]'>ZONE</span>
           </h1>
-          <p className='text-[16px] px-6 sm:px-20 leading-[40px] text-justify'>
+          <p className='text-[16px] px-6 sm:px-20 leading-[30px] sm:leading-[40px] text-justify'>
             Experience the vision of Teckybot and explore our innovative products. The Teckybot Zone is where technology and creativity come together, offering a glimpse into the future with our latest advancements and solutions for everyone.
           </p>
         </div>
@@ -180,7 +180,7 @@ const Eventpage = () => {
           <h1 className='text-[34px] sm:text-[48px] font-semibold'>
             <span className='text-[#FF721F]'>3D TECH </span><span className='text-[#0169C1]'>ZONE</span>
           </h1>
-          <p className='text-[16px] px-6 sm:px-20 leading-[40px] text-justify'>
+          <p className='text-[16px] px-6 sm:px-20 leading-[30px] sm:leading-[40px] text-justify'>
             Discover the fascinating world of 3D printing at the 3D Zone. Here, you'll find 3D printers and a variety of 3D printed objects that showcase applications across different domains. See how 3D printing is transforming industries and sparking new possibilities.
           </p>
         </div>
@@ -194,7 +194,7 @@ const Eventpage = () => {
           <h1 className='text-[34px] sm:text-[48px] font-semibold'>
             <span className='text-[#FF721F]'>AR/VR </span><span className='text-[#0169C1]'>ZONE</span>
           </h1>
-          <p className='text-[16px] px-6 sm:px-20 leading-[40px] text-justify'>
+          <p className='text-[16px] px-6 sm:px-20 leading-[30px] sm:leading-[40px] text-justify'>
             Step into the future with our AR/VR Zone, where you can experience the incredible potential of augmented reality and virtual reality. Explore how AR and VR technologies will revolutionize everyday life and create new opportunities for innovation and interaction.
           </p>
         </div>
