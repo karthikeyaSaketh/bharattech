@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bharattech/static/css/main.af89e73b.css",
-    "main.js": "/bharattech/static/js/main.eb208538.js",
+    "main.css": "/bharattech/static/css/main.faaa1df4.css",
+    "main.js": "/bharattech/static/js/main.232df7fb.js",
     "static/media/1.png": "/bharattech/static/media/1.57a2f10d20ab6ee896cb.png",
     "static/media/image2.jpg": "/bharattech/static/media/image2.c195f8f8b593e0109c23.jpg",
     "static/media/image1.jpg": "/bharattech/static/media/image1.9538c656e9fa0e6fdf12.jpg",
@@ -44,7 +44,6 @@
     "static/media/TIE.png": "/bharattech/static/media/TIE.5feddf30e8a5a5d4e669.png",
     "static/media/AHUB.png": "/bharattech/static/media/AHUB.113acd79643056b2c4f3.png",
     "static/media/link.png": "/bharattech/static/media/link.2b7f296876b70af1ebab.png",
-    "static/media/whatsapp.png": "/bharattech/static/media/whatsapp.c826b0165560636baf0b.png",
     "static/media/btl_logo.png": "/bharattech/static/media/btl_logo.193592395c7adf9395f1.png",
     "static/media/placeholder.png": "/bharattech/static/media/placeholder.64cdcb0ef97818161310.png",
     "static/media/phone.png": "/bharattech/static/media/phone.19cbd0c47a64a5098a5e.png",
@@ -52,11 +51,11 @@
     "static/media/linkedin.png": "/bharattech/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/email.png": "/bharattech/static/media/email.9082177d266cee25a57b.png",
     "index.html": "/bharattech/index.html",
-    "main.af89e73b.css.map": "/bharattech/static/css/main.af89e73b.css.map",
-    "main.eb208538.js.map": "/bharattech/static/js/main.eb208538.js.map"
+    "main.faaa1df4.css.map": "/bharattech/static/css/main.faaa1df4.css.map",
+    "main.232df7fb.js.map": "/bharattech/static/js/main.232df7fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.af89e73b.css",
-    "static/js/main.eb208538.js"
+    "static/css/main.faaa1df4.css",
+    "static/js/main.232df7fb.js"
   ]
 }
