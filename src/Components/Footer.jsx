@@ -57,7 +57,7 @@ const Footer = () => {
                 <div className='flex flex-col items-start justify-start gap-6 text-base font-medium text-blue-900 w-full sm:w-auto'>
                     <div className='flex items-baseline gap-5'>
                         <img src={mail} alt='mail' className='h-[20px] w-[20px]' />
-                        <div className='font-bold text-lg sm:text-2xl'>bharattechleague@gmail.com</div>
+                        <div className='font-bold text-lg sm:text-2xl'>bharatteckleague@gmail.com</div>
                     </div>
                     <div className='flex items-baseline gap-5'>
                         <img src={mobile} alt='mobile' className='h-[20px] w-[20px]' />
