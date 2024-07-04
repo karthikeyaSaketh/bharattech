@@ -118,7 +118,7 @@ const Juniors = () => {
           icon: "success",
           button: "OK"
         }).then(() => {
-          navigate('/bharattech');
+          navigate('/bharattech/Registration/Juniors/Confirmation');
         });
       } catch (error) {
         console.log(error);

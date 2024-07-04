@@ -115,7 +115,7 @@ const Seniors = () => {
           icon: "success",
           button: "OK"
         }).then(() => {
-          navigate('/bharattech');
+          navigate('/bharattech/Registration/Seniors/Confirmation');
         });
       } catch (error) {
         console.log(error);
