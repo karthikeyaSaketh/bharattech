@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import swal from 'sweetalert';
-import { NavLink } from 'react-router-dom';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import Footer from '../Components/Footer'
 import Senior from '../data/senior.png'
 
 const Seniors = () => {
+  const navigate = useNavigate();
+
   const statesAndDistricts = {
     "Andhra Pradesh": [
       "Anantapur", "Chittoor", "East Godavari", "Guntur", "Krishna",
@@ -48,6 +51,9 @@ const Seniors = () => {
     const [key, subkey] = name.split('.');
 
     if (subkey) {
+      if (subkey === 'name' && /\d/.test(value)) {
+        return;
+      }
       setFormData((prevData) => ({
         ...prevData,
         [key]: {
@@ -56,6 +62,9 @@ const Seniors = () => {
         }
       }));
     } else {
+      if (name === 'participant1Contact' && (!/^\d{0,10}$/.test(value) || /\D/.test(value))) {
+        return;
+      }
       setFormData((prevData) => ({
         ...prevData,
         [name]: value
@@ -63,11 +72,11 @@ const Seniors = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const participants = [formData.participant1, formData.participant2, formData.participant3, formData.participant4];
-    const filledParticipants = participants.filter(p => p.name && p.class);
+    const filledParticipants = participants.filter(p => p.name && p.year);
 
     if (filledParticipants.length !== 2 && filledParticipants.length !== 4) {
       swal({
@@ -75,10 +84,43 @@ const Seniors = () => {
         text: "Participants count must be 2 or 4",
         icon: "warning",
         button: "OK"
-      })
-    }
+      });
+    } else {
+      const requestData = {
+        values: [
+          formData.participant1.name,
+          formData.participant1.year,
+          formData.participant2.name,
+          formData.participant2.year,
+          formData.participant3.name,
+          formData.participant3.year,
+          formData.participant4.name,
+          formData.participant4.year,
+          formData.education,
+          formData.institution,
+          formData.state,
+          formData.district,
+          formData.participant1Contact,
+          formData.participant1Email,
+          formData.participant2Email,
+          formData.competition
+        ]
+      };
 
-    console.log('Form Data:', formData);
+      try {
+        const res = await axios.post('https://bharattechleague-production-8429.up.railway.app/create/seniors', requestData);
+        swal({
+          title: "Registration Successful!",
+          text: "You have registered successfully.",
+          icon: "success",
+          button: "OK"
+        }).then(() => {
+          navigate('/bharattech');
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    }
   };
 
 

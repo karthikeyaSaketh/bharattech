@@ -5,6 +5,7 @@ import img1 from '../data/contactUs/1.png'
 import img2 from '../data/contactUs/2.png'
 import img3 from '../data/contactUs/3.png'
 import img4 from '../data/contactUs/4.png'
+import axios from 'axios';
 
 const ContactUs = () => {
   const [name, setName] = useState('');
@@ -18,19 +19,28 @@ const ContactUs = () => {
     return emailPattern.test(email);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateEmail(email)) {
-      swal({
-        title: "Message Sent!",
-        text: "Your message has been sent successfully.",
-        icon: "success",
-        button: "OK"
-      }).then(() => {
-        // window.location.reload();
-        navigate('/bharattech');
-      });
-    } else {
+      const requestData = {
+        values: [name, email, message]
+      };
+
+      try {
+        const res = await axios.post('https://bharattechleague-production-8429.up.railway.app/create/contacts', requestData)
+        swal({
+          title: "Message Sent!",
+          text: "Your message has been sent successfully.",
+          icon: "success",
+          button: "OK"
+        }).then(() => {
+          navigate('/bharattech');
+        })
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    else {
       setEmailError('Invalid email format');
     }
   };
@@ -55,15 +65,15 @@ const ContactUs = () => {
             Connect With Us
           </h1>
           <p>
-            Feel free to reach out to us any time. Fill up 
-            the form to contact us or connect with us 
+            Feel free to reach out to us any time. Fill up
+            the form to contact us or connect with us
             on our social media.
           </p>
           <div className='flex flex-wrap gap-8 sm:gap-16'>
-          <a href='https://www.facebook.com/teckybot?mibextid=ZbWKwL' target='_blank'><img src={img1} alt='img1' className='w-[30xp] h-[30px]' /></a>
-          <a href='https://instagram.com/teckybot/' target='_blank'><img src={img2} alt='img2' className='w-[30xp] h-[30px]' /></a>
-          <a href='https://www.linkedin.com/company/teckybot/' target='_blank'><img src={img3} alt='img3' className='w-[30xp] h-[30px]' /></a>
-          <a href='https://www.youtube.com/@teckybot23' target='_blank'><img src={img4} alt='img4' className='w-[30xp] h-[30px]' /></a>
+            <a href='https://www.facebook.com/teckybot?mibextid=ZbWKwL' target='_blank'><img src={img1} alt='img1' className='w-[30xp] h-[30px]' /></a>
+            <a href='https://instagram.com/teckybot/' target='_blank'><img src={img2} alt='img2' className='w-[30xp] h-[30px]' /></a>
+            <a href='https://www.linkedin.com/company/teckybot/' target='_blank'><img src={img3} alt='img3' className='w-[30xp] h-[30px]' /></a>
+            <a href='https://www.youtube.com/@teckybot23' target='_blank'><img src={img4} alt='img4' className='w-[30xp] h-[30px]' /></a>
           </div>
 
           <div className='w-[340px] h-[1px] bg-[#B1B1B1]'>

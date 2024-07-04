@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import swal from 'sweetalert';
-import { NavLink } from 'react-router-dom';
-import Footer from '../Components/Footer'
-import Junior from '../data/junior.png'
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import Footer from '../Components/Footer';
+import Junior from '../data/junior.png';
 
 const Juniors = () => {
+  const navigate = useNavigate();
+  
   const statesAndDistricts = {
     "Andhra Pradesh": [
       "Anantapur", "Chittoor", "East Godavari", "Guntur", "Krishna",
@@ -27,7 +30,6 @@ const Juniors = () => {
     ]
   };
 
-
   const [formData, setFormData] = useState({
     participant1: { name: '', class: '' },
     participant2: { name: '', class: '' },
@@ -49,6 +51,9 @@ const Juniors = () => {
     const [key, subkey] = name.split('.');
 
     if (subkey) {
+      if (subkey === 'name' && /\d/.test(value)) {
+        return;
+      }
       setFormData((prevData) => ({
         ...prevData,
         [key]: {
@@ -57,6 +62,13 @@ const Juniors = () => {
         }
       }));
     } else {
+      if (name === 'participantContact' && (!/^\d{0,10}$/.test(value) || /\D/.test(value))) {
+        return;
+      } else if (name === 'mentorContact' && (!/^\d{0,10}$/.test(value) || /\D/.test(value))) {
+        return;
+      } else if (name === 'mentorEmail' && !/\S+@\S+\.\S+/.test(value)) {
+        return;
+      }
       setFormData((prevData) => ({
         ...prevData,
         [name]: value
@@ -64,7 +76,7 @@ const Juniors = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const participants = [formData.participant1, formData.participant2, formData.participant3, formData.participant4];
@@ -76,15 +88,48 @@ const Juniors = () => {
         text: "Participants count must be 2 or 4",
         icon: "warning",
         button: "OK"
-      })
-    }
+      });
+    } else {
+      const requestData = {
+        values: [
+          formData.participant1.name,
+          formData.participant1.class,
+          formData.participant2.name,
+          formData.participant2.class,
+          formData.participant3.name,
+          formData.participant3.class,
+          formData.participant4.name,
+          formData.participant4.class,
+          formData.institution,
+          formData.state,
+          formData.district,
+          formData.participantEmail,
+          formData.participantContact,
+          formData.mentorName,
+          formData.mentorContact,
+          formData.mentorEmail,
+          formData.competition
+        ]
+      };
 
-    console.log('Form Data:', formData);
+      try {
+        const res = await axios.post('https://bharattechleague-production-8429.up.railway.app/create/juniors', requestData);
+        swal({
+          title: "Registration Successful!",
+          text: "You have registered successfully.",
+          icon: "success",
+          button: "OK"
+        }).then(() => {
+          navigate('/bharattech');
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    }
   };
 
-
   return (
-    <div className='flex flex-col '>
+    <div className='flex flex-col'>
       <div className='mt-10 mb-6 flex flex-col-reverse lg:flex-row lg:justify-around w-full lg:h-[590px]'>
         <div className='flex flex-col lg:w-[60%] h-full text-sm'>
           <form onSubmit={handleSubmit}>
@@ -199,7 +244,6 @@ const Juniors = () => {
                 </div>
               </div>
 
-
               <div className='flex flex-col items-center sm:flex-row justify-between sm:gap-8'>
                 <div className='w-[85%] sm:w-[50%]'>
                   <input type="text" placeholder='Name of the institution / school'
@@ -250,11 +294,9 @@ const Juniors = () => {
                         ))}
                     </select>
                   </div>
-
                 </div>
-
-
               </div>
+
               <div className='flex flex-col items-center sm:flex-row justify-around sm:gap-8'>
                 <div className='w-[85%]'>
                   <input type="email" placeholder='Email of the participant'
@@ -277,6 +319,7 @@ const Juniors = () => {
                   />
                 </div>
               </div>
+
               <div className='flex flex-col items-center sm:flex-row justify-around sm:gap-8'>
                 <div className='w-[85%]'>
                   <input type="text" placeholder='Name of the mentor'
@@ -299,9 +342,10 @@ const Juniors = () => {
                   />
                 </div>
               </div>
+
               <div className='flex flex-col items-center sm:flex-row justify-around sm:gap-8'>
                 <div className='w-[85%]'>
-                  <input type="email" placeholder='Email of the meentor'
+                  <input type="email" placeholder='Email of the mentor'
                     className="appearance-none border-2 border-[#F16600] rounded-xl w-[100%] py-3 px-3 my-4 text-center
                      text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal"
                     name="mentorEmail"
@@ -327,6 +371,7 @@ const Juniors = () => {
                   <option value="renewableenergy">Renewable Energy</option>
                 </select>
               </div>
+
               <div className='flex justify-center w-full'>
                 <button type='submit'
                   className="rounded-xl w-[85%] sm:w-full py-4 px-3 my-6 leading-tight text-[18px] font-normal text-white"
@@ -335,10 +380,8 @@ const Juniors = () => {
                   Submit your response
                 </button>
               </div>
-
             </div>
           </form>
-
         </div>
 
         <div className='flex flex-col items-center p-6 lg:w-[30%] h-full text-center'>
@@ -354,6 +397,7 @@ const Juniors = () => {
         <Footer />
       </div>
     </div>
-  )
-}
+  );
+};
+
 export default Juniors;
