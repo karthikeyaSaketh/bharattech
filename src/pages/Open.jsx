@@ -3,7 +3,7 @@ import Footer from '../Components/Footer';
 
 const Open = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date('2024-06-30T00:00:00') - +new Date();
+    const difference = +new Date('2024-07-06T00:00:00') - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
