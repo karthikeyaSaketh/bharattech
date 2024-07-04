@@ -66,8 +66,6 @@ const Juniors = () => {
         return;
       } else if (name === 'mentorContact' && (!/^\d{0,10}$/.test(value) || /\D/.test(value))) {
         return;
-      } else if (name === 'mentorEmail' && !/\S+@\S+\.\S+/.test(value)) {
-        return;
       }
       setFormData((prevData) => ({
         ...prevData,
