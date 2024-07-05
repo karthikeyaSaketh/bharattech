@@ -39,11 +39,11 @@ const App = () => {
           <Route path='/bharattech/Events/3dprinting' element={<Printing3d/>} />
           <Route path='/bharattech/Events/roboticsjunior' element={<RoboticsJunior/>} />
           <Route path='/bharattech/Events/dronejunior' element={<DroneJunior/>} />
-          <Route path='/bharattech/Events/renewableEnergy' element={<RenewableEnergy/>} />
+          {/* <Route path='/bharattech/Events/renewableEnergy' element={<RenewableEnergy/>} />
           <Route path='/bharattech/Events/AISenior' element={<AISenior/>} />
           <Route path='/bharattech/Events/roboticsSenior' element={<RoboticsSenior/>} />
           <Route path='/bharattech/Events/droneSenior' element={<DroneSenior/>} />
-          <Route path='/bharattech/Events/iot' element={<IotSenior/>} />
+          <Route path='/bharattech/Events/iot' element={<IotSenior/>} /> */}
 
           <Route path='/bharattech/Gallery' element={<Gallery />} />
           <Route path='/bharattech/Registration' element={<Open />} />
