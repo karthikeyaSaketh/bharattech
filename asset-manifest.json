@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ecfd821.css",
-    "main.js": "/static/js/main.44d494d5.js",
+    "main.css": "/static/css/main.2faec12c.css",
+    "main.js": "/static/js/main.c16ecb73.js",
     "static/media/1.png": "/static/media/1.57a2f10d20ab6ee896cb.png",
     "static/media/image2.jpg": "/static/media/image2.c195f8f8b593e0109c23.jpg",
     "static/media/image1.jpg": "/static/media/image1.9538c656e9fa0e6fdf12.jpg",
     "static/media/teckybot.png": "/static/media/teckybot.a02f9d82eaff92d02618.png",
     "static/media/11.png": "/static/media/11.a119a5fd4abf70a68511.png",
-    "static/media/2.png": "/static/media/2.6153186145ee028d9ff5.png",
     "static/media/3d.png": "/static/media/3d.7eb6a77fcd1a1986bc42.png",
+    "static/media/2.png": "/static/media/2.6153186145ee028d9ff5.png",
     "static/media/vr.png": "/static/media/vr.892b69ee95ce9d01b840.png",
     "static/media/img1.jpg": "/static/media/img1.8383f46f40421a2fe87c.jpg",
     "static/media/6.png": "/static/media/6.e7ea78b25763ff86839f.png",
@@ -28,6 +28,7 @@
     "static/media/s11.png": "/static/media/s11.e143f1672b0e8679b7df.png",
     "static/media/s12.png": "/static/media/s12.ae56da0e02e937d614c9.png",
     "static/media/s10.png": "/static/media/s10.a55580d333e963bd5be6.png",
+    "static/media/2_1.png": "/static/media/2_1.20cbb24a796f438b7f52.png",
     "static/media/s5.png": "/static/media/s5.312864d20f099a7e05ec.png",
     "static/media/s4.png": "/static/media/s4.8d647ea612d11a57dee2.png",
     "static/media/s9.png": "/static/media/s9.221dee86ba572a767bd7.png",
@@ -39,7 +40,11 @@
     "static/media/logo.png": "/static/media/logo.4c13ab22c9ebab9cb331.png",
     "static/media/AU.png": "/static/media/AU.562302db4c2f2353b325.png",
     "static/media/RRDroneJunior.pdf": "/static/media/RRDroneJunior.95cbea8d2f9b9741868e.pdf",
+    "static/media/PS3D(Junior).pdf": "/static/media/PS3D(Junior).8876566038421dc615d3.pdf",
+    "static/media/PSRobotics(Junior).pdf": "/static/media/PSRobotics(Junior).4ce7ad881eab41c91e73.pdf",
+    "static/media/RRRobotics(Junior).pdf": "/static/media/RRRobotics(Junior).ee7661571389367cd4c6.pdf",
     "static/media/PSDroneJunior.pdf": "/static/media/PSDroneJunior.d030c30ddb61537873b1.pdf",
+    "static/media/RR3D(Junior).pdf": "/static/media/RR3D(Junior).db8eda11492b39b4239f.pdf",
     "static/media/instagram.png": "/static/media/instagram.e719d8b29f452a16302d.png",
     "static/media/TIE.png": "/static/media/TIE.5feddf30e8a5a5d4e669.png",
     "static/media/AHUB.png": "/static/media/AHUB.113acd79643056b2c4f3.png",
@@ -51,11 +56,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/email.png": "/static/media/email.9082177d266cee25a57b.png",
     "index.html": "/index.html",
-    "main.6ecfd821.css.map": "/static/css/main.6ecfd821.css.map",
-    "main.44d494d5.js.map": "/static/js/main.44d494d5.js.map"
+    "main.2faec12c.css.map": "/static/css/main.2faec12c.css.map",
+    "main.c16ecb73.js.map": "/static/js/main.c16ecb73.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ecfd821.css",
-    "static/js/main.44d494d5.js"
+    "static/css/main.2faec12c.css",
+    "static/js/main.c16ecb73.js"
   ]
 }
