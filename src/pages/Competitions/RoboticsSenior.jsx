@@ -32,7 +32,7 @@ const RoboticsSenior = () => {
               SENIOR LEVEL PROBLEM STATEMENT
             </p>
             <div className='flex flex-col sm:flex-row mt-4 justify-between gap-8 sm:gap-16'>
-              <a href={PS} download="Problem Statement Robotics Junior.pdf">
+              <a href={PS} download="Problem Statement Robotics Senior.pdf">
                 <button className='bg-[#1B8534] text-white text-[14px] px-4 py-4 rounded-[10px]'>
                   DOWNLOAD PROBLEM STATEMENT
                 </button>

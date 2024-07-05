@@ -32,12 +32,12 @@ const AISenior = () => {
               SENIOR LEVEL PROBLEM STATEMENT
             </p>
             <div className='flex flex-col sm:flex-row mt-4 justify-between gap-8 sm:gap-16'>
-              <a href={PS} download="Problem Statement Drone Junior.pdf">
+              <a href={PS} download="Problem Statement AI.pdf">
                 <button className='bg-[#1B8534] text-white text-[14px] px-4 py-4 rounded-[10px]'>
                   DOWNLOAD PROBLEM STATEMENT
                 </button>
               </a>
-              <a href={RR} download="Drone Rules and Regulations.pdf">
+              <a href={RR} download="AI Rules and Regulations.pdf">
                 <button className='bg-[#1B8534] text-white text-[14px] px-4 py-4 rounded-[10px]'>
                   DOWNLOAD RULES & REGULATIONS
                 </button>

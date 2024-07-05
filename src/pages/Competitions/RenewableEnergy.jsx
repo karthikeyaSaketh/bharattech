@@ -32,12 +32,12 @@ const RenewableEnergy = () => {
               JUNIOR LEVEL PROBLEM STATEMENT
             </p>
             <div className='flex flex-col sm:flex-row mt-4 justify-between gap-8 sm:gap-16'>
-              <a href={PS} download="Problem Statement Drone Junior.pdf">
+              <a href={PS} download="Problem Statement Renewable Energy Junior.pdf">
                 <button className='bg-[#FF721F] text-white text-[14px] px-4 py-4 rounded-[10px]'>
                   DOWNLOAD PROBLEM STATEMENT
                 </button>
               </a>
-              <a href={RR} download="Drone Rules and Regulations.pdf">
+              <a href={RR} download="Renewable Energy Rules and Regulations.pdf">
                 <button className='bg-[#FF721F] text-white text-[14px] px-4 py-4 rounded-[10px]'>
                   DOWNLOAD RULES & REGULATIONS
                 </button>
