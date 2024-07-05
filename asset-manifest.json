@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2e5cc854.css",
-    "main.js": "/static/js/main.b714a28d.js",
+    "main.js": "/static/js/main.12d7425e.js",
     "static/media/1.png": "/static/media/1.57a2f10d20ab6ee896cb.png",
     "static/media/image2.jpg": "/static/media/image2.c195f8f8b593e0109c23.jpg",
     "static/media/image1.jpg": "/static/media/image1.9538c656e9fa0e6fdf12.jpg",
@@ -49,13 +49,13 @@
     "static/media/PSDrone(Junior).pdf": "/static/media/PSDrone(Junior).73ae181c2c09dec11667.pdf",
     "static/media/PSRobotics(Senior).pdf": "/static/media/PSRobotics(Senior).33799581d526160f8075.pdf",
     "static/media/PSRobotics(Junior).pdf": "/static/media/PSRobotics(Junior).4ce7ad881eab41c91e73.pdf",
-    "static/media/PSIot(Senior).pdf": "/static/media/PSIot(Senior).487f5c0338399dece854.pdf",
+    "static/media/PSIotSenior.pdf": "/static/media/PSIotSenior.487f5c0338399dece854.pdf",
     "static/media/RRAI(Senior).pdf": "/static/media/RRAI(Senior).4be0f9acc78de304530f.pdf",
     "static/media/PSAI(Senior).pdf": "/static/media/PSAI(Senior).0a2d52d78bac2aa7b3cd.pdf",
     "static/media/RR3D(Junior).pdf": "/static/media/RR3D(Junior).db8eda11492b39b4239f.pdf",
     "static/media/RRCleanEnergy(Junior).pdf": "/static/media/RRCleanEnergy(Junior).b83f666164edfac8ad2c.pdf",
     "static/media/instagram.png": "/static/media/instagram.e719d8b29f452a16302d.png",
-    "static/media/RRIot(Senior).pdf": "/static/media/RRIot(Senior).8b82f99150e15fca3bda.pdf",
+    "static/media/RRIotSenior.pdf": "/static/media/RRIotSenior.8b82f99150e15fca3bda.pdf",
     "static/media/TIE.png": "/static/media/TIE.5feddf30e8a5a5d4e669.png",
     "static/media/AHUB.png": "/static/media/AHUB.113acd79643056b2c4f3.png",
     "static/media/link.png": "/static/media/link.2b7f296876b70af1ebab.png",
@@ -67,10 +67,10 @@
     "static/media/email.png": "/static/media/email.9082177d266cee25a57b.png",
     "index.html": "/index.html",
     "main.2e5cc854.css.map": "/static/css/main.2e5cc854.css.map",
-    "main.b714a28d.js.map": "/static/js/main.b714a28d.js.map"
+    "main.12d7425e.js.map": "/static/js/main.12d7425e.js.map"
   },
   "entrypoints": [
     "static/css/main.2e5cc854.css",
-    "static/js/main.b714a28d.js"
+    "static/js/main.12d7425e.js"
   ]
 }
