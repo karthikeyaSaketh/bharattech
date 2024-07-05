@@ -14,7 +14,14 @@ import Confirmation1 from './pages/Confirmation1';
 import Confirmation2 from './pages/Confirmation2';
 import ScrollToTop from './Components/ScrollToTop';
 import ScrollToTopButton from './Components/ScrollToTopButton';
-import Competitions from './Components/Competitions';
+import Printing3d from './pages/Competitions/Printing3d'
+import RoboticsJunior from './pages/Competitions/RoboticsJunior';
+import DroneJunior from './pages/Competitions/DroneJunior'
+import RenewableEnergy from './pages/Competitions/RenewableEnergy'
+import AISenior from './pages/Competitions/AISenior'
+import RoboticsSenior from './pages/Competitions/RoboticsSenior';
+import DroneSenior from './pages/Competitions/DroneSenior'
+import IotSenior from './pages/Competitions/IotSenior'
 
 const App = () => {
   return (
@@ -28,10 +35,16 @@ const App = () => {
           <Route path='/bharattech' element={<Home />} />
           <Route path='/bharattech/AboutBTL' element={<AboutBtl />} />
           <Route path='/bharattech/Events' element={<Eventpage />} />
-          <Route path='/bharattech/Events/dronetechnology' element={<Competitions/>} />
-          <Route path='/bharattech/Events/RoboticsJunior' element={<Eventpage />} />
-          <Route path='/bharattech/Events/DroneTechnologyJunior' element={<Eventpage />} />
-          <Route path='/bharattech/Events/RenewableEnergy' element={<Eventpage />} />
+
+          <Route path='/bharattech/Events/3dprinting' element={<Printing3d/>} />
+          <Route path='/bharattech/Events/roboticsjunior' element={<RoboticsJunior/>} />
+          <Route path='/bharattech/Events/dronejunior' element={<DroneJunior/>} />
+          <Route path='/bharattech/Events/renewableEnergy' element={<RenewableEnergy/>} />
+          <Route path='/bharattech/Events/AISenior' element={<AISenior/>} />
+          <Route path='/bharattech/Events/roboticsSenior' element={<RoboticsSenior/>} />
+          <Route path='/bharattech/Events/droneSenior' element={<DroneSenior/>} />
+          <Route path='/bharattech/Events/iot' element={<IotSenior/>} />
+
           <Route path='/bharattech/Gallery' element={<Gallery />} />
           <Route path='/bharattech/Registration' element={<Open />} />
           <Route path='/bharattech/ContactUs' element={<ContactUs />} />

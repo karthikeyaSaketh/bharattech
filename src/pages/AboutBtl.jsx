@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../Components/Footer'
 import img1 from '../data/aboutbtl/1.png'
 import img2 from '../data/aboutbtl/2.png'
+import img2_phone from '../data/aboutbtl/2_1.png' 
 import img3 from '../data/aboutbtl/3.png'
 import img4 from '../data/aboutbtl/4.png'
 import img5 from '../data/aboutbtl/5.png'
@@ -62,16 +63,17 @@ const AboutBtl = () => {
       </div>
 
       <div className='w-full my-10'>
-        <img src={img2} alt='img2' className='h-[300px] sm:h-[400px] lg:h-[600px] xl:h-[700px] w-full' />
+        <img src={img2} alt='img2' className='hidden sm:block h-[300px] sm:h-[400px] lg:h-[600px] xl:h-[700px] w-full' />
+        <img src={img2_phone} alt='img2' className='block sm:hidden h-[300px] w-full' />
       </div>
 
       <div className='flex flex-col items-center my-6'>
         <div className='flex justify-center items-center w-full' style={{ background: "linear-gradient(90deg, rgba(255, 114, 31, 1) 0%, rgba(255, 114, 31, 1) 20%, rgba(1, 105, 193, 1) 40%, rgba(1, 105, 193, 1) 60%, rgba(27, 133, 52, 1) 80%, rgba(27, 133, 52, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
-          <h1 className='text-center text-[36px] sm:text-[48px] lg:text-[64px] xl:text-[96px] font-bold'>
+          <h1 className='text-center text-[32px] sm:text-[48px] lg:text-[52px] xl:text-[80px] font-bold'>
             BHARAT TECK LEAGUE 2024
           </h1>
         </div>
-        <p className='text-[18px] sm:text-[24px] lg:text-[30px] xl:text-[36px] p-6 sm:p-12 lg:p-16 text-justify'>
+        <p className='text-[16px] sm:text-[24px] lg:text-[30px] xl:text-[28px] p-6 sm:p-12 lg:p-16 text-justify'>
           Building on the success of the Andhra Teck League, BTL 2024 will cover three states: Andhra Pradesh, Telangana, and Himachal Pradesh. The event is organized by Teckybot and will include more than 1500 participants. The competition is structured in three phases.
         </p>
 

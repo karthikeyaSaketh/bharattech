@@ -30,12 +30,24 @@ const Navbar = () => {
   useEffect(() => {
     const path = location.pathname;
 
-    const activeIndex = navItems.findIndex(item => 
+    const activeIndex = navItems.findIndex(item =>
       item.path === path ||
-      (item.path === '/bharattech/Registration' && 
-        (path.startsWith('/bharattech/Registration/Juniors') ||
-         path.startsWith('/bharattech/Registration/Seniors')))
-    );
+      (item.path === '/bharattech/Registration' && (
+        path.startsWith('/bharattech/Registration/Juniors') ||
+        path.startsWith('/bharattech/Registration/Seniors') ||
+        path.startsWith('/bharattech/Registration/Juniors/Confirmation') ||
+        path.startsWith('/bharattech/Registration/Seniors/Confirmation')
+      )) ||
+      (item.path === '/bharattech/Events' && (
+        path.startsWith('/bharattech/Events/3dprinting') ||
+        path.startsWith('/bharattech/Events/roboticsjunior') ||
+        path.startsWith('/bharattech/Events/dronejunior') ||
+        path.startsWith('/bharattech/Events/renewableEnergy') ||
+        path.startsWith('/bharattech/Events/AISenior') ||
+        path.startsWith('/bharattech/Events/roboticsSenior') ||
+        path.startsWith('/bharattech/Events/droneSenior') ||
+        path.startsWith('/bharattech/Events/iot')
+      )) );
 
     if (activeIndex !== -1) {
       const updatedActiveState = new Array(navItems.length).fill(false);
@@ -51,7 +63,9 @@ const Navbar = () => {
         style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}
       >
         <div className='h-full'>
-          <img src={logo} alt='logo' className='p-1 w-full h-full' />
+          <NavLink to='/' onClick={() => handleItemClick(0)}>
+            <img src={logo} alt='logo' className='p-1 w-full h-full' />
+          </NavLink>
         </div>
         <div className='flex justify-end items-center pb-2'>
           <div className='hidden sm:flex justify-end align-middle sm:text-xs xl:text-base gap-4 sm:gap-6 lg:gap-10 xl:gap-20'>
@@ -77,10 +91,9 @@ const Navbar = () => {
             </svg>
           </button>
           <div
-            className={`absolute top-16 left-0 w-1/2 flex-col items-center bg-white border border-gray-300 rounded-3xl p-2 z-10 text-gray-500 ${
-              isMenuOpen ? 'flex' : 'hidden'
-            } sm:hidden`}
-            >
+            className={`absolute top-16 left-0 w-1/2 flex-col items-center bg-white border border-gray-300 rounded-3xl p-2 z-10 text-gray-500 ${isMenuOpen ? 'flex' : 'hidden'
+              } sm:hidden`}
+          >
             {navItems.map((item, index) => (
               <div
                 key={index}

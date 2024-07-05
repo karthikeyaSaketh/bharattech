@@ -26,7 +26,7 @@ const Footer = () => {
                         <div className='flex justify-between align-center gap-8 text-base font-medium'>
                             <div className='flex flex-col gap-4'>
                                 <NavLink to='/bharattech' onClick={() => handleItemClick(0)}>Home</NavLink>
-                                <NavLink to='/bharattech/AboutBTL' onClick={() => handleItemClick(1)}>About Btl</NavLink>
+                                <NavLink to='/bharattech/AboutBTL' onClick={() => handleItemClick(1)}>About BTL</NavLink>
                                 <NavLink to='/bharattech/Events' onClick={() => handleItemClick(2)}>Events</NavLink>
                             </div>
                             <div className='flex flex-col gap-4'>

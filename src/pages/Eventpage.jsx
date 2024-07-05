@@ -41,14 +41,18 @@ const Eventpage = () => {
               <img src={img1} alt="img1" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>3D Printing</p>
+                <NavLink to='/bharattech/Events/3dprinting'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                </NavLink>
               </div>
             </div>
             <div className='flex flex-col gap-4'>
               <img src={img2} alt="img2" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Robotics</p>
-                <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                <NavLink to='/bharattech/Events/roboticsjunior'>
+                  <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                </NavLink>
               </div>
             </div>
           </div>
@@ -58,7 +62,7 @@ const Eventpage = () => {
               <img src={img3} alt="img3" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Drone Technology</p>
-                <NavLink to='/bharattech/events/dronetechnology'>
+                <NavLink to='/bharattech/Events/dronejunior'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>
@@ -67,7 +71,9 @@ const Eventpage = () => {
               <img src={img4} alt="img4" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Renewable Energy</p>
-                <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                <NavLink to='/bharattech/Events/renewableEnergy'>
+                  <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                </NavLink>
               </div>
             </div>
           </div>
@@ -84,14 +90,18 @@ const Eventpage = () => {
               <img src={img5} alt="img5" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Artificial Intelligence</p>
-                <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                <NavLink to='/bharattech/Events/AISenior'>
+                  <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                </NavLink>
               </div>
             </div>
             <div className='flex flex-col gap-4'>
               <img src={img6} alt="img6" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Robotics</p>
-                <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                <NavLink to='/bharattech/Events/roboticssenior'>
+                  <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                </NavLink>
               </div>
             </div>
           </div>
@@ -101,14 +111,18 @@ const Eventpage = () => {
               <img src={img7} alt="img7" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Drone Technology</p>
-                <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                <NavLink to='/bharattech/Events/dronesenior'>
+                  <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                </NavLink>
               </div>
             </div>
             <div className='flex flex-col gap-4'>
               <img src={img8} alt="img8" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Internet of Things</p>
-                <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                <NavLink to='/bharattech/Events/iot'>
+                  <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
+                </NavLink>
               </div>
             </div>
           </div>
