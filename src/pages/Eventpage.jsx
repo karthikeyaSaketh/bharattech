@@ -99,7 +99,7 @@ const Eventpage = () => {
               <img src={img6} alt="img6" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Robotics</p>
-                <NavLink to='/bharattech/Events/roboticssenior'>
+                <NavLink to='/bharattech/Events/roboticsSenior'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>
@@ -111,7 +111,7 @@ const Eventpage = () => {
               <img src={img7} alt="img7" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Drone Technology</p>
-                <NavLink to='/bharattech/Events/dronesenior'>
+                <NavLink to='/bharattech/Events/droneSenior'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../Components/Footer'
 import img1 from '../data/aboutbtl/1.png'
 import img2 from '../data/aboutbtl/2.png'
-import img2_phone from '../data/aboutbtl/2_1.png' 
+import img2_phone from '../data/aboutbtl/2_1.png'
 import img3 from '../data/aboutbtl/3.png'
 import img4 from '../data/aboutbtl/4.png'
 import img5 from '../data/aboutbtl/5.png'
@@ -19,12 +19,18 @@ const AboutBtl = () => {
 
       <div className='mt-6 w-full p-8 pt-0 sm:p-16 sm:pt-0 xl:pt-16 text-left' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
         <div className='flex flex-col-reverse xl:flex-row w-full justify-around items-center'>
-          <p className='text-[18px] sm:text-[24px] text-justify'>
-            <b>Bharat Teck League 2024</b> (BTL 2024) was initiated with the vision of promoting and encouraging young minds to develop an interest in technology
-            and prepare for the future. This event aims to be the largest technical league in Bharat, dedicated to Bharat's students. By uniting young innovators from across the nation, BTL 2024 is not just a competition but a platform for growth,
-            technological awareness, and future readiness. Join us in this monumental event as we celebrate and cultivate the burgeoning technological landscape of our country, preparing the next generation of tech leaders for the future. Let's embark on this exciting journey together,
-            inspiring and nurturing tomorrow's innovators.
-          </p>
+          <div className='flex flex-col gap-8 leading-[30px]'>
+            <p className='text-[18px] text-justify'>
+              <b>
+                Bharat Teck League 2024</b> (BTL 2024) was initiated with the vision of promoting and encouraging young minds to develop an interest in technology
+              and prepare for the future. This event aims to be the largest technical league in Bharat, dedicated to Bharat's students. By uniting young innovators from across the nation, BTL 2024 is not just a competition but a platform for growth,
+              technological awareness, and future readiness.
+            </p>
+            <p className='text-[18px] text-justify'>
+              Join us in this monumental event as we celebrate and cultivate the burgeoning technological landscape of our country, preparing the next generation of tech leaders for the future. Let's embark on this exciting journey together,
+              inspiring and nurturing tomorrow's innovators.
+            </p>
+          </div>
           <img src={logo} alt='logo' className='w-[80%] xl:w-[40%]' />
         </div>
       </div>
@@ -63,8 +69,8 @@ const AboutBtl = () => {
       </div>
 
       <div className='w-full my-10'>
-        <img src={img2} alt='img2' className='hidden sm:block h-[300px] sm:h-[400px] lg:h-[600px] xl:h-[700px] w-full' />
-        <img src={img2_phone} alt='img2' className='block sm:hidden h-[300px] w-full' />
+        <img src={img2} alt='img2' className='hidden sm:block sm:h-[400px] lg:h-[600px] xl:h-[700px] w-full' />
+        <img src={img2_phone} alt='img2' className='block sm:hidden h-[600px] w-full' />
       </div>
 
       <div className='flex flex-col items-center my-6'>

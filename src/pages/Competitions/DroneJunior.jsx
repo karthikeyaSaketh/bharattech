@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Footer from '../../Components/Footer';
 import img from '../../data/events/back.png'
 import img1 from '../../data/events/3.png'
-import PSDroneJunior from '../../data/documents/PSDroneJunior.pdf'
-import RRDroneJunior from '../../data/documents/RRDroneJunior.pdf'
+import PS from '../../data/documents/PSDrone(Junior).pdf'
+import RR from '../../data/documents/RRDrone(Junior).pdf'
 
 const DroneJunior = () => {
     const navigate = useNavigate();
@@ -24,7 +24,7 @@ const DroneJunior = () => {
                     <div className='w-full xl:w-[40%] flex flex-col justify-start items-center xl:pl-20'>
                         <img src={img1} alt='img1' className='w-[350px] sm:w-[300px] h-[300px]' />
                     </div>
-                    <div className='flex flex-col w-full xl:w-[60%] justify-evenly items-center gap-4 text-center'>
+                    <div className='flex flex-col w-full xl:w-[60%] justify-evenly items-center gap-4 text-center mt-4'>
                         <h1 className='text-[32px] sm:text-[48px] text-[#FF721F] font-bold'>
                             DRONE TECHNOLOGY
                         </h1>
@@ -32,12 +32,12 @@ const DroneJunior = () => {
                             JUNIOR LEVEL PROBLEM STATEMENT
                         </p>
                         <div className='flex flex-col sm:flex-row mt-4 justify-between gap-8 sm:gap-16'>
-                            <a href={PSDroneJunior} download="Problem Statement Drone Junior.pdf">
+                            <a href={PS} download="Problem Statement Drone Junior.pdf">
                                 <button className='bg-[#FF721F] text-white text-[14px] px-4 py-4 rounded-[10px]'>
                                     DOWNLOAD PROBLEM STATEMENT
                                 </button>
                             </a>
-                            <a href={RRDroneJunior} download="Drone Rules and Regulations.pdf">
+                            <a href={RR} download="Drone Rules and Regulations.pdf">
                                 <button className='bg-[#FF721F] text-white text-[14px] px-4 py-4 rounded-[10px]'>
                                     DOWNLOAD RULES & REGULATIONS
                                 </button>

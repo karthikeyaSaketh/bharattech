@@ -24,7 +24,7 @@ const RoboticsJunior = () => {
           <div className='w-full xl:w-[40%] flex flex-col justify-start items-center xl:pl-20'>
             <img src={img1} alt='img1' className='w-[350px] sm:w-[300px] h-[300px]' />
           </div>
-          <div className='flex flex-col w-full xl:w-[60%] justify-evenly items-center gap-4 text-center'>
+          <div className='flex flex-col w-full xl:w-[60%] justify-evenly items-center gap-4 text-center mt-4'>
             <h1 className='text-[32px] sm:text-[48px] text-[#FF721F] font-bold'>
               Robotics
             </h1>
@@ -63,7 +63,7 @@ const RoboticsJunior = () => {
             <b>Planting and Seeding : &nbsp;</b>  Robots ensure accurate planting and seeding, improving crop yields and
             reducing manual labor.
           </p>
-          <div className='flex flex-col gap-6'>
+          <div className='flex flex-col gap-6 mt-4'>
             <p className='font-bold text-[24px]'>
               Problem Statement:
             </p>
