@@ -6,6 +6,7 @@ import Footer from '../Components/Footer';
 import Junior from '../data/junior.png';
 
 const Juniors = () => {
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   
   const statesAndDistricts = {
@@ -77,6 +78,8 @@ const Juniors = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (loading) return; // Prevent multiple submissions
+
     const participants = [formData.participant1, formData.participant2, formData.participant3, formData.participant4];
     const filledParticipants = participants.filter(p => p.name && p.class);
 
@@ -110,6 +113,17 @@ const Juniors = () => {
         ]
       };
 
+      setLoading(true);
+
+      swal({
+        title: 'Submitting...',
+        text: 'Please wait while we process your registration.',
+        icon: 'info',
+        buttons: false,
+        closeOnClickOutside: false,
+        closeOnEsc: false
+      });
+
       try {
         const res = await axios.post('https://bharattechleague-production-8429.up.railway.app/create/juniors', requestData);
         swal({
@@ -122,9 +136,18 @@ const Juniors = () => {
         });
       } catch (error) {
         console.log(error);
+        swal({
+          title: "Submission Failed",
+          text: "There was an error submitting your registration. Please try again.",
+          icon: "error",
+          button: "OK"
+        });
+      } finally {
+        setLoading(false);
       }
     }
   };
+
 
   return (
     <div className='flex flex-col'>

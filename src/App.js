@@ -46,7 +46,7 @@ const App = () => {
           <Route path='/bharattech/Events/iot' element={<IotSenior/>} />
 
           <Route path='/bharattech/Gallery' element={<Gallery />} />
-          <Route path='/bharattech/Registration' element={<Open />} />
+          <Route path='/bharattech/Registration' element={<Registration />} />
           <Route path='/bharattech/ContactUs' element={<ContactUs />} />
           <Route path='/bharattech/Registration/Juniors' element={<Juniors />} />
           <Route path='/bharattech/Registration/Seniors' element={<Seniors />} />

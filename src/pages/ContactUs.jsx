@@ -11,6 +11,7 @@ const ContactUs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
   const [emailError, setEmailError] = useState('');
   const navigate = useNavigate();
 
@@ -21,13 +22,27 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (loading) return; // Prevent multiple submissions
+
     if (validateEmail(email)) {
       const requestData = {
         values: [name, email, message]
       };
 
+      setLoading(true);
+
+      swal({
+        title: 'Sending...',
+        text: 'Please wait while we send your message.',
+        icon: 'info',
+        buttons: false,
+        closeOnClickOutside: false,
+        closeOnEsc: false
+      });
+
       try {
-        const res = await axios.post('https://bharattechleague-production-8429.up.railway.app/create/contacts', requestData)
+        const res = await axios.post('https://bharattechleague-production-8429.up.railway.app/create/contacts', requestData);
         swal({
           title: "Message Sent!",
           text: "Your message has been sent successfully.",
@@ -35,12 +50,19 @@ const ContactUs = () => {
           button: "OK"
         }).then(() => {
           navigate('/bharattech');
-        })
+        });
       } catch (error) {
         console.log(error);
+        swal({
+          title: "Failed to Send",
+          text: "There was an error sending your message. Please try again.",
+          icon: "error",
+          button: "OK"
+        });
+      } finally {
+        setLoading(false);
       }
-    }
-    else {
+    } else {
       setEmailError('Invalid email format');
     }
   };

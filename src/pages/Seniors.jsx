@@ -6,6 +6,8 @@ import Footer from '../Components/Footer'
 import Senior from '../data/senior.png'
 
 const Seniors = () => {
+
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const statesAndDistricts = {
@@ -75,6 +77,8 @@ const Seniors = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (loading) return; // Prevent multiple submissions
+
     const participants = [formData.participant1, formData.participant2, formData.participant3, formData.participant4];
     const filledParticipants = participants.filter(p => p.name && p.year);
 
@@ -107,6 +111,17 @@ const Seniors = () => {
         ]
       };
 
+      setLoading(true);
+
+      swal({
+        title: 'Submitting...',
+        text: 'Please wait while we process your registration.',
+        icon: 'info',
+        buttons: false,
+        closeOnClickOutside: false,
+        closeOnEsc: false
+      });
+
       try {
         const res = await axios.post('https://bharattechleague-production-8429.up.railway.app/create/seniors', requestData);
         swal({
@@ -119,6 +134,14 @@ const Seniors = () => {
         });
       } catch (error) {
         console.log(error);
+        swal({
+          title: "Submission Failed",
+          text: "There was an error submitting your registration. Please try again.",
+          icon: "error",
+          button: "OK"
+        });
+      } finally {
+        setLoading(false);
       }
     }
   };
