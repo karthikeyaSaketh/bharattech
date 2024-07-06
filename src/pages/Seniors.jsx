@@ -382,10 +382,10 @@ const Seniors = () => {
                   <option value="" disabled style={{ color: "#718096" }}>
                     Select a competition
                   </option>
-                  <option value="drone">Artificial Intelligence</option>
+                  <option value="Artifial Intelligence">Artificial Intelligence</option>
                   <option value="robotics">Robotics</option>
-                  <option value="3dprinting">Drone Competitions</option>
-                  <option value="renewableenergy">Internet of Things</option>
+                  <option value="drone">Drone</option>
+                  <option value="iot">Internet of Things</option>
                 </select>
                 <div className='w-full sm:w-[50%]'>
                   <div className='flex justify-center w-full'><button type='submit'
