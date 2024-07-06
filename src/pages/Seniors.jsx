@@ -382,7 +382,7 @@ const Seniors = () => {
                   <option value="" disabled style={{ color: "#718096" }}>
                     Select a competition
                   </option>
-                  <option value="Artifial Intelligence">Artificial Intelligence</option>
+                  <option value="Artificial Intelligence">Artificial Intelligence</option>
                   <option value="robotics">Robotics</option>
                   <option value="drone">Drone</option>
                   <option value="iot">Internet of Things</option>
