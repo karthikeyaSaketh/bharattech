@@ -55,8 +55,8 @@ const RenewableEnergy = () => {
             <li className="flex flex-col">
               <span className="font-bold text-[18px]">1. Solar-Powered Water Pump: </span>
               <span className='ml-4'>
-                Submit a video or timelapse video (max 2 minutes) showcasing drone control skills
-                (take-off, landing, forward, backward, left, right, 360 rotation).
+                Design a model of a solar-powered water pump for irrigation. Include a small solar panel and a
+                water pump to show how solar energy can move water to plants.
               </span>
             </li>
             <li className="flex flex-col">
@@ -277,7 +277,7 @@ const RenewableEnergy = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                Teams will be assessed on their ability to clearly explain their project and its impact. 
+                Teams will be assessed on their ability to clearly explain their project and its impact.
               </span>
             </li>
           </ul>
