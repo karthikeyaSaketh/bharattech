@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8ca2f489.css",
-    "main.js": "/static/js/main.ff9ab772.js",
+    "main.js": "/static/js/main.cede8e50.js",
     "static/media/1.png": "/static/media/1.f863667e3aed40812d4a.png",
     "static/media/1_1.png": "/static/media/1_1.25b2e222fdb46010d728.png",
     "static/media/2_1.png": "/static/media/2_1.20cbb24a796f438b7f52.png",
@@ -39,14 +39,17 @@
     "static/media/s7.png": "/static/media/s7.500a44e32aa6ead27f79.png",
     "static/media/senior.png": "/static/media/senior.b51f78780322b7000f4c.png",
     "static/media/junior.png": "/static/media/junior.f192d72fe4c7b9b69c48.png",
+    "static/media/TIE.png": "/static/media/TIE.766f32637e2f3d063f5f.png",
+    "static/media/ACIC.png": "/static/media/ACIC.206293228629b468a2d4.png",
+    "static/media/AHUB.png": "/static/media/AHUB.59173a3df78da6682d9f.png",
     "static/media/conf_img_2.png": "/static/media/conf_img_2.d6f5d49535fd4f258919.png",
+    "static/media/AIC.png": "/static/media/AIC.631534db2e87c95073af.png",
     "static/media/conf_img_1.png": "/static/media/conf_img_1.396adc63dc6391c649c7.png",
     "static/media/RRDrone(Junior).pdf": "/static/media/RRDrone(Junior).2ffd60be859660dfaeed.pdf",
     "static/media/RRDrone(Senior).pdf": "/static/media/RRDrone(Senior).ae8495aaf3b397d770bd.pdf",
     "static/media/logo.png": "/static/media/logo.4c13ab22c9ebab9cb331.png",
     "static/media/RRRobotics(Senior).pdf": "/static/media/RRRobotics(Senior).eae36403289c0485646e.pdf",
     "static/media/RRRobotics(Junior).pdf": "/static/media/RRRobotics(Junior).5e568c1ebd7a7a0ea946.pdf",
-    "static/media/AU.png": "/static/media/AU.562302db4c2f2353b325.png",
     "static/media/PSCleanEnergy(Junior).pdf": "/static/media/PSCleanEnergy(Junior).0c091c1401ea5a3a0f62.pdf",
     "static/media/PS3D(Junior).pdf": "/static/media/PS3D(Junior).8876566038421dc615d3.pdf",
     "static/media/PSDrone(Senior).pdf": "/static/media/PSDrone(Senior).1fa3cb5a1a0d14f3584b.pdf",
@@ -60,8 +63,6 @@
     "static/media/RRCleanEnergy(Junior).pdf": "/static/media/RRCleanEnergy(Junior).b83f666164edfac8ad2c.pdf",
     "static/media/instagram.png": "/static/media/instagram.e719d8b29f452a16302d.png",
     "static/media/RRIotSenior.pdf": "/static/media/RRIotSenior.8b82f99150e15fca3bda.pdf",
-    "static/media/TIE.png": "/static/media/TIE.5feddf30e8a5a5d4e669.png",
-    "static/media/AHUB.png": "/static/media/AHUB.113acd79643056b2c4f3.png",
     "static/media/div2.png": "/static/media/div2.b947203202e76eb2697b.png",
     "static/media/link.png": "/static/media/link.2b7f296876b70af1ebab.png",
     "static/media/btl_logo.png": "/static/media/btl_logo.193592395c7adf9395f1.png",
@@ -73,10 +74,10 @@
     "static/media/email.png": "/static/media/email.9082177d266cee25a57b.png",
     "index.html": "/index.html",
     "main.8ca2f489.css.map": "/static/css/main.8ca2f489.css.map",
-    "main.ff9ab772.js.map": "/static/js/main.ff9ab772.js.map"
+    "main.cede8e50.js.map": "/static/js/main.cede8e50.js.map"
   },
   "entrypoints": [
     "static/css/main.8ca2f489.css",
-    "static/js/main.ff9ab772.js"
+    "static/js/main.cede8e50.js"
   ]
 }
