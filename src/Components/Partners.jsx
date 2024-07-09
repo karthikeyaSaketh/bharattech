@@ -3,6 +3,10 @@ import ahub from '../data/AHUB.png'
 import acic from '../data/ACIC.png'
 import aic from '../data/AIC.png'
 import tie from '../data/TIE.png'
+import img1 from '../data/2nd_1.png'
+import img2 from '../data/2nd_2.png'
+import img3 from '../data/2nd_3.png'
+import img4 from '../data/2nd_4.png'
 
 const Partners = () => {
     const text2 = "ESTEEMED PARTNERS"
@@ -19,7 +23,7 @@ const Partners = () => {
                 </h1>
             </div>
 
-            <div className='relative flex items-center justify-center h-[230px] sm:h-[400px] w-full overflow-x-auto mb-10'>
+            <div className='relative flex items-center justify-center h-[230px] sm:h-[300px] w-full overflow-x-auto'>
                 <div className='flex items-center h-[200px] sm:h-[250px] mt-4 sm:mt-0 overflow-hidden'>
                     <div className='flex animate-loop-scroll'>
                         <img src={ahub} alt='img1' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
@@ -32,7 +36,7 @@ const Partners = () => {
                         <img src={acic} alt='img4' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
                     </div>
                     <div className='flex animate-loop-scroll' aria-hidden="true">
-                    <img src={ahub} alt='img1' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={ahub} alt='img1' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
                         <img src={tie} alt='img2' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
                         <img src={aic} alt='img3' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
                         <img src={acic} alt='img4' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
@@ -43,6 +47,35 @@ const Partners = () => {
                     </div>
                 </div>
             </div>
+
+
+
+            <div className='relative flex items-center justify-center h-[230px] sm:h-[250px] w-full overflow-x-auto mb-10'>
+                <div className='flex flex-row-reverse items-center h-[200px] sm:h-[250px] sm:mt-0 overflow-hidden'>
+                    <div className='flex animate-reverse-loop-scroll'>
+                        <img src={img1} alt='img1' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img2} alt='img2' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img3} alt='img3' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img4} alt='img4' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img1} alt='img1' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img2} alt='img2' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img3} alt='img3' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img4} alt='img4' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                    </div>
+                    <div className='flex animate-reverse-loop-scroll' aria-hidden="true">
+                        <img src={img1} alt='img1' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img2} alt='img2' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img3} alt='img3' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img4} alt='img4' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img1} alt='img1' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img2} alt='img2' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img3} alt='img3' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                        <img src={img4} alt='img4' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     )
 }
