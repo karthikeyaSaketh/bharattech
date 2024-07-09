@@ -11,7 +11,7 @@ import img4 from '../data/2nd_4.png'
 const Partners = () => {
     const text2 = "ESTEEMED PARTNERS"
     return (
-        <div className='relative flex flex-col mt-6 w-full text-center'>
+        <div className='relative flex flex-col mt-16 w-full text-center'>
             <div className='mt-6 h-24 sm:h-20 flex justify-center items-center'
                 style={{ 'backgroundImage': '-webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 2%, rgba(253, 108, 0, 1) 30%, rgba(241, 102, 0, 1) 70%, rgba(255, 255, 255, 1) 98%)' }}
 
