@@ -1,12 +1,12 @@
 import React from 'react'
-import ahub from '../data/AHUB.png'
-import acic from '../data/ACIC.png'
-import aic from '../data/AIC.png'
-import tie from '../data/TIE.png'
-import img1 from '../data/2nd_1.png'
-import img2 from '../data/2nd_2.png'
-import img3 from '../data/2nd_3.png'
-import img4 from '../data/2nd_4.png'
+import ahub from '../data/AHUB.jpg'
+import acic from '../data/ACIC.jpg'
+import aic from '../data/AIC.jpg'
+import tie from '../data/TIE.jpg'
+import img1 from '../data/2nd_1.jpg'
+import img2 from '../data/2nd_2.jpg'
+import img3 from '../data/2nd_3.jpg'
+import img4 from '../data/2nd_4.jpg'
 
 const Partners = () => {
     const text2 = "ESTEEMED PARTNERS"

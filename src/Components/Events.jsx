@@ -1,8 +1,8 @@
 // src/components/Events.js
 import React from 'react';
-import timeline1 from '../data/timeline1.png'
-import timeline2 from '../data/timeline2.png'
-import calender from '../data/calender.png'
+import timeline1 from '../data/timeline1.jpg'
+import timeline2 from '../data/timeline2.jpg'
+import calender from '../data/calender.jpg'
 
 const Events = () => {
   const text = "EVENT TIMELINE"

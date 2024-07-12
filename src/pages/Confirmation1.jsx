@@ -1,6 +1,6 @@
   import React from 'react'
   import Footer from '../Components/Footer'
-  import img1 from '../data/conf_img_1.png'
+  import img1 from '../data/conf_img_1.jpg'
 
   const Confirmation1 = () => {
     return (

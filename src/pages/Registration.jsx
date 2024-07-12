@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../Components/Footer'
-import junior from '../data/junior.png'
-import senior from '../data/senior.png'
+import junior from '../data/junior.jpg'
+import senior from '../data/senior.jpg'
 import { NavLink } from 'react-router-dom'
 
 const Registration = () => {

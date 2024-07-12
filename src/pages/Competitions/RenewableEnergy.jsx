@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import Footer from '../../Components/Footer';
 import img from '../../data/events/back.png'
-import img1 from '../../data/events/4.png'
+import img1 from '../../data/events/4.jpg'
 import PS from '../../data/documents/PSCleanEnergy(Junior).pdf'
 import RR from '../../data/documents/RRCleanEnergy(Junior).pdf'
 
@@ -26,7 +26,7 @@ const RenewableEnergy = () => {
           </div>
           <div className='flex flex-col w-full xl:w-[60%] justify-evenly items-center gap-4 text-center mt-4'>
             <h1 className='text-[32px] sm:text-[48px] text-[#FF721F] font-bold'>
-              RENEWABLE ENERGY
+              CLEAN ENERGY
             </h1>
             <p className='text-[16px] tracking-[0.4em] sm:tracking-[0.8em]'>
               JUNIOR LEVEL PROBLEM STATEMENT

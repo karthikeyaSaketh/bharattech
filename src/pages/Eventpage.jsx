@@ -1,20 +1,20 @@
 import React from 'react'
 import Footer from '../Components/Footer'
-import img1 from '../data/events/1.png'
-import img2 from '../data/events/2.png'
-import img3 from '../data/events/3.png'
-import img4 from '../data/events/4.png'
-import img5 from '../data/events/5.png'
-import img6 from '../data/events/6.png'
-import img7 from '../data/events/7.png'
-import img8 from '../data/events/8.png'
+import img1 from '../data/events/1.jpg'
+import img2 from '../data/events/2.jpg'
+import img3 from '../data/events/3.jpg'
+import img4 from '../data/events/4.jpg'
+import img5 from '../data/events/5.jpg'
+import img6 from '../data/events/6.jpg'
+import img7 from '../data/events/7.jpg'
+import img8 from '../data/events/8.jpg'
 import arrow from '../data/events/arrow.png'
-import img9 from '../data/events/9.png'
-import img10 from '../data/events/10.png'
-import img11 from '../data/events/11.png'
-import vr from '../data/events/vr.png'
-import d from '../data/events/3d.png'
-import teckybot from '../data/events/teckybot.png'
+import img9 from '../data/events/9.jpg'
+import img10 from '../data/events/10.jpg'
+import img11 from '../data/events/11.jpg'
+import vr from '../data/events/vr.jpg'
+import d from '../data/events/3d.jpg'
+import teckybot from '../data/events/teckybot.jpg'
 import { NavLink } from 'react-router-dom'
 
 const Eventpage = () => {
@@ -70,8 +70,8 @@ const Eventpage = () => {
             <div className='flex flex-col gap-4'>
               <img src={img4} alt="img4" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
-                <p className='text-[16px]'>Renewable Energy</p>
-                <NavLink to='/bharattech/Events/renewableEnergy'>
+                <p className='text-[16px]'>Clean Energy</p>
+                <NavLink to='/bharattech/Events/cleanEnergy'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>

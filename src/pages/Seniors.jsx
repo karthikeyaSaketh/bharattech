@@ -3,7 +3,7 @@ import swal from 'sweetalert';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../Components/Footer'
-import Senior from '../data/senior.png'
+import Senior from '../data/senior.jpg'
 
 const Seniors = () => {
 

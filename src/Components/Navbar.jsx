@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import logo from '../data/btl_logo.png';
-import logo2 from '../data/teckybot_logo.png'
 import { NavbarContext } from './NavbarContext';
 
 const Navbar = () => {
@@ -42,7 +41,7 @@ const Navbar = () => {
         path.startsWith('/bharattech/Events/3dprinting') ||
         path.startsWith('/bharattech/Events/roboticsjunior') ||
         path.startsWith('/bharattech/Events/dronejunior') ||
-        path.startsWith('/bharattech/Events/renewableEnergy') ||
+        path.startsWith('/bharattech/Events/cleanEnergy') ||
         path.startsWith('/bharattech/Events/AISenior') ||
         path.startsWith('/bharattech/Events/roboticsSenior') ||
         path.startsWith('/bharattech/Events/droneSenior') ||

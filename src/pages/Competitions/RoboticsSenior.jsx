@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import Footer from '../../Components/Footer';
 import img from '../../data/events/back2.png'
-import img1 from '../../data/events/6.png'
+import img1 from '../../data/events/6.jpg'
 import PS from '../../data/documents/PSRobotics(Senior).pdf'
 import RR from '../../data/documents/RRRobotics(Senior).pdf'
 

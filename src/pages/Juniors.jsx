@@ -3,7 +3,7 @@ import swal from 'sweetalert';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../Components/Footer';
-import Junior from '../data/junior.png';
+import Junior from '../data/junior.jpg';
 
 const Juniors = () => {
   const [loading, setLoading] = useState(false);
@@ -389,7 +389,7 @@ const Juniors = () => {
                   <option value="3dprinting">3D Printing</option>
                   <option value="robotics">Robotics</option>
                   <option value="drone">Drone</option>
-                  <option value="renewableenergy">Renewable Energy</option>
+                  <option value="cleanenergy">Clean Energy</option>
                 </select>
               </div>
 
