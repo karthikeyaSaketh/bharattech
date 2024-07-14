@@ -77,19 +77,8 @@ const Seniors = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (loading) return; // Prevent multiple submissions
+    if (loading) return; 
 
-    const participants = [formData.participant1, formData.participant2, formData.participant3, formData.participant4];
-    const filledParticipants = participants.filter(p => p.name && p.year);
-
-    if (filledParticipants.length !== 2 && filledParticipants.length !== 4) {
-      swal({
-        title: "Warning!!!",
-        text: "Participants count must be 2 or 4",
-        icon: "warning",
-        button: "OK"
-      });
-    } else {
       const requestData = {
         values: [
           formData.participant1.name,
@@ -143,7 +132,6 @@ const Seniors = () => {
       } finally {
         setLoading(false);
       }
-    }
   };
 
 

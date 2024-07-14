@@ -242,7 +242,7 @@ const ContactUs = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                Participation is for groups only. Each team must consist of either 2 or 4 members. Teams with 1 or 3 members are not allowed.
+                Participation is for groups only. Each team must consist of either 2 or 3 or 4 members.
               </span>
             </li>
           </ul>
