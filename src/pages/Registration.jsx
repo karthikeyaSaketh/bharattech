@@ -69,7 +69,7 @@ const Registration = () => {
               </span>
             </li>
           </ul>
-          <p className='text-[22px] px-8 lg:px-20'>3.&nbsp;For Prelims, the participation is free. Participants who gets selected for Zonal level should pay a one-time fee i.e; Rs. 349 /- per head (Juniors) & Rs. 449 /- per head (Seniors).</p>
+          <p className='text-[22px] px-8 lg:pl-20'>3.&nbsp;For Prelims, the participation is free. Participants who gets selected for Zonal level should pay a one-time fee i.e; Rs. 349 /- per head (Juniors) & Rs. 449 /- per head (Seniors).</p>
         </div>
 
       </div>
