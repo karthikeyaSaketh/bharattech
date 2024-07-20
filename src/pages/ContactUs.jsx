@@ -165,7 +165,7 @@ const ContactUs = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                Junior Category: Students from 6th to 10th grade.
+                Junior Category: Students from <b>6th to 10th</b> grade.
               </span>
             </li>
             <li className="flex">
@@ -183,32 +183,14 @@ const ContactUs = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                The main theme is agriculture, focusing on the role of innovation and technology in this field.
+                The main theme is <b>Agriculture</b>, focusing on the role of innovation and technology in this field.
               </span>
             </li>
           </ul>
         </div>
 
         <div className='flex flex-col items-start justify-center w-[95%] gap-6 leading-8 text-justify'>
-          <p className='text-[22px] font-bold pl-4'>3. Is there a registration fee ?</p>
-          <ul className="list-none space-y-4 pl-4 sm:pl-16 w-full">
-            <li className="flex">
-              <span className="mr-4">-</span>
-              <span>
-                Yes, registration fees are as follows:
-              </span>
-            </li>
-            <li className="flex">
-              <span className="mr-4">-</span>
-              <span>
-                Zonal Level: Rs. 349/- per head for Juniors & Rs. 449/- per head for Seniors (Selected participants only).
-              </span>
-            </li>
-          </ul>
-        </div>
-
-        <div className='flex flex-col items-start justify-center w-[95%] gap-6 leading-8 text-justify'>
-          <p className='text-[22px] font-bold pl-4'>4. How many levels are there in this event ?</p>
+          <p className='text-[22px] font-bold pl-4'>3. How many levels are there in this event ?</p>
           <ul className="list-none space-y-4 pl-4 sm:pl-16 w-full">
             <li className="flex">
               <span className="mr-4">-</span>
@@ -237,12 +219,36 @@ const ContactUs = () => {
         </div>
 
         <div className='flex flex-col items-start justify-center w-[95%] gap-6 leading-8 text-justify'>
+          <p className='text-[22px] font-bold pl-4'>4. Is there a registration fee ?</p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16 w-full">
+            <li className="flex">
+              <span className="mr-4"></span>
+              <span>
+                Level 1: Prelims &nbsp;–&nbsp; Free Participation
+              </span>
+            </li>
+            <li className="flex">
+              <span className="mr-4"></span>
+              <span>
+                Level 2: Zonal &nbsp;-&nbsp;  Rs. 349 /- per head (Juniors) & Rs. 449 /- per head (Seniors) [Selected Participants].
+              </span>
+            </li>
+            <li className="flex">
+              <span className="mr-4"></span>
+              <span>
+                Level 3: Final &nbsp;–&nbsp; Free for Finalists
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div className='flex flex-col items-start justify-center w-[95%] gap-6 leading-8 text-justify'>
           <p className='text-[22px] font-bold pl-4'>5. Is participation individual or in groups ?</p>
           <ul className="list-none space-y-4 pl-4 sm:pl-16 w-full">
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                Participation is for groups only. Each team must consist of either 2 or 3 or 4 members.
+                Participation is for groups only. Each team must consist of either 2/3/4 member. Each team can participate in minimum 1 or maximum 2 competitions.
               </span>
             </li>
           </ul>
@@ -285,7 +291,7 @@ const ContactUs = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                Yes, a mentor is mandatory for junior participants.
+                1 or 2 mentors are preferable for any number of teams from a school.
               </span>
             </li>
           </ul>
@@ -309,7 +315,7 @@ const ContactUs = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                Last date for registrations and abstract/video submission is 28-07-2024. Please check the website regularly for updates.
+                Last date for registrations and abstract / video submission is 28-07-2024. Check website for any queries and updates.
               </span>
             </li>
           </ul>
@@ -321,7 +327,7 @@ const ContactUs = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                No, the organizers will not provide travel and accommodation for participants. Participants should plan their own travel and accommodation.
+                Only food in Zonal level and Final level will be provided by event organizers. Accommodation and Travel to the venue should be under participants’ scope.
               </span>
             </li>
           </ul>
@@ -387,7 +393,7 @@ const ContactUs = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                All updates will be posted on the Bharat Teck League website, communicated via email and WhatsApp community.
+                All updates will be posted on the Bharat Teck League website, Social handles, communicated via email and WhatsApp community.
               </span>
             </li>
           </ul>

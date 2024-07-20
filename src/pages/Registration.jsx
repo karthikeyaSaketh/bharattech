@@ -41,6 +41,38 @@ const Registration = () => {
           </div>
         </div>
       </div>
+      
+
+      <div className='flex flex-col sm:gap-6 w-full mt-4 lg:px-20 mb-10'>
+        <h1 className='text-[22px] lg:text-[32px] font-bold mt-10 mb-4 sm:mb-0 text-left px-8 lg:px-20'>NOTE &nbsp;:</h1>
+
+        <div className='flex flex-col items-start justify-center w-[95%] gap-6 leading-8 text-justify'>
+          <p className='text-[22px] px-8 lg:px-20'>1.	&nbsp;Participation is for groups only. Each team must consist of either 2/3/4 member.</p>
+          <p className='text-[22px] px-8 lg:px-20'>2.	&nbsp;The Bharat Teck League – 2024 consists of three levels:</p>
+          <ul className="list-none space-y-4 text-[18px] px-10 lg:px-24 w-full">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+               Level 1: Prelims (online participation)
+              </span>
+            </li>
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+              	Level 2: Zonal (physical participation)
+              </span>
+            </li>
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+              	Level 3: Final (physical participation)
+              </span>
+            </li>
+          </ul>
+          <p className='text-[22px] px-8 lg:px-20'>3.&nbsp;For Prelims, the participation is free. Participants who gets selected for Zonal level should pay a one-time fee i.e; Rs. 349 /- per head (Juniors) & Rs. 449 /- per head (Seniors).</p>
+        </div>
+
+      </div>
       <div className='relative w-full h-auto'>
         <Footer />
       </div>

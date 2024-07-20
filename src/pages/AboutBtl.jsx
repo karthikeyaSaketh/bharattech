@@ -131,7 +131,7 @@ const AboutBtl = () => {
         <div className='flex flex-col sm:flex-row my-6 sm:my-16 sm:h-[200px] w-full sm:w-[90%] justify-around items-center tracking-widest text-center gap-10 sm:gap-0'>
           <div className='w-[80%] sm:w-[40%] sm:h-full flex flex-col justify-evenly items-center'>
             <p className='text-[#0169C1] font-bold text-[30px] lg:text-[36px]'>TELANGANA</p>
-            <p className='text-[20px] lg:text-[24px] font-medium text-[#5F5F5F]'>ZONAL (24-08-2024)</p>
+            <p className='text-[20px] lg:text-[24px] font-medium text-[#5F5F5F]'>ZONAL (25-08-2024)</p>
           </div>
           <div className='w-[80%] sm:w-[40%] h-[150px] sm:h-full flex flex-col justify-evenly items-center bg-[#0169C1] text-white rounded-[20px]'>
             <p className='font-bold text-[30px] lg:text-[36px] tracking-widest'>HYDERABAD</p>
