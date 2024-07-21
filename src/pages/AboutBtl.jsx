@@ -7,6 +7,12 @@ import img3 from '../data/aboutbtl/3.png'
 import img4 from '../data/aboutbtl/4.png'
 import img5 from '../data/aboutbtl/5.png'
 import logo from '../data/aboutbtl/logo.png'
+import ttl from '../data/aboutbtl/TTLZonal.jpg'
+import atl from '../data/aboutbtl/ATLZonal.jpg'
+import htl from '../data/aboutbtl/HTLZonal.jpg'
+import ttl1 from '../data/aboutbtl/TTLZonal1.jpg'
+import atl1 from '../data/aboutbtl/ATLZonal1.jpg'
+import htl1 from '../data/aboutbtl/HTLZonal1.jpg'
 
 const AboutBtl = () => {
   return (
@@ -117,7 +123,7 @@ const AboutBtl = () => {
         </div>
 
 
-        <div className='flex flex-col sm:flex-row my-6 sm:my-16 sm:h-[200px] w-full sm:w-[90%] justify-around items-center tracking-widest text-center gap-10 sm:gap-0'>
+        {/* <div className='flex flex-col sm:flex-row my-6 sm:my-16 sm:h-[200px] w-full sm:w-[90%] justify-around items-center tracking-widest text-center gap-10 sm:gap-0'>
           <div className='w-[80%] sm:w-[40%] sm:h-full flex flex-col justify-evenly items-center'>
             <p className='text-[#0169C1] font-bold text-[30px] lg:text-[36px]'>HIMACHAL PRADESH</p>
             <p className='text-[20px] lg:text-[24px] font-medium text-[#5F5F5F]'>ZONAL (14-09-2024)</p>
@@ -151,7 +157,18 @@ const AboutBtl = () => {
             <p className='font-bold text-[26px] lg:text-[36px] tracking-widest'>VIJAYAWADA</p>
             <p className='font-bold text-[26px] lg:text-[36px] tracking-widest'>NELLORE</p>
           </div>
-        </div>
+        </div> */}
+
+
+        <img src={ttl} alt="ttl" className='hidden sm:block w-[90%] xl:w-[80%] h-auto my-4' />
+        <img src={atl} alt="atl" className='hidden sm:block w-[90%] xl:w-[80%] h-auto my-4' />
+        <img src={htl} alt="htl" className='hidden sm:block w-[90%] xl:w-[80%] h-auto my-4' />
+
+        <img src={ttl1} alt="ttl1" className='block sm:hidden w-[95%] xl:w-[80%] h-auto my-2' />
+        <img src={atl1} alt="atl1" className='block sm:hidden w-[95%] xl:w-[80%] h-auto my-2' />
+        <img src={htl1} alt="htl1" className='block sm:hidden w-[95%] xl:w-[80%] h-auto my-2' />
+
+
       </div>
 
       <div className="mb-16" style={{ background: "linear-gradient(90deg, rgba(255, 114, 31, 1) 0%, rgba(255, 114, 31, 1) 20%, rgba(1, 105, 193, 1) 40%, rgba(1, 105, 193, 1) 60%, rgba(27, 133, 52, 1) 80%, rgba(27, 133, 52, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
