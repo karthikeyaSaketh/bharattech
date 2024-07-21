@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from 'react-icons/bs';
 import image1 from '../data/image1.jpg';
 import image2 from '../data/image2.jpg';
+import image3 from '../data/image3.jpg'
 import img1 from '../data/img1.jpg';
 import img2 from '../data/img2.jpg';
 
 const ImgSlider = () => {
-  const images = [image1, image2];
+  const images = [image1, image2,image3];
   const images2 = [img1,img2];
   const [currentImg, setCurrentImg] = useState(0);
 

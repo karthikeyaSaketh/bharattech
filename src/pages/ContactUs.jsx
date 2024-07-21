@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import swal from 'sweetalert';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 import img1 from '../data/contactUs/1.png'
 import img2 from '../data/contactUs/2.png'
 import img3 from '../data/contactUs/3.png'
 import img4 from '../data/contactUs/4.png'
+import ap1 from '../data/contactUs/AP1.jpg'
+import ap2 from '../data/contactUs/AP2.jpg'
+import ap3 from '../data/contactUs/AP3.jpg'
+import ap4 from '../data/contactUs/AP4.jpg'
+import tl1 from '../data/contactUs/T1.jpg'
+import h1 from '../data/contactUs/H1.jpg'
 import axios from 'axios';
 
 const ContactUs = () => {
@@ -14,6 +21,17 @@ const ContactUs = () => {
   const [loading, setLoading] = useState(false);
   const [emailError, setEmailError] = useState('');
   const navigate = useNavigate();
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   const validateEmail = (email) => {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -153,6 +171,20 @@ const ContactUs = () => {
         </div>
 
 
+      </div>
+
+      <div className='flex flex-col items-center justify-center my-16 gap-6 w-[95%] pt-[60px]' id='contact'>
+        <h1 className='text-[36px] text-center mt-12 mb-8 text-[#1B8534] font-semibold'>ANDHRA PRADESH - ZONAL CONTACT</h1>
+        <div className='flex justify-evenly flex-wrap gap-12'>
+          <img src={ap1} alt='ap1' className='w-[280px] h-[280px]'/>
+          <img src={ap2} alt='ap2' className='w-[280px] h-[280px]'/>
+          <img src={ap3} alt='ap3' className='w-[280px] h-[280px]'/>
+          <img src={ap4} alt='ap4' className='w-[280px] h-[280px]'/>
+        </div>
+        <div className='flex justify-center gap-12 lg:gap-40 flex-wrap mt-16'>
+          <img src={tl1} alt='tl1' className='w-[360px] h-[320px]'/>
+          <img src={h1} alt='h1' className='w-[360px] h-[320px]'/>
+        </div>
       </div>
 
 
