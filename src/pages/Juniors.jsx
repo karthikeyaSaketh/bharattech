@@ -117,7 +117,7 @@ const Juniors = () => {
         const res = await axios.post('https://bharattechleague-production-8429.up.railway.app/create/juniors', requestData);
         swal({
           title: "Registration Successful!",
-          text: "You have registered successfully.",
+          text: "Thank you for registering. You will be added to our WhatsApp community shortly.",
           icon: "success",
           button: "OK"
         }).then(() => {
