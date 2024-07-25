@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ba687d0.css",
-    "main.js": "/static/js/main.6a26d300.js",
+    "main.css": "/static/css/main.b9a2cc5f.css",
+    "main.js": "/static/js/main.8589aca8.js",
     "static/media/1.png": "/static/media/1.682ee71ed5971fd1389f.png",
     "static/media/1_1.png": "/static/media/1_1.25b2e222fdb46010d728.png",
     "static/media/2_1.png": "/static/media/2_1.20cbb24a796f438b7f52.png",
     "static/media/2.png": "/static/media/2.e719d8b29f452a16302d.png",
     "static/media/image1.jpg": "/static/media/image1.d3e9b10152c626169626.jpg",
+    "static/media/ATLZonal.jpg": "/static/media/ATLZonal.4cf68a83a12f297024eb.jpg",
+    "static/media/ATLZonal1.jpg": "/static/media/ATLZonal1.73969a634d70885dbb52.jpg",
     "static/media/timeline1.jpg": "/static/media/timeline1.6729e253896ce96a5dbd.jpg",
     "static/media/calender.jpg": "/static/media/calender.ea7ba54b35293161fe4c.jpg",
     "static/media/img1.jpg": "/static/media/img1.74e1e989de3aab7a9b19.jpg",
     "static/media/timeline2.jpg": "/static/media/timeline2.ab0af22465555af97cfa.jpg",
+    "static/media/TTLZonal.jpg": "/static/media/TTLZonal.94c9f13675534dfdb97f.jpg",
+    "static/media/TTLZonal1.jpg": "/static/media/TTLZonal1.a385a3418a34da7b8932.jpg",
     "static/media/image2.jpg": "/static/media/image2.6d33f9399987e1065ff0.jpg",
     "static/media/image3.jpg": "/static/media/image3.3274559d64461d20df8e.jpg",
     "static/media/6.jpg": "/static/media/6.d49a460d8d34d66944d9.jpg",
+    "static/media/HTLZonal.jpg": "/static/media/HTLZonal.a203dc8b7f652052c3f8.jpg",
     "static/media/5.jpg": "/static/media/5.0a91a1f6b8904b37c40a.jpg",
     "static/media/img2.jpg": "/static/media/img2.adc74973d745dcfda647.jpg",
     "static/media/teckybot.jpg": "/static/media/teckybot.ab6563bb3a7416b3022e.jpg",
     "static/media/3d.jpg": "/static/media/3d.bf5ce0bcd7805ad033cc.jpg",
     "static/media/conf_img_2.jpg": "/static/media/conf_img_2.fdd5e5318f85cf02f693.jpg",
+    "static/media/HTLZonal1.jpg": "/static/media/HTLZonal1.00a21ff779c8f332d7f6.jpg",
     "static/media/S3.jpg": "/static/media/S3.c6a5e85840acb7f6cb17.jpg",
     "static/media/conf_img_1.jpg": "/static/media/conf_img_1.4aeac9a5ab06dadaebf8.jpg",
     "static/media/vr.jpg": "/static/media/vr.9e2e74d51135d5b7ef61.jpg",
@@ -89,11 +95,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/email.png": "/static/media/email.9082177d266cee25a57b.png",
     "index.html": "/index.html",
-    "main.4ba687d0.css.map": "/static/css/main.4ba687d0.css.map",
-    "main.6a26d300.js.map": "/static/js/main.6a26d300.js.map"
+    "main.b9a2cc5f.css.map": "/static/css/main.b9a2cc5f.css.map",
+    "main.8589aca8.js.map": "/static/js/main.8589aca8.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ba687d0.css",
-    "static/js/main.6a26d300.js"
+    "static/css/main.b9a2cc5f.css",
+    "static/js/main.8589aca8.js"
   ]
 }
