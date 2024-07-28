@@ -19,7 +19,7 @@
             </h1>
             <h1 className='text-[24px] sm:text-[32px] lg:text-[36px] font-semibold'
               style={{ background: "linear-gradient(90deg, rgba(72, 74, 161, 1) 0%, rgba(249, 111, 154, 1) 38%, rgba(252, 195, 40, 1) 67%, rgba(254, 153, 50, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
-              You will receive a confirmation mail shortly
+              You will receive a confirmation call shortly
             </h1>
             <div className='hidden sm:flex sm:items-end lg:items-stretch'>
               <div className='relative top-[5%] left-[70%] w-[140px] h-[140px] rounded-full z-10'

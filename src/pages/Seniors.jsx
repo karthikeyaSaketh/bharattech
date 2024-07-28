@@ -115,7 +115,7 @@ const Seniors = () => {
         const res = await axios.post('https://bharattechleague-production-8429.up.railway.app/create/seniors', requestData);
         swal({
           title: "Registration Successful!",
-          text: "Thank you for registering. You will be added to our WhatsApp community shortly.",
+          text: "Thank you for registering. You will be added to our WhatsApp community within 24 hours.",
           icon: "success",
           button: "OK"
         }).then(() => {

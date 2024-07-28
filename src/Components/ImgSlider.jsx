@@ -2,13 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from 'react-icons/bs';
 import image1 from '../data/image1.jpg';
 import image2 from '../data/image2.jpg';
-import image3 from '../data/image3.jpg'
+import image3 from '../data/image3.jpg';
+import image4 from '../data/image4.jpg';
 import img1 from '../data/img1.jpg';
 import img2 from '../data/img2.jpg';
+import img3 from '../data/img3.jpg';
+import img4 from '../data/img4.jpg';
 
 const ImgSlider = () => {
-  const images = [image1, image2,image3];
-  const images2 = [img1,img2];
+  const images = [image1, image2,image3,image4];
+  const images2 = [img1,img2,img3,img4];
   const [currentImg, setCurrentImg] = useState(0);
 
   const handlePrevious = () => {
@@ -22,7 +25,7 @@ const ImgSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImg((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000);
+    }, 8000);
     return () => {
       clearInterval(interval);
     };
@@ -31,7 +34,7 @@ const ImgSlider = () => {
   return (
     <div className="relative flex justify-center items-center h-[570px] w-full sm:h-[450px] xl:h-[600px]">
       <BsArrowLeftCircleFill
-        className="arrow absolute w-4 h-4 sm:w-8 sm:h-8 text-white filter drop-shadow-lg cursor-pointer left-4 z-10"
+        className="arrow absolute w-6 h-6 sm:w-8 sm:h-8 text-gray-700 filter drop-shadow-lg cursor-pointer left-4 z-10"
         onClick={handlePrevious}
       />
       <div className="hidden sm:block w-full h-full overflow-hidden relative">
@@ -65,7 +68,7 @@ const ImgSlider = () => {
           : null}
       </div>
       <BsArrowRightCircleFill
-        className="arrow absolute w-4 sm:w-8 h-4 sm:h-8 text-white filter drop-shadow-lg cursor-pointer right-4 z-10"
+        className="arrow absolute w-6 sm:w-8 h-6 sm:h-8 text-gray-700 filter drop-shadow-lg cursor-pointer right-4 z-10"
         onClick={handleNext}
       />
 
