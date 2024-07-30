@@ -2,16 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from 'react-icons/bs';
 import image1 from '../data/image1.jpg';
 import image2 from '../data/image2.jpg';
-import image3 from '../data/image3.jpg';
-import image4 from '../data/image4.jpg';
-import img1 from '../data/img1.jpg';
-import img2 from '../data/img2.jpg';
-import img3 from '../data/img3.jpg';
-import img4 from '../data/img4.jpg';
+import img1 from '../data/img1.jpg'
+import img2 from '../data/img2.jpg'
 
 const ImgSlider = () => {
-  const images = [image1, image2,image3,image4];
-  const images2 = [img1,img2,img3,img4];
+  const images = [image1, image2];
+  const images2 = [img1,img2];
   const [currentImg, setCurrentImg] = useState(0);
 
   const handlePrevious = () => {
@@ -25,19 +21,19 @@ const ImgSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImg((prevIndex) => (prevIndex + 1) % images.length);
-    }, 8000);
+    }, 12000);
     return () => {
       clearInterval(interval);
     };
   }, [images.length]);
 
   return (
-    <div className="relative flex justify-center items-center h-[570px] w-full sm:h-[450px] xl:h-[600px]">
+    <div className="relative flex justify-center items-center w-full h-[570px] sm:h-[450px] xl:h-[600px]">
       <BsArrowLeftCircleFill
         className="arrow absolute w-6 h-6 sm:w-8 sm:h-8 text-gray-700 filter drop-shadow-lg cursor-pointer left-4 z-10"
         onClick={handlePrevious}
       />
-      <div className="hidden sm:block w-full h-full overflow-hidden relative">
+      <div className="hidden sm:block w-[85%] h-full overflow-hidden relative">
         {images && images.length
           ? images.map((imageurl, index) => (
               <img

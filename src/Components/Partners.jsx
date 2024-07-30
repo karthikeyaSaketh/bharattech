@@ -9,6 +9,12 @@ import img3 from '../data/2nd_3.jpg'
 import img4 from '../data/2nd_4.jpg'
 import img5 from '../data/2nd_5.jpg'
 import img6 from '../data/2nd_6.jpg'
+import l1 from '../data/l1.jpg'
+import l2 from '../data/l2.jpg'
+import l3 from '../data/l3.jpg'
+import l4 from '../data/l4.jpg'
+import l5 from '../data/l5.jpg'
+import l6 from '../data/l6.jpg'
 
 const Partners = () => {
     const text2 = "ESTEEMED PARTNERS"
@@ -50,9 +56,7 @@ const Partners = () => {
                 </div>
             </div>
 
-
-
-            <div className='relative flex items-center justify-center h-[230px] sm:h-[250px] w-full overflow-x-auto mb-10'>
+            <div className='relative flex items-center justify-center h-[230px] sm:h-[250px] w-full overflow-x-auto'>
                 <div className='flex flex-row-reverse items-center h-[200px] sm:h-[250px] sm:mt-0 overflow-hidden'>
                     <div className='flex animate-reverse-loop-scroll'>
                         <img src={img1} alt='img1' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
@@ -81,6 +85,31 @@ const Partners = () => {
                         <img src={img4} alt='img4' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
                         <img src={img5} alt='img5' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
                         <img src={img6} alt='img6' className='w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full max-w-none mx-8 sm:mx-16 xl:mx-20' style={{ "box-shadow": "0px 0px 10px rgba(0,0,0, 0.5)" }} />
+                    </div>
+                </div>
+            </div>
+
+            <div className="relative flex items-center justify-center h-[230px] sm:h-[250px] w-full overflow-x-auto mb-10">
+                <div className="flex items-center h-[200px] sm:h-[250px] overflow-hidden">
+                    <div className="flex animate-loop-scroll">
+                        {[l1, l2, l3, l4, l5, l6].map((img, index) => (
+                            <img
+                                key={index}
+                                src={img}
+                                alt={`img${index + 1}`}
+                                className="w-[200px] sm:w-[330px] h-[150px] sm:h-[180px] max-w-none mx-8 sm:mx-16 xl:mx-20"
+                            />
+                        ))}
+                    </div>
+                    <div className="flex animate-loop-scroll" aria-hidden="true">
+                        {[l1, l2, l3, l4, l5, l6].map((img, index) => (
+                            <img
+                                key={`duplicate-${index}`}
+                                src={img}
+                                alt={`img${index + 1}`}
+                                className="w-[200px] sm:w-[330px] h-[150px] sm:h-[180px] max-w-none mx-8 sm:mx-16 xl:mx-20"
+                            />
+                        ))}
                     </div>
                 </div>
             </div>

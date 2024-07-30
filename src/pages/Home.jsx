@@ -12,8 +12,8 @@ const Home = () => {
       <ImgSlider/>
       <VidSection/>
       <Events/>
+      <Partners/>      
       <Links/>
-      <Partners/>
       <Footer/>
     </div>
   )

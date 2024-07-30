@@ -96,8 +96,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div className='m-4 sm:m-24 lg:mt-8 lg:mb-4 flex flex-col justify-center items-center'>
-      <div className='flex flex-col align-center items-center lg:flex-row w-full xl:w-[80%]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+    <div className=' flex flex-col justify-center items-center'>
+      {/* <div className='flex flex-col align-center items-center lg:flex-row w-full xl:w-[80%]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
         <div className='flex flex-col w-[80%] lg:w-[50%] justify-center items-center pt-12 lg:pt-0 px-0 sm:px-10 xl:px-20 gap-12'>
           <h1 className='text-[32px] sm:text-[40px] text-[#1B8534] font-bold'>
             Connect With Us
@@ -171,9 +171,9 @@ const ContactUs = () => {
         </div>
 
 
-      </div>
+      </div> */}
 
-      <div className='flex flex-col items-center justify-center my-16 gap-6 w-[95%] pt-[60px]' id='contact'>
+      <div className='flex flex-col items-center justify-center gap-6 w-[95%] pt-[30px]' id='contact'>
         <h1 className='text-[36px] text-center mt-12 mb-8 text-[#1B8534] font-semibold'>ANDHRA PRADESH - ZONAL CONTACT</h1>
         <div className='flex justify-evenly flex-wrap gap-12'>
           <img src={ap1} alt='ap1' className='w-[280px] h-[280px]'/>
