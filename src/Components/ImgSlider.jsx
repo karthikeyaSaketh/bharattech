@@ -37,7 +37,7 @@ const ImgSlider = () => {
         className="arrow absolute w-6 h-6 sm:w-8 sm:h-8 text-gray-700 filter drop-shadow-lg cursor-pointer left-4 z-10"
         onClick={handlePrevious}
       />
-      <div className="hidden sm:block w-[85%] h-full overflow-hidden relative">
+      <div className="hidden sm:block w-[90%] h-full overflow-hidden relative">
         {images && images.length
           ? images.map((imageurl, index) => (
               <img

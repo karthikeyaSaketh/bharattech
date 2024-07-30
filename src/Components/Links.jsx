@@ -12,7 +12,7 @@ import div2 from '../data/div2.png'
 const Links = () => {
     return (
         <div className='flex flex-col lg:flex-row mt-8 mb-20 justify-center items-center w-full gap-16'>
-            <div className='flex flex-col sm:flex-row justify-center w-[80%] lg:w-[40%] rounded-[10px]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+            <div className='flex flex-col sm:flex-row justify-center w-[80%] lg:w-[40%] rounded-[20px] sm:rounded-[10px]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
                 <img src={img2} alt='competitions' className='hidden sm:block w-[60%]' />
                 <img src={img3} alt='competitions' className='block sm:hidden w-full' />
                 <div className='flex flex-col justify-evenly items-center w-full p-8 sm:p-0 gap-4 sm:w-[40%]'>
@@ -23,7 +23,7 @@ const Links = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col sm:flex-row-reverse justify-center w-[80%] lg:w-[40%] rounded-[10px]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+            <div className='flex flex-col sm:flex-row-reverse justify-center w-[80%] lg:w-[40%] rounded-[20px] sm:rounded-[10px]' style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
                 <img src={img1} alt='competitions' className='hidden sm:block w-[60%]' />
                 <img src={img4} alt='competitions' className='block sm:hidden w-full' />
                 <div className='flex flex-col justify-evenly items-center w-full p-8 sm:p-0 gap-4 sm:w-[40%]'>
