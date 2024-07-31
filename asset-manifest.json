@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.31919254.css",
-    "main.js": "/static/js/main.2c10be94.js",
+    "main.js": "/static/js/main.04ee6982.js",
     "static/media/1.png": "/static/media/1.682ee71ed5971fd1389f.png",
     "static/media/1_1.png": "/static/media/1_1.25b2e222fdb46010d728.png",
     "static/media/2_1.png": "/static/media/2_1.20cbb24a796f438b7f52.png",
@@ -47,6 +47,8 @@
     "static/media/S11.jpg": "/static/media/S11.909a1315eebd1062509d.jpg",
     "static/media/S10.jpg": "/static/media/S10.cd514bd9b0a739fb7866.jpg",
     "static/media/s1.jpg": "/static/media/s1.699e7e5b4f0bea8945e9.jpg",
+    "static/media/PSDrone(Senior).pdf": "/static/media/PSDrone(Senior).6395a97024d5f7a49f4c.pdf",
+    "static/media/PSDrone(Junior).pdf": "/static/media/PSDrone(Junior).29a24c4afbe7ceda185b.pdf",
     "static/media/S5.jpg": "/static/media/S5.dc411e790be43dea888d.jpg",
     "static/media/l3.jpg": "/static/media/l3.cddb6e1b400662ae026b.jpg",
     "static/media/2.jpg": "/static/media/2.4c9fdcd526a0f843bb89.jpg",
@@ -55,6 +57,7 @@
     "static/media/l6.jpg": "/static/media/l6.f913e2291549c430d3c2.jpg",
     "static/media/2nd_5.jpg": "/static/media/2nd_5.0daeb640bc72e75bdfed.jpg",
     "static/media/AP1.jpg": "/static/media/AP1.51e48a18baa2ab5fd66e.jpg",
+    "static/media/PSRobotics(Senior).pdf": "/static/media/PSRobotics(Senior).6b5852b578a91a143f52.pdf",
     "static/media/S7.jpg": "/static/media/S7.b3780469840f52ddea0f.jpg",
     "static/media/l4.jpg": "/static/media/l4.bedf1d825606f50c4fdb.jpg",
     "static/media/7.jpg": "/static/media/7.31ea7cc06be1f36c5e3d.jpg",
@@ -74,13 +77,10 @@
     "static/media/AIC.jpg": "/static/media/AIC.35a617fe4796b2ddbd2e.jpg",
     "static/media/junior.jpg": "/static/media/junior.7081bc8befe16a1ee61a.jpg",
     "static/media/PS3D(Junior).pdf": "/static/media/PS3D(Junior).8876566038421dc615d3.pdf",
+    "static/media/PSRobotics(Junior).pdf": "/static/media/PSRobotics(Junior).7d5018355ea9e9650753.pdf",
     "static/media/senior.jpg": "/static/media/senior.855004f01d3d2ba19997.jpg",
-    "static/media/PSDrone(Senior).pdf": "/static/media/PSDrone(Senior).1fa3cb5a1a0d14f3584b.pdf",
-    "static/media/PSDrone(Junior).pdf": "/static/media/PSDrone(Junior).73ae181c2c09dec11667.pdf",
     "static/media/TIE.jpg": "/static/media/TIE.dc55bb891a8ff0b64e7d.jpg",
-    "static/media/PSRobotics(Senior).pdf": "/static/media/PSRobotics(Senior).33799581d526160f8075.pdf",
     "static/media/2nd_4.jpg": "/static/media/2nd_4.19b240b67d7e761a7e4e.jpg",
-    "static/media/PSRobotics(Junior).pdf": "/static/media/PSRobotics(Junior).4ce7ad881eab41c91e73.pdf",
     "static/media/RRRobotics(Junior).pdf": "/static/media/RRRobotics(Junior).75e04e55c7adc772f363.pdf",
     "static/media/RRRobotics(Senior).pdf": "/static/media/RRRobotics(Senior).05f86d6c546f3d17a55d.pdf",
     "static/media/PSIotSenior.pdf": "/static/media/PSIotSenior.487f5c0338399dece854.pdf",
@@ -105,10 +105,10 @@
     "static/media/email.png": "/static/media/email.9082177d266cee25a57b.png",
     "index.html": "/index.html",
     "main.31919254.css.map": "/static/css/main.31919254.css.map",
-    "main.2c10be94.js.map": "/static/js/main.2c10be94.js.map"
+    "main.04ee6982.js.map": "/static/js/main.04ee6982.js.map"
   },
   "entrypoints": [
     "static/css/main.31919254.css",
-    "static/js/main.2c10be94.js"
+    "static/js/main.04ee6982.js"
   ]
 }
