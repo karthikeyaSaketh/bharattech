@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.31919254.css",
-    "main.js": "/static/js/main.9636728e.js",
+    "main.css": "/static/css/main.a320f72d.css",
+    "main.js": "/static/js/main.00f27a94.js",
     "static/media/1.png": "/static/media/1.682ee71ed5971fd1389f.png",
     "static/media/1_1.png": "/static/media/1_1.25b2e222fdb46010d728.png",
     "static/media/2_1.png": "/static/media/2_1.20cbb24a796f438b7f52.png",
@@ -10,7 +10,7 @@
     "static/media/ATLZonal.jpg": "/static/media/ATLZonal.4cf68a83a12f297024eb.jpg",
     "static/media/ATLZonal1.jpg": "/static/media/ATLZonal1.73969a634d70885dbb52.jpg",
     "static/media/timeline1.jpg": "/static/media/timeline1.87473ba7b2fb68732cff.jpg",
-    "static/media/image2.png": "/static/media/image2.54b9decb2894c09115c8.png",
+    "static/media/image2.png": "/static/media/image2.2199084b257d1c4ab369.png",
     "static/media/calender.jpg": "/static/media/calender.54a6f284ec387b20b8ba.jpg",
     "static/media/timeline2.jpg": "/static/media/timeline2.64c2c156bfd35f04d40b.jpg",
     "static/media/TTLZonal.jpg": "/static/media/TTLZonal.94c9f13675534dfdb97f.jpg",
@@ -27,6 +27,8 @@
     "static/media/3d.jpg": "/static/media/3d.bf5ce0bcd7805ad033cc.jpg",
     "static/media/conf_img_2.jpg": "/static/media/conf_img_2.fdd5e5318f85cf02f693.jpg",
     "static/media/HTLZonal1.jpg": "/static/media/HTLZonal1.00a21ff779c8f332d7f6.jpg",
+    "static/media/drone.jpg": "/static/media/drone.07440c62d053efcff11e.jpg",
+    "static/media/robot.jpg": "/static/media/robot.dca1b446be1795341cb5.jpg",
     "static/media/S3.jpg": "/static/media/S3.c6a5e85840acb7f6cb17.jpg",
     "static/media/conf_img_1.jpg": "/static/media/conf_img_1.4aeac9a5ab06dadaebf8.jpg",
     "static/media/vr.jpg": "/static/media/vr.9e2e74d51135d5b7ef61.jpg",
@@ -93,6 +95,7 @@
     "static/media/AHUB.jpg": "/static/media/AHUB.ff26481ad9ee13d0fd20.jpg",
     "static/media/RRIotSenior.pdf": "/static/media/RRIotSenior.6abf484bac5e7a2f0654.pdf",
     "static/media/2nd_1.jpg": "/static/media/2nd_1.6b1d3d41c88479a1800c.jpg",
+    "static/media/robotics.jpg": "/static/media/robotics.72081409b8f97ad3a9ea.jpg",
     "static/media/div2.png": "/static/media/div2.b947203202e76eb2697b.png",
     "static/media/link.png": "/static/media/link.2b7f296876b70af1ebab.png",
     "static/media/btl_logo.png": "/static/media/btl_logo.193592395c7adf9395f1.png",
@@ -104,11 +107,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/email.png": "/static/media/email.9082177d266cee25a57b.png",
     "index.html": "/index.html",
-    "main.31919254.css.map": "/static/css/main.31919254.css.map",
-    "main.9636728e.js.map": "/static/js/main.9636728e.js.map"
+    "main.a320f72d.css.map": "/static/css/main.a320f72d.css.map",
+    "main.00f27a94.js.map": "/static/js/main.00f27a94.js.map"
   },
   "entrypoints": [
-    "static/css/main.31919254.css",
-    "static/js/main.9636728e.js"
+    "static/css/main.a320f72d.css",
+    "static/js/main.00f27a94.js"
   ]
 }
