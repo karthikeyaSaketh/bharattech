@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Footer from '../../Components/Footer';
 import img from '../../data/events/back2.png'
 import img1 from '../../data/events/6.jpg'
+import arena from '../../data/events/robotics.jpg'
+import robot from '../../data/events/robot.jpg'
 import PS from '../../data/documents/PSRobotics(Senior).pdf'
 import RR from '../../data/documents/RRRobotics(Senior).pdf'
 
@@ -126,14 +128,14 @@ const RoboticsSenior = () => {
           <ul className="list-none space-y-4 pl-4 sm:pl-16">
             <li className="flex">
               <span className="mr-4">-</span>
-              <span>The robot dimensions should be less than or equal to 40 cm in length and 35 cm in width. And 
-              weight should not be more than 7 kilograms. 
+              <span>The robot dimensions should be less than or equal to 40 cm in length and 35 cm in width. And
+                weight should not be more than 7 kilograms.
               </span>
             </li>
             <li className="flex">
               <span className="mr-4">-</span>
-              <span>The robot can be either wired or wireless, depending on the team's preference and the 
-              competition rules. 
+              <span>The robot can be either wired or wireless, depending on the team's preference and the
+                competition rules.
               </span>
             </li>
           </ul>
@@ -145,8 +147,8 @@ const RoboticsSenior = () => {
           <ul className="list-none space-y-4 pl-4 sm:pl-16">
             <li className="flex">
               <span className="mr-4">-</span>
-              <span>In the zonal round, teams will control their robot to pick up objects from one side of the arena 
-              and place them on the other side, avoiding obstacles and completing the task quickly. 
+              <span>In the zonal round, teams will control their robot to pick up objects from one side of the arena
+                and place them on the other side, avoiding obstacles and completing the task quickly.
               </span>
             </li>
             <li className="flex">
@@ -220,6 +222,26 @@ const RoboticsSenior = () => {
               </span>
             </li>
           </ul>
+        </div>
+
+
+
+
+        <div className='flex flex-col w-[80%] gap-6 leading-8 text-justify mb-8 items-center'>
+          <img src={robot} alt='arena' className='lg:w-[60%] h-auto' />
+        </div>
+
+        <div className='flex flex-col w-[80%] gap-6 leading-8 text-justify mb-16 items-center'>
+          <p className='text-[28px] font-bold'>SAMPLE ARENA </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>The arena shown in the image is for reference purposes only and serves as a
+                sample. The actual arena at the competition may have some modifications.
+              </span>
+            </li>
+          </ul>
+          <img src={arena} alt='arena' className='lg:w-[40%] h-auto' />
         </div>
 
       </div>

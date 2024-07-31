@@ -32,12 +32,12 @@ const ImgSlider = () => {
   }, [images.length]);
 
   return (
-    <div className="relative flex justify-center items-center w-full h-[570px] sm:h-[450px] xl:h-[600px]">
+    <div className="relative flex flex-col justify-center items-center w-full h-[570px] sm:h-[450px] xl:h-[550px] xl:my-8 gap-4">
       <BsArrowLeftCircleFill
         className="arrow absolute w-6 h-6 sm:w-8 sm:h-8 text-gray-700 filter drop-shadow-lg cursor-pointer left-4 z-10"
         onClick={handlePrevious}
       />
-      <div className="hidden sm:block w-[90%] h-full overflow-hidden relative">
+      <div className="hidden sm:block w-[90%] h-full xl:h-[500px] overflow-hidden relative">
         {images && images.length
           ? images.map((imageurl, index) => (
               <img
@@ -72,7 +72,7 @@ const ImgSlider = () => {
         onClick={handleNext}
       />
 
-      <span className="absolute flex bottom-4 z-10">
+      <span className="relative flex z-10">
         {images && images.length
           ? images.map((_, index) => (
               <button

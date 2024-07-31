@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Footer from '../../Components/Footer';
 import img from '../../data/events/back.png'
 import img1 from '../../data/events/2.jpg'
+import arena from '../../data/events/robotics.jpg'
+import robot from '../../data/events/robot.jpg'
 import PS from '../../data/documents/PSRobotics(Junior).pdf'
 import RR from '../../data/documents/RRRobotics(Junior).pdf'
 
@@ -210,7 +212,7 @@ const RoboticsJunior = () => {
         </div>
 
 
-        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify mb-16'>
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify mb-6'>
           <p className='text-[24px] font-bold'>Performance Judging: </p>
           <ul className="list-none space-y-4 pl-4 sm:pl-16">
             <li className="flex">
@@ -220,6 +222,23 @@ const RoboticsJunior = () => {
               </span>
             </li>
           </ul>
+        </div>
+
+        <div className='flex flex-col w-[80%] gap-6 leading-8 text-justify mb-8 items-center'>
+          <img src={robot} alt='arena' className='lg:w-[60%] h-auto' />
+        </div>
+
+        <div className='flex flex-col w-[80%] gap-6 leading-8 text-justify mb-16 items-center'>
+          <p className='text-[28px] font-bold'>SAMPLE ARENA </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>The arena shown in the image is for reference purposes only and serves as a
+                sample. The actual arena at the competition may have some modifications.
+              </span>
+            </li>
+          </ul>
+          <img src={arena} alt='arena' className='lg:w-[40%] h-auto' />
         </div>
 
       </div>
