@@ -99,11 +99,11 @@ const AboutBtl = () => {
         </div> */}
 
 
-        <img src={ttl} alt="ttl" className='hidden sm:block w-[90%] xl:w-[80%] h-auto my-4' />
-        <img src={atl} alt="atl" className='hidden sm:block w-[90%] xl:w-[80%] h-auto my-4' />
+        <img src={ttl} alt="ttl" className='hidden sm:block w-[90%] xl:w-[80%] h-auto my-8 lg:my-12 rounded-[20px]' />
+        <img src={atl} alt="atl" className='hidden sm:block w-[90%] xl:w-[80%] h-auto my-8 lg:my-12 rounded-[20px]' />
 
-        <img src={ttl1} alt="ttl1" className='block sm:hidden w-[95%] xl:w-[80%] h-auto my-2' />
-        <img src={atl1} alt="atl1" className='block sm:hidden w-[95%] xl:w-[80%] h-auto my-2' />
+        <img src={ttl1} alt="ttl1" className='block sm:hidden w-[95%] xl:w-[80%] h-auto my-2 rounded-[20px]' />
+        <img src={atl1} alt="atl1" className='block sm:hidden w-[95%] xl:w-[80%] h-auto my-2 rounded-[20px]' />
 
 
       </div>

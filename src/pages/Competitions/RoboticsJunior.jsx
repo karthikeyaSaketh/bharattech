@@ -156,6 +156,11 @@ const RoboticsJunior = () => {
               <span>Every robot should have a picker/gripper to hold and carry objects to their respective points.
               </span>
             </li>
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>The objects in arena (balls and pipes), weigh between 10 grams to 200 grams. The diameter
+                of balls ranges from 5 cm to 8 cm, and the diameter of pipes ranges from 3 cm to 6 cm. </span>
+            </li>
           </ul>
         </div>
 
@@ -224,22 +229,26 @@ const RoboticsJunior = () => {
           </ul>
         </div>
 
-        <div className='flex flex-col w-[80%] gap-6 leading-8 text-justify mb-8 items-center'>
-          <img src={robot} alt='arena' className='lg:w-[60%] h-auto' />
+        <div className='flex flex-col sm:flex-row w-[80%] gap-6 leading-8 text-justify items-center sm:items-start justify-around'>
+          <div className='flex flex-col items-center w-full sm:w-[50%] sm:gap-12 lg:gap-20'>
+            <p className='text-[28px] font-bold'>SAMPLE ROBOT </p>
+            <img src={robot} alt='arena' className='w-full h-auto' />
+          </div>
+          <div className='flex flex-col items-center w-full sm:w-[40%]'>
+            <p className='text-[28px] font-bold'>SAMPLE ARENA </p>
+            <img src={arena} alt='arena' className='w-full h-auto' />
+          </div>
         </div>
 
-        <div className='flex flex-col w-[80%] gap-6 leading-8 text-justify mb-16 items-center'>
-          <p className='text-[28px] font-bold'>SAMPLE ARENA </p>
-          <ul className="list-none space-y-4 pl-4 sm:pl-16">
-            <li className="flex">
-              <span className="mr-4">-</span>
-              <span>The arena shown in the image is for reference purposes only and serves as a
-                sample. The actual arena at the competition may have some modifications.
-              </span>
+        <div className='flex items-center justify-center w-[80%] gap-6 leading-8 mb-8'>
+          <ul className="list-none space-y-4 w-full">
+            <li className="w-full text-center text-[16px] sm:text-[20px] lg:text-[24px]">
+              The images shown are for reference purposes only and serves as samples.              
             </li>
           </ul>
-          <img src={arena} alt='arena' className='lg:w-[40%] h-auto' />
         </div>
+
+        
 
       </div>
       <div className='relative w-full mt-10 h-auto'>

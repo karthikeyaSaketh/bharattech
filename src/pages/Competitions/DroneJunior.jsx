@@ -235,6 +235,65 @@ const DroneJunior = () => {
                         <li className="flex">
                             <span className="mr-4">-</span>
                             <span className='text-blue-500'>
+                                <a
+                                    href='https://robocraze.com/products/dm002-wifi-fpv-rc-diy-quadcopter-kit?variant=41176363925657&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOoqHM1-HgIuqtPg3UzUO4hp6GoWESz1bAATojtrtW382fQW-ECeXjOA'
+                                    target='_blank'>
+                                    Buy DM002 DIY Drone Kit With Manual at Cheapest Price – Robocraze
+                                </a>
+                            </span>
+                        </li>
+                        <li className="flex">
+                            <span className="mr-4">-</span>
+                            <span className='text-blue-500'>
+                                <a
+                                    href='https://makerbazar.in/products/wooden-assembly-diy-toy-drone-aircraft-with-remote?variant=46150208717040'
+                                    target='_blank'>
+                                    XYQ-2 Wooden Assembly DIY Toy Drone Aircraft with Remote (makerbazar.in)
+                                </a>
+                            </span>
+                        </li>
+                        <li className="flex">
+                            <span className="mr-4">-</span>
+                            <span className='text-blue-500'>
+                                <a
+                                    href='https://www.amazon.in/POTLIBABA-Drone-Educational-Skill-Assembly/dp/B0BRG4DN4W/ref=asc_df_B0BRG4DN4W/?tag=googleshopdes-21&linkCode=df0&hvadid=619798029309&hvpos=&hvnetw=g&hvrand=3850966135138696946&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9147458&hvtargid=pla-1934070504420&psc=1&mcid=cc8944ac45fd344ba0c638e035e7e3ca'
+                                    target='_blank'>
+                                    POTLIBABA RC Drone Educational DIY STEM Kit | Skill Based Fun Toys | Educational & Assembly Game for Kids 6 to 18 - Multicolor : Amazon.in: Toys & Games
+                                </a>
+                            </span>
+                        </li>
+                        <li className="flex">
+                            <span className="mr-4">-</span>
+                            <span className='text-blue-500'>
+                                <a
+                                    href='https://xyzhobby.com/product/dm002-diy-mini-micro-fpv-quadcopter-4ch-6-aixs-gyro-rc-quadcopter-drone/?utm_source=Google+Shopping&utm_medium=cpc&utm_campaign=Xyzhobby_1&srsltid=AfmBOooV1hvEna6UBWL1CuLN4-n-M4wAgnvRP35C9C9kSmUcHPR0-vV9dLM'
+                                    target='_blank'>
+                                    DM002 DIY Mini Micro FPV Quadcopter 4CH 6-Aixs Gyro RC Quadcopter Drone – xyzhobby </a>
+                            </span>
+                        </li>
+                        <li className="flex">
+                            <span className="mr-4">-</span>
+                            <span className='text-blue-500'>
+                                <a
+                                    href='https://www.amazon.in/ROBOPIAs-Beginners-Assemble-Quadcopter-altitude/dp/B0CFW149D6?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A1KWS0EX0T3DLB&th=1'
+                                    target='_blank'>
+                                    ROBOPIA's DIY Wooden Drone Kit (Without Camera) For Kids Or Beginners | Build & Assemble your own Flying Rc Quadcopter With Altitude Hold, Headless Mode & 3D Flip | Best Toy For Boys & Girls : Amazon.in: Toys & Games
+                                </a>
+                            </span>
+                        </li>
+                        <li className="flex">
+                            <span className="mr-4">-</span>
+                            <span className='text-blue-500'>
+                                <a
+                                    href='https://www.amazon.in/HEYCANDY-HEYCANDY-E88-Pro-Drone-with-4K-Camera-WiFi-FPV-1080P-HD-Dual-Foldable-RC-Drone-Altitude-Hold-Headless-Mode-Visual-Positioning-Auto-Return-App-Control-Multicolor-Single-Battery/dp/B0D4DZQPZ2/ref=asc_df_B0D4DZQPZ2/?tag=googleshopdes-21&linkCode=df0&hvadid=701464143060&hvpos=&hvnetw=g&hvrand=2685980001067454831&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9147458&hvtargid=pla-2310549611254&mcid=cff3be5b480e3b73b86fd948a6f3a6d6&gad_source=1&th=1'
+                                    target='_blank'>
+                                    HEYCANDY-E88-Pro-Drone-with-4K-Camera-WiFi-FPV-1080P-HD-Dual-Foldable-RC-Drone-Altitude-Hold-Headless-Mode-Visual-Positioning-Auto-Return-App-Control-Multicolor (Single-Battery) : Amazon.in: Toys & Games
+                                </a>
+                            </span>
+                        </li>
+                        <li className="flex">
+                            <span className="mr-4">-</span>
+                            <span className='text-blue-500'>
                                 <a href="
 https://www.amazon.in/Daily-Shop-Daily-Shop-HX-750-Drone-Quadcopter-360-Degree-Movable-Stunt-Drone-Without-Camera-for-Kids-Unbreakable-2-Extra-Blades-Multicolor/dp/B0D3PZ9NXB/ref=sr_1_2?crid=I85D2W762SE9&dib=eyJ2IjoiMSJ9.OraN1xqroEFxk2yiUiIdQuIBh1j7W4arroVyJ5rSQJr-V5tgOSE7GQ-eb9tBb45IYxJDlMSXod7Vufk7C3BzgQK_t7qiNERGe7IOBTbk-Uz-vZnusP7BGzoeioKCef-aoX4ct9hq0TFgbvBAS7ZrnGprhWRxlFfVgeleFbWCqIs1Oh_XpRrbeDNAW_LHX6DAwBFDFzMLZVF4IukYSX2Xh55yvcfcCHaKtcPI4ezTQHHZZLYJ8DtriM9nXUIh8BQC6Q7ZEZFQPX7CVmHMSL6-IkWJOXHQBY_HzxIhZyWuZj4.H7gyiTgXnyXbYkEDI8AQjj2HSnRGSs9P5K3IskylmAg&dib_tag=se&keywords=Hx+750+Drone&qid=1720159634&s=toys&sprefix=hx+750+drone%2Ctoys%2C198&sr=1-2" target='_blank'>
                                     Daily-Shop-HX-750-Drone-Quadcopter-360-Degree-Movable-Stunt-Drone-Without-Camera-for-Kids-Unbreakable-2-Extra-Blades-(Multicolor) : Amazon.in: Toys & Games
@@ -248,82 +307,6 @@ https://www.amazon.in/Daily-Shop-Daily-Shop-HX-750-Drone-Quadcopter-360-Degree-M
                                     href="https://www.amazon.in/dp/B06W5QQQJZ/ref=syn_sd_onsite_desktop_0?ie=UTF8&psc=1&pd_rd_plhdr=t&aref=745Mb5HzQa"
                                     target='_blank'>
                                     Pluto DIY Nano Drone Kit Pluto 1.2 - for Learning Stem & Tinkering, Crash Resistant, Smartphone Controlled, Rechargeable Battery by Drona Aviation, 25 educational Drone Programming Projects : Amazon.in: Toys & Games
-                                </a>
-                            </span>
-                        </li>
-
-                        <li className="flex">
-                            <span className="mr-4">-</span>
-                            <span className='text-blue-500'>
-                                <a
-                                    href='https://robocraze.com/products/dm002-wifi-fpv-rc-diy-quadcopter-kit?variant=41176363925657&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOoqHM1-HgIuqtPg3UzUO4hp6GoWESz1bAATojtrtW382fQW-ECeXjOA'
-                                    target='_blank'>
-                                    Buy DM002 DIY Drone Kit With Manual at Cheapest Price – Robocraze
-                                </a>
-                            </span>
-                        </li>
-
-                        <li className="flex">
-                            <span className="mr-4">-</span>
-                            <span className='text-blue-500'>
-                                <a
-                                    href='https://xyzhobby.com/product/dm002-diy-mini-micro-fpv-quadcopter-4ch-6-aixs-gyro-rc-quadcopter-drone/?utm_source=Google+Shopping&utm_medium=cpc&utm_campaign=Xyzhobby_1&srsltid=AfmBOooV1hvEna6UBWL1CuLN4-n-M4wAgnvRP35C9C9kSmUcHPR0-vV9dLM'
-                                    target='_blank'>
-                                    DM002 DIY Mini Micro FPV Quadcopter 4CH 6-Aixs Gyro RC Quadcopter Drone – xyzhobby </a>
-                            </span>
-                        </li>
-
-                        <li className="flex">
-                            <span className="mr-4">-</span>
-                            <span className='text-blue-500'>
-                                <a
-                                    href='https://www.amazon.in/altitude-headless-Quadcopter-Drone-SALE-drone-controller/dp/B0D28V7DHB/ref=sr_1_1?crid=14C7XBELHE5E6&dib=eyJ2IjoiMSJ9.XH97vgoEv0B3k8wrTSmmeFxVps2iwr8F5oLqtxtQ985ORJe8jxWegD5IOX3Aek3O6JORAK1EfMHqg6nyt8H2khgMjZqYW4DvMLPQx23Y3aIJKNuVsQ0i72NvNvIW6Gdrr1Nn7usoGzktgJebVH4nYoesKtTx9GzeugKAC6I0Ipgh8mJWS3MOOx3SPDOsGecrDnu6V7zuUWrT1d_MTXBK9CVfZsUeocZxAqhjdVPzzDWfFYy-5zG72kQKm_kly3Mxw7j1ag-DyfJe-36Ld351zGiz7ATr3Oml0gQcbE4XeW4.cBsgSpFJpgD46UhRfNf9jEL-lb1ysZdAshuDdhF_emA&dib_tag=se&keywords=DM002&qid=1720159797&s=automotive&sprefix=dm002%2Cautomotive%2C205&sr=1-1-catcorr'
-                                    target='_blank'>
-                                    DM002 Wifi altitude hold headless mode| Quadcopter-Drone Spare Parts- Motor And Circuit Full Parts This drone is your own creation Build drone camera 4k 1080p drone camera for kids 8-12 drone SALE-drone flight controller- : Amazon.in: Toys & Games
-                                </a>
-                            </span>
-                        </li>
-
-                        <li className="flex">
-                            <span className="mr-4">-</span>
-                            <span className='text-blue-500'>
-                                <a
-                                    href='https://www.amazon.in/POTLIBABA-Drone-Educational-Skill-Assembly/dp/B0BRG4DN4W/ref=asc_df_B0BRG4DN4W/?tag=googleshopdes-21&linkCode=df0&hvadid=619798029309&hvpos=&hvnetw=g&hvrand=3850966135138696946&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9147458&hvtargid=pla-1934070504420&psc=1&mcid=cc8944ac45fd344ba0c638e035e7e3ca'
-                                    target='_blank'>
-                                    POTLIBABA RC Drone Educational DIY STEM Kit | Skill Based Fun Toys | Educational & Assembly Game for Kids 6 to 18 - Multicolor : Amazon.in: Toys & Games
-                                </a>
-                            </span>
-                        </li>
-
-                        <li className="flex">
-                            <span className="mr-4">-</span>
-                            <span className='text-blue-500'>
-                                <a
-                                    href='https://makerbazar.in/products/wooden-assembly-diy-toy-drone-aircraft-with-remote?variant=46150208717040'
-                                    target='_blank'>
-                                    XYQ-2 Wooden Assembly DIY Toy Drone Aircraft with Remote (makerbazar.in)
-                                </a>
-                            </span>
-                        </li>
-
-                        <li className="flex">
-                            <span className="mr-4">-</span>
-                            <span className='text-blue-500'>
-                                <a
-                                    href='https://www.amazon.in/ROBOPIAs-Beginners-Assemble-Quadcopter-altitude/dp/B0CFW149D6?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A1KWS0EX0T3DLB&th=1'
-                                    target='_blank'>
-                                    ROBOPIA's DIY Wooden Drone Kit (Without Camera) For Kids Or Beginners | Build & Assemble your own Flying Rc Quadcopter With Altitude Hold, Headless Mode & 3D Flip | Best Toy For Boys & Girls : Amazon.in: Toys & Games
-                                </a>
-                            </span>
-                        </li>
-
-                        <li className="flex">
-                            <span className="mr-4">-</span>
-                            <span className='text-blue-500'>
-                                <a
-                                    href='https://www.amazon.in/HEYCANDY-HEYCANDY-E88-Pro-Drone-with-4K-Camera-WiFi-FPV-1080P-HD-Dual-Foldable-RC-Drone-Altitude-Hold-Headless-Mode-Visual-Positioning-Auto-Return-App-Control-Multicolor-Single-Battery/dp/B0D4DZQPZ2/ref=asc_df_B0D4DZQPZ2/?tag=googleshopdes-21&linkCode=df0&hvadid=701464143060&hvpos=&hvnetw=g&hvrand=2685980001067454831&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9147458&hvtargid=pla-2310549611254&mcid=cff3be5b480e3b73b86fd948a6f3a6d6&gad_source=1&th=1'
-                                    target='_blank'>
-                                    HEYCANDY-E88-Pro-Drone-with-4K-Camera-WiFi-FPV-1080P-HD-Dual-Foldable-RC-Drone-Altitude-Hold-Headless-Mode-Visual-Positioning-Auto-Return-App-Control-Multicolor (Single-Battery) : Amazon.in: Toys & Games
                                 </a>
                             </span>
                         </li>
