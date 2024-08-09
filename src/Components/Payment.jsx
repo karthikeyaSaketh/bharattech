@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../Components/Footer';
+import Junior from '../data/junior.jpg';
 
 const RazorpayPayment = () => {
   const [participants, setParticipants] = useState(['', '', '', '']);
   const [amount, setAmount] = useState(0);
   const [orderId, setOrderId] = useState('');
-  const [loading, setLoading] = useState(false); // State for loading
+  const [loading, setLoading] = useState(false);
   const participantCost = 1; // Cost per participant (e.g., ₹50)
-  const navigate = useNavigate(); // For navigation
+  const navigate = useNavigate();
 
   // Handle participant name changes
   const handleChange = (index, value) => {
@@ -24,24 +26,32 @@ const RazorpayPayment = () => {
 
   // Fetch order ID from backend
   const fetchOrderId = async () => {
-    setLoading(true); // Set loading to true while fetching order ID
+    setLoading(true);
     console.log('Fetching order ID...');
     try {
-      const response = await axios.post('https://bharattechleague-production.up.railway.app/create-order', { amount: amount * 100 }); // Convert amount to paisa
+      const response = await axios.post(
+        'https://bharathtechleague-hqdeauhdarb9fmct.eastus-01.azurewebsites.net/create-order',
+        { amount: amount * 100 } // Convert amount to paisa
+      );
       console.log('Order ID fetched:', response.data.orderId);
       setOrderId(response.data.orderId);
-      return response.data.orderId; // Return the fetched order ID
+      return response.data.orderId;
     } catch (error) {
-      console.error('Failed to fetch order ID:', error);
-      Swal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'Error fetching order ID: ' + (error.response?.data?.message || error.message),
-      });
-      return null; // Return null on error
+      handleSwalError('Error fetching order ID', error);
+      return null;
     } finally {
-      setLoading(false); // Set loading to false after fetching order ID
+      setLoading(false);
     }
+  };
+
+  // SweetAlert error handling
+  const handleSwalError = (title, error) => {
+    console.error(`${title}:`, error);
+    Swal.fire({
+      icon: 'error',
+      title,
+      text: error.response?.data?.message || error.message,
+    });
   };
 
   // Handle the payment process
@@ -54,7 +64,7 @@ const RazorpayPayment = () => {
       });
       return;
     }
-    
+
     let currentOrderId = orderId;
 
     if (!currentOrderId) {
@@ -63,7 +73,7 @@ const RazorpayPayment = () => {
       console.log('Post-fetch Order ID:', currentOrderId);
       if (!currentOrderId) {
         console.log('Order ID is still not available. Aborting payment.');
-        return; // Abort if fetching order ID failed
+        return;
       }
     }
 
@@ -74,46 +84,82 @@ const RazorpayPayment = () => {
       currency: 'INR',
       name: 'Bharat Tech League',
       description: 'Registration Fee',
-      order_id: currentOrderId, // Use the order ID fetched from your server
+      order_id: currentOrderId,
       handler: async function (response) {
         console.log('Payment successful:', response);
+
+        Swal.fire({
+          title: 'Verifying Payment',
+          text: 'Please wait while we verify your payment details.',
+          allowOutsideClick: false,
+          didOpen: () => {
+            Swal.showLoading();
+          },
+        });
+
         const paymentData = {
           razarpay_order_id: response.razorpay_order_id,
           razarpay_payment_id: response.razorpay_payment_id,
           razarpay_signature: response.razorpay_signature,
         };
 
-        // Verify payment using the backend API
         try {
-          console.log('Verifying payment with data:', paymentData);
-          const verificationResponse = await axios.post('https://bharattechleague-production.up.railway.app/verify-payment', paymentData);
-          console.log('Verification response:', verificationResponse.data);
+          const verificationResponse = await axios.post(
+            'https://bharathtechleague-hqdeauhdarb9fmct.eastus-01.azurewebsites.net/verify-payment',
+            paymentData
+          );
+
           if (verificationResponse.data.signatureIsValid) {
             Swal.fire({
               icon: 'success',
-              title: 'Success',
-              text: 'Payment successful!',
-            }).then(() => {
-              navigate('/'); // Redirect to home page
+              title: 'Payment Verified',
+              text: 'Your payment has been verified successfully!',
+              allowOutsideClick: false,
+              didOpen: () => {
+                Swal.showLoading();
+              },
             });
+
+            const payload = {
+              values: [
+                participants[0] || 'Participant Name',
+                "JUNIOR",
+                response.razorpay_payment_id,
+                response.razorpay_order_id,
+                response.razorpay_signature,
+              ],
+            };
+
+            try {
+              const postResponse = await axios.post(
+                'https://bharathtechleague-hqdeauhdarb9fmct.eastus-01.azurewebsites.net/payment-details',
+                payload
+              );
+              console.log('Payment details posted:', postResponse.data);
+
+              Swal.fire({
+                icon: 'success',
+                title: 'Details Submitted',
+                text: 'Your payment and details have been successfully submitted!',
+              }).then(() => {
+                navigate('/');
+              });
+            } catch (postError) {
+              handleSwalError('Failed to submit payment details', postError);
+            }
           } else {
             Swal.fire({
               icon: 'error',
-              title: 'Error',
+              title: 'Verification Error',
               text: 'Payment verification failed.',
             });
           }
         } catch (error) {
-          console.error('Payment verification failed:', error);
-          Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'Payment verification failed: ' + (error.response?.data?.message || error.message),
-          });
+          handleSwalError('Payment verification failed', error);
         }
       },
       prefill: {
-        name: participants[0] || 'Participant Name', // Prefill with first participant's name or placeholder
+        name: participants[0] || 'Participant Name',
       },
       notes: {
         address: 'Some address here',
@@ -125,7 +171,7 @@ const RazorpayPayment = () => {
 
     const rzp = new window.Razorpay(options);
     rzp.on('payment.failed', function (response) {
-      console.log('Payment Failed:', response.error); // Log the failure reason
+      console.log('Payment Failed:', response.error);
       Swal.fire({
         icon: 'error',
         title: 'Payment Failed',
@@ -137,30 +183,71 @@ const RazorpayPayment = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-4 border border-gray-200 rounded-md shadow-md">
-      <h2 className="text-2xl font-semibold text-center mb-4">Register Participants</h2>
-      <div className="space-y-4">
-        {participants.map((participant, index) => (
-          <input
-            key={index}
-            type="text"
-            placeholder={`Participant ${index + 1} Name`}
-            value={participant}
-            onChange={(e) => handleChange(index, e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded-md"
-          />
-        ))}
+    <div className="flex flex-col-reverse lg:flex-row-reverse justify-between items-center bg-white mt-4">
+      <div className="flex flex-col items-center justify-center lg:w-[40%] h-full text-center order-1 lg:order-none lg:mt-16">
+        <div className="m-10 flex justify-center items-center w-[285px] h-[285px] xl:w-[385px] xl:h-[385px] rounded-xl" style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+          <img src={Junior} alt="junior" className="w-[90%] h-[90%]" />
+        </div>
       </div>
-      <div className="mt-4 text-xl">
-        Total Amount: <span className="font-bold">₹{amount}</span>
+
+      <div className="flex flex-col lg:w-[60%] items-center justify-center lg:p-8 gap-12 mb-16 lg:mb-0">
+        <h1 className="text-5xl font-bold lg:mt-10">JUNIOR LEVEL</h1>
+        <div className="w-[90%] lg:w-[80%] mx-auto">
+          <div className="flex flex-wrap lg:flex-nowrap justify-between lg:mb-6">
+            <input
+              id="name1"
+              type="text"
+              placeholder="Enter name of 1st participant"
+              className="appearance-none border-2 border-[#F16600] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
+              name={`participant1.name`}
+              value={participants[0]}
+              onChange={(e) => handleChange(0, e.target.value)}
+              required
+            />
+            <input
+              id="name2"
+              type="text"
+              placeholder="Enter name of 2nd participant"
+              className="appearance-none border-2 border-[#F16600] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
+              name={`participant2.name`}
+              value={participants[1]}
+              onChange={(e) => handleChange(1, e.target.value)}
+              required
+            />
+          </div>
+          <div className="flex flex-wrap lg:flex-nowrap justify-between mb-4">
+            <input
+              id="name3"
+              type="text"
+              placeholder="Enter name of 3rd participant"
+              className="appearance-none border-2 border-[#F16600] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
+              name={`participant3.name`}
+              value={participants[2]}
+              onChange={(e) => handleChange(2, e.target.value)}
+            />
+            <input
+              id="name4"
+              type="text"
+              placeholder="Enter name of 4th participant"
+              className="appearance-none border-2 border-[#F16600] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
+              name={`participant4.name`}
+              value={participants[3]}
+              onChange={(e) => handleChange(3, e.target.value)}
+            />
+          </div>
+          <div className="flex justify-between items-center">
+            <div className="font-semibold text-2xl lg:text-3xl text-orange-900">Amount: ₹{amount}</div>
+            <button
+              type="button"
+              className="text-white text-2xl lg:text-3xl py-2 px-10 rounded-xl bg-orange-600"
+              onClick={handlePayment}
+              disabled={loading}
+            >
+              {loading ? 'Processing...' : 'PAY'}
+            </button>
+          </div>
+        </div>
       </div>
-      <button
-        onClick={handlePayment}
-        disabled={amount <= 0 || loading} // Disable button if amount is 0 or while loading
-        className="mt-4 w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 transition"
-      >
-        {loading ? 'Processing...' : 'Proceed to Pay'} {/* Show loading text */}
-      </button>
     </div>
   );
 };
