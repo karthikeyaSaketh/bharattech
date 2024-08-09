@@ -129,6 +129,7 @@ const RazorpayPayment = () => {
             const payload = {
               values: [
                 participants[0] || 'Participant Name',
+                'JUNIOR',
                 institutionName, // Include institution name as 3rd column
                 response.razorpay_payment_id,
                 response.razorpay_order_id,
