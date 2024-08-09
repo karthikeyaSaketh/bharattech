@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import { useNavigate } from 'react-router-dom';
 import Footer from '../../Components/Footer';
 import img from '../../data/events/back2.png'
@@ -12,6 +12,21 @@ const DroneSenior = () => {
 
   const handleClick = () => {
     navigate('/bharattech/Events');
+  };
+  const sampleRobotRef = useRef(null);
+
+  const handleSampleRobotClick = () => {
+    // Calculate the offset position with 70px padding
+    const yOffset = -70; // Adjust the offset as needed
+  
+    // Get the position of the element
+    const elementPosition = sampleRobotRef.current.getBoundingClientRect().top + window.scrollY;
+  
+    // Scroll to the position with smooth behavior
+    window.scrollTo({
+      top: elementPosition + yOffset,
+      behavior: 'smooth',
+    });
   };
 
   return (
@@ -120,6 +135,15 @@ const DroneSenior = () => {
           </ul>
         </div>
 
+        <div className='flex justify-center mt-8'>
+          <button
+            className='bg-[#1B8534] text-white text-[14px] px-6 py-3 rounded-[10px] cursor-pointer'
+            onClick={handleSampleRobotClick}
+          >
+            SAMPLE ROBOT
+          </button>
+        </div>
+
         <h1 className='text-[32px] font-bold mt-12 text-center'>ZONAL LEVEL</h1>
 
         <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
@@ -143,6 +167,18 @@ const DroneSenior = () => {
               <span className="mr-4">-</span>
               <span>
                 In the zonal round, teams will participate hands-on. Each team will control and fly their drone through an arena, avoiding various obstacles, and must complete 2 laps.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Rules and guidelines may be subjected to changes at the time of the competition based on prevailing conditions and coordinator decisions. However, the core concept of the competition will remain unchanged.
               </span>
             </li>
           </ul>
@@ -216,6 +252,18 @@ const DroneSenior = () => {
           </ul>
         </div>
 
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Rules and guidelines may be subjected to changes at the time of the competition based on prevailing conditions and coordinator decisions. However, the core concept of the competition will remain unchanged.
+              </span>
+            </li>
+          </ul>
+        </div>
+
 
         <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
           <p className='text-[24px] font-bold'>Lap Completion: </p>
@@ -250,7 +298,7 @@ const DroneSenior = () => {
           </ul>
         </div>
 
-        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify mb-4'>
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify mb-4' ref={sampleRobotRef}>
           <p className='text-[24px] font-bold'>Allowed Drone Models :  </p>
           <ul className="list-none space-y-4 pl-4 sm:pl-16">
             <li className="flex">

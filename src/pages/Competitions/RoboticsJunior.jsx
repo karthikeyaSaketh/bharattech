@@ -1,16 +1,35 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import { useNavigate } from 'react-router-dom';
 import Footer from '../../Components/Footer';
 import img from '../../data/events/back.png'
 import img1 from '../../data/events/2.jpg'
 import arena from '../../data/events/robotics.jpg'
 import robot from '../../data/events/robot.jpg'
+import ball from '../../data/events/ball.jpg'
+import pipe from '../../data/events/pipe.jpeg'
 import PS from '../../data/documents/PSRobotics(Junior).pdf'
 import RR from '../../data/documents/RRRobotics(Junior).pdf'
 
 const RoboticsJunior = () => {
   const navigate = useNavigate();
+  
+  // Create a reference for the Sample Robot section
+  const sampleRobotRef = useRef(null);
 
+  const handleSampleRobotClick = () => {
+    // Calculate the offset position with 70px padding
+    const yOffset = -70; // Adjust the offset as needed
+  
+    // Get the position of the element
+    const elementPosition = sampleRobotRef.current.getBoundingClientRect().top + window.scrollY;
+  
+    // Scroll to the position with smooth behavior
+    window.scrollTo({
+      top: elementPosition + yOffset,
+      behavior: 'smooth',
+    });
+  };
+  
   const handleClick = () => {
     navigate('/bharattech/Events');
   };
@@ -120,6 +139,15 @@ const RoboticsJunior = () => {
           </ul>
         </div>
 
+        <div className='flex justify-center mt-8'>
+          <button
+            className='bg-[#FF721F] text-white text-[14px] px-6 py-3 rounded-[10px] cursor-pointer'
+            onClick={handleSampleRobotClick}
+          >
+            SAMPLE ROBOT
+          </button>
+        </div>
+
 
         <h1 className='text-[32px] font-bold mt-12 text-center'>ZONAL LEVEL</h1>
 
@@ -128,8 +156,7 @@ const RoboticsJunior = () => {
           <ul className="list-none space-y-4 pl-4 sm:pl-16">
             <li className="flex">
               <span className="mr-4">-</span>
-              <span>The robot dimensions should be less than or equal to 40 cm in length and 35 cm in width. And
-                weight should not be more than 5 kilograms.
+              <span>The robot dimensions should be less than or equal to <b>40cm X 40cm X 30cm</b> (LxWxH). And weight should not be more than <b>5 kilograms.</b> Specification +/- 5% is acceptable.
               </span>
             </li>
             <li className="flex">
@@ -156,12 +183,44 @@ const RoboticsJunior = () => {
               <span>Every robot should have a picker/gripper to hold and carry objects to their respective points.
               </span>
             </li>
+          </ul>
+        </div>
+
+
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Rules and guidelines may be subjected to changes at the time of the competition based on prevailing conditions and coordinator decisions. However, the core concept of the competition will remain unchanged.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[24px] font-bold'>Objects : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
             <li className="flex">
               <span className="mr-4">-</span>
               <span>The objects in arena (balls and pipes), weigh between 10 grams to 200 grams. The diameter
                 of balls ranges from 5 cm to 8 cm, and the diameter of pipes ranges from 3 cm to 6 cm. </span>
             </li>
           </ul>
+        </div>
+
+        <h1 className='text-[32px] font-bold mt-12 text-center'>SAMPLE OBJECTS</h1>
+
+        <div className='flex flex-col sm:flex-row w-[80%] gap-6 leading-8 text-justify items-center sm:items-start justify-around'>
+          <div className='flex flex-col items-center w-full sm:w-[40%] sm:gap-12 lg:gap-20'>
+            <img src={ball} alt='arena' className='w-full h-auto' />
+          </div>
+          <div className='flex flex-col items-center w-full sm:w-[40%]'>
+            <img src={pipe} alt='arena' className='w-full h-auto' />
+          </div>
         </div>
 
 
@@ -216,6 +275,18 @@ const RoboticsJunior = () => {
           </ul>
         </div>
 
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Rules and guidelines may be subjected to changes at the time of the competition based on prevailing conditions and coordinator decisions. However, the core concept of the competition will remain unchanged.
+              </span>
+            </li>
+          </ul>
+        </div>
+
 
         <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify mb-6'>
           <p className='text-[24px] font-bold'>Performance Judging: </p>
@@ -229,7 +300,7 @@ const RoboticsJunior = () => {
           </ul>
         </div>
 
-        <div className='flex flex-col sm:flex-row w-[80%] gap-6 leading-8 text-justify items-center sm:items-start justify-around'>
+        <div className='flex flex-col sm:flex-row w-[80%] gap-6 leading-8 text-justify items-center sm:items-start justify-around' ref={sampleRobotRef}>
           <div className='flex flex-col items-center w-full sm:w-[50%] sm:gap-12 lg:gap-20'>
             <p className='text-[28px] font-bold'>SAMPLE ROBOT </p>
             <img src={robot} alt='arena' className='w-full h-auto' />

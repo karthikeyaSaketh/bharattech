@@ -3,7 +3,7 @@ import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from 'react-icons/bs';
 import image1 from '../data/image1.png';
 import image2 from '../data/image2.jpg';
 import image3 from '../data/image3.jpg';
-import image4 from '../data/image4.jpg';
+import image4 from '../data/image4.png';
 import img1 from '../data/img1.png'
 import img2 from '../data/img2.png'
 import img3 from '../data/img3.png'

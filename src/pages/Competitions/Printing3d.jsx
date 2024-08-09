@@ -152,6 +152,19 @@ const Printing3d = () => {
 
 
         <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Rules and guidelines may be subjected to changes at the time of the competition based on prevailing conditions and coordinator decisions. However, the core concept of the competition will remain unchanged.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
           <p className='text-[24px] font-bold'>Criteria:</p>
           <ul className="list-none space-y-4 pl-4 sm:pl-16">
             <li className="flex">
@@ -207,6 +220,20 @@ const Printing3d = () => {
             </li>
           </ul>
         </div>
+
+
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Rules and guidelines may be subjected to changes at the time of the competition based on prevailing conditions and coordinator decisions. However, the core concept of the competition will remain unchanged.
+              </span>
+            </li>
+          </ul>
+        </div>
+        
 
         <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
           <p className='text-[24px] font-bold'>Criteria:</p>

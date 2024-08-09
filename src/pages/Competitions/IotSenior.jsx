@@ -137,6 +137,18 @@ const IotSenior = () => {
         <h1 className='text-[32px] font-bold mt-12 text-center'>ZONAL LEVEL</h1>
 
         <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Software such as Proteus, Fritzing and OrCAD are permitted for circuit design and simulation.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
           <p className='text-[24px] font-bold'>Competition :  </p>
           <ul className="list-none space-y-4 pl-4 sm:pl-16">
             <li className="flex">
@@ -163,6 +175,18 @@ const IotSenior = () => {
           </ul>
         </div>
 
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Rules and guidelines may be subjected to changes at the time of the competition based on prevailing conditions and coordinator decisions. However, the core concept of the competition will remain unchanged.
+              </span>
+            </li>
+          </ul>
+        </div>
+
 
         <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
           <p className='text-[24px] font-bold'>Presentation & Judging :  </p>
@@ -177,7 +201,7 @@ const IotSenior = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                Evaluation will be based on the performance and explanation of the simulated IoT project. 
+              	Evaluation will be based on the circuit design, simulation output and explanation of the simulated IoT project.
               </span>
             </li>
           </ul>
@@ -191,8 +215,8 @@ const IotSenior = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                Teams selected from the zonal level must bring all necessary components, tools and 
-                equipment to the venue for the final level. 
+                Teams selected from the zonal level must bring all necessary components, tools and
+                equipment to the venue for the final level.
               </span>
             </li>
             <li className="flex">
@@ -204,13 +228,24 @@ const IotSenior = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                Teams will present their completed IoT devices to the judges, including a detailed 
-                PowerPoint presentation explaining the design, functionality, and benefits. 
+                Teams will present their completed IoT devices to the judges, including a detailed
+                PowerPoint presentation explaining the design, functionality, and benefits.
               </span>
             </li>
           </ul>
         </div>
 
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Rules and guidelines may be subjected to changes at the time of the competition based on prevailing conditions and coordinator decisions. However, the core concept of the competition will remain unchanged.
+              </span>
+            </li>
+          </ul>
+        </div>
 
         <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
           <p className='text-[24px] font-bold'>Performance Judging :  </p>
@@ -218,8 +253,8 @@ const IotSenior = () => {
             <li className="flex">
               <span className="mr-4">-</span>
               <span>
-                Judges will evaluate the teams based on the functionality and portability of the prototype 
-                IoT device, as well as presentation skills. 
+                Judges will evaluate the teams based on the functionality and portability of the prototype
+                IoT device, as well as presentation skills.
               </span>
             </li>
           </ul>

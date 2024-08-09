@@ -67,7 +67,7 @@ const AISenior = () => {
 
         <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
           <p className='text-[18px]'>
-            Participants will navigate through 30 multiple-choice questions (MCQs) within a 20-minute time
+            Participants will navigate through 30 multiple-choice questions (MCQs) within a 30-minute time
             frame. Questions will cover the following areas:
           </p>
           <ul className="list-none space-y-4 pl-4 sm:pl-16">
@@ -90,6 +90,18 @@ const AISenior = () => {
               <span>
                 <b>Agriculture-Related Questions :&nbsp;</b> Understanding of agricultural practices, challenges, and
                 the potential applications of AI and ML in agriculture.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+              Participants must bring one laptop per team, along with chargers, for both the Zonal and Final levels. Please note that internet access will not be provided and is strictly prohibited.
               </span>
             </li>
           </ul>

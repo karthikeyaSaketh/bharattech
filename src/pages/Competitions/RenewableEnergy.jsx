@@ -200,6 +200,44 @@ const RenewableEnergy = () => {
                 items and components are allowed to ensure the focus remains on functionality.
               </span>
             </li>
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Only battery power supply should be used to operate the models.
+              </span>
+            </li>
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                If AC (220V) supply is required for the Zonal/Final competition, please notify the management team in advance via email.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Rules and guidelines may be subjected to changes at the time of the competition based on prevailing conditions and coordinator decisions. However, the core concept of the competition will remain unchanged.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Rules and guidelines may be subjected to changes at the time of the competition based on prevailing conditions and coordinator decisions. However, the core concept of the competition will remain unchanged.
+              </span>
+            </li>
           </ul>
         </div>
 
@@ -258,6 +296,37 @@ const RenewableEnergy = () => {
               <span>
                 Teams must give a detailed presentation (PPT) in their laptop, and also explaining the
                 project's design, functionality, and benefits.
+              </span>
+            </li>
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Only battery power supply should be used to operate the models.
+              </span>
+            </li>
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                If AC (220V) supply is required for the Zonal/Final competition, please notify the management team in advance via email.
+              </span>
+            </li>
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                No power supply will be provided for laptop charging in Final level.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+
+        <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify'>
+          <p className='text-[20px] font-bold text-left'>NOTE : </p>
+          <ul className="list-none space-y-4 pl-4 sm:pl-16">
+            <li className="flex">
+              <span className="mr-4">-</span>
+              <span>
+                Rules and guidelines may be subjected to changes at the time of the competition based on prevailing conditions and coordinator decisions. However, the core concept of the competition will remain unchanged.
               </span>
             </li>
           </ul>
