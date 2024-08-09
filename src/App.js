@@ -23,6 +23,8 @@ import RoboticsSenior from './pages/Competitions/RoboticsSenior';
 import DroneSenior from './pages/Competitions/DroneSenior'
 import IotSenior from './pages/Competitions/IotSenior'
 
+import RazorpayPayment from './Components/Payment'
+
 const App = () => {
   return (
 
@@ -33,6 +35,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/bharattech' element={<Home />} />
+          <Route path='/bharattech/payments' element={<RazorpayPayment />} />
           <Route path='/bharattech/AboutBTL' element={<AboutBtl />} />
           <Route path='/bharattech/Events' element={<Eventpage />} />
 

@@ -114,7 +114,7 @@ const Juniors = () => {
       });
 
       try {
-        const res = await axios.post('https://bharattechleague-production-8429.up.railway.app/create/juniors', requestData);
+        const res = await axios.post('https://bharathtechleague-hqdeauhdarb9fmct.eastus-01.azurewebsites.net/create/juniors', requestData);
         swal({
           title: "Registration Successful!",
           text: "Thank you for registering. You will be added to our WhatsApp community within 24 hours.",
