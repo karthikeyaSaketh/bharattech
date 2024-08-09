@@ -10,6 +10,7 @@ const RazorpayPayment = () => {
   const [amount, setAmount] = useState(0);
   const [orderId, setOrderId] = useState('');
   const [loading, setLoading] = useState(false);
+  const [institutionName, setInstitutionName] = useState(''); // New state for institution name
   const participantCost = 1; // Cost per participant (e.g., ₹50)
   const navigate = useNavigate();
 
@@ -22,6 +23,11 @@ const RazorpayPayment = () => {
     // Calculate the amount to be paid based on the number of participants filled
     const filledParticipants = newParticipants.filter((p) => p.trim() !== '').length;
     setAmount(filledParticipants * participantCost);
+  };
+
+  // Handle institution name change
+  const handleInstitutionChange = (e) => {
+    setInstitutionName(e.target.value);
   };
 
   // Fetch order ID from backend
@@ -56,11 +62,11 @@ const RazorpayPayment = () => {
 
   // Handle the payment process
   const handlePayment = async () => {
-    if (amount <= 0) {
+    if (amount <= 0 || !institutionName.trim()) {
       Swal.fire({
         icon: 'warning',
         title: 'Warning',
-        text: 'Please enter at least one participant name to proceed.',
+        text: 'Please enter at least one participant name and the institution name to proceed.',
       });
       return;
     }
@@ -123,7 +129,7 @@ const RazorpayPayment = () => {
             const payload = {
               values: [
                 participants[0] || 'Participant Name',
-                "JUNIOR",
+                institutionName, // Include institution name as 3rd column
                 response.razorpay_payment_id,
                 response.razorpay_order_id,
                 response.razorpay_signature,
@@ -185,13 +191,14 @@ const RazorpayPayment = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row-reverse justify-between items-center bg-white mt-4">
       <div className="flex flex-col items-center justify-center lg:w-[40%] h-full text-center order-1 lg:order-none lg:mt-16">
-        <div className="m-10 flex justify-center items-center w-[285px] h-[285px] xl:w-[385px] xl:h-[385px] rounded-xl" style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+        <h1 className="block lg:hidden text-5xl font-bold mt-10">JUNIOR LEVEL</h1>
+        <div className="m-6 lg:m-10 flex justify-center items-center w-[285px] h-[285px] xl:w-[385px] xl:h-[385px] rounded-xl" style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
           <img src={Junior} alt="junior" className="w-[90%] h-[90%]" />
         </div>
       </div>
 
       <div className="flex flex-col lg:w-[60%] items-center justify-center lg:p-8 gap-12 mb-16 lg:mb-0">
-        <h1 className="text-5xl font-bold lg:mt-10">JUNIOR LEVEL</h1>
+        <h1 className="hidden lg:block text-5xl font-bold lg:mt-10">JUNIOR LEVEL</h1>
         <div className="w-[90%] lg:w-[80%] mx-auto">
           <div className="flex flex-wrap lg:flex-nowrap justify-between lg:mb-6">
             <input
@@ -215,7 +222,7 @@ const RazorpayPayment = () => {
               required
             />
           </div>
-          <div className="flex flex-wrap lg:flex-nowrap justify-between mb-4">
+          <div className="flex flex-wrap lg:flex-nowrap justify-between lg:mb-6">
             <input
               id="name3"
               type="text"
@@ -233,6 +240,18 @@ const RazorpayPayment = () => {
               name={`participant4.name`}
               value={participants[3]}
               onChange={(e) => handleChange(3, e.target.value)}
+            />
+          </div>
+          <div className="flex flex-col mb-4 lg:mb-6">
+            <input
+              id="institution"
+              type="text"
+              placeholder="Enter name of Institution/School"
+              className="appearance-none border-2 border-[#F16600] rounded-xl w-full py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
+              name="institutionName"
+              value={institutionName}
+              onChange={handleInstitutionChange}
+              required
             />
           </div>
           <div className="flex justify-between items-center">
@@ -253,3 +272,4 @@ const RazorpayPayment = () => {
 };
 
 export default RazorpayPayment;
+
