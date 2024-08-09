@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a5669a67.css",
-    "main.js": "/static/js/main.9838f040.js",
+    "main.js": "/static/js/main.96bc4916.js",
     "static/media/1.png": "/static/media/1.682ee71ed5971fd1389f.png",
     "static/media/1_1.png": "/static/media/1_1.25b2e222fdb46010d728.png",
     "static/media/2_1.png": "/static/media/2_1.20cbb24a796f438b7f52.png",
@@ -13,11 +13,11 @@
     "static/media/calender.jpg": "/static/media/calender.54a6f284ec387b20b8ba.jpg",
     "static/media/timeline2.jpg": "/static/media/timeline2.64c2c156bfd35f04d40b.jpg",
     "static/media/ATLZonal.jpg": "/static/media/ATLZonal.47f68e29e81eda816501.jpg",
-    "static/media/image4.jpg": "/static/media/image4.47f68e29e81eda816501.jpg",
     "static/media/TTLZonal1.jpg": "/static/media/TTLZonal1.a385a3418a34da7b8932.jpg",
     "static/media/TTLZonal.jpg": "/static/media/TTLZonal.97d8ebb1154a383bec63.jpg",
     "static/media/image3.jpg": "/static/media/image3.97d8ebb1154a383bec63.jpg",
     "static/media/6.jpg": "/static/media/6.d49a460d8d34d66944d9.jpg",
+    "static/media/image4.png": "/static/media/image4.8b31c335620995c011bf.png",
     "static/media/HTLZonal.jpg": "/static/media/HTLZonal.a203dc8b7f652052c3f8.jpg",
     "static/media/img1.png": "/static/media/img1.8dfe96c5c687969c40bb.png",
     "static/media/img4.png": "/static/media/img4.a6358adc3973312e3977.png",
@@ -106,12 +106,13 @@
     "static/media/3.png": "/static/media/3.f249b38224ca41a0b909.png",
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/email.png": "/static/media/email.9082177d266cee25a57b.png",
+    "static/media/pipe.jpeg": "/static/media/pipe.781fe81e2b5b0c8eca09.jpeg",
     "index.html": "/index.html",
     "main.a5669a67.css.map": "/static/css/main.a5669a67.css.map",
-    "main.9838f040.js.map": "/static/js/main.9838f040.js.map"
+    "main.96bc4916.js.map": "/static/js/main.96bc4916.js.map"
   },
   "entrypoints": [
     "static/css/main.a5669a67.css",
-    "static/js/main.9838f040.js"
+    "static/js/main.96bc4916.js"
   ]
 }
