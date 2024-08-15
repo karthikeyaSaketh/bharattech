@@ -8,8 +8,8 @@ import Eventpage from './pages/Eventpage'
 import Gallery from './pages/Gallery'
 import Open from './pages/Open'
 import Registration from './pages/Registration'
-import Juniors from './pages/Juniors';
-import Seniors from './pages/Seniors';
+import RazorpayPayment from './pages/Juniors';
+import RazorpayPayment2 from './pages/Seniors';
 import Confirmation1 from './pages/Confirmation1';
 import Confirmation2 from './pages/Confirmation2';
 import ScrollToTop from './Components/ScrollToTop';
@@ -23,8 +23,6 @@ import RoboticsSenior from './pages/Competitions/RoboticsSenior';
 import DroneSenior from './pages/Competitions/DroneSenior'
 import IotSenior from './pages/Competitions/IotSenior'
 
-import RazorpayPayment from './Components/Payment'
-
 const App = () => {
   return (
 
@@ -35,7 +33,6 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/bharattech' element={<Home />} />
-          <Route path='/bharattech/payments' element={<RazorpayPayment />} />
           <Route path='/bharattech/AboutBTL' element={<AboutBtl />} />
           <Route path='/bharattech/Events' element={<Eventpage />} />
 
@@ -51,8 +48,8 @@ const App = () => {
           <Route path='/bharattech/Gallery' element={<Gallery />} />
           <Route path='/bharattech/Registration' element={<Registration />} />
           <Route path='/bharattech/ContactUs' element={<ContactUs />} />
-          <Route path='/bharattech/Registration/Juniors' element={<Juniors />} />
-          <Route path='/bharattech/Registration/Seniors' element={<Seniors />} />
+          <Route path='/bharattech/Registration/Juniors' element={<RazorpayPayment />} />
+          <Route path='/bharattech/Registration/Seniors' element={<RazorpayPayment2 />} />
           <Route path='/bharattech/Registration/Juniors/Confirmation' element={<Confirmation1 />} />
           <Route path='/bharattech/Registration/Seniors/Confirmation' element={<Confirmation2 />} />
         </Routes>

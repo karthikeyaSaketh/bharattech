@@ -9,10 +9,10 @@ import { NavLink } from 'react-router-dom';
 const Registration = () => {
   return (
     <div className='flex flex-col'>
-      <div className='my-6 w-full h-auto'>
+      <div className='mt-4 w-full h-auto'>
         <div className='flex flex-col justify-center items-center'>
-          <h1 className='mt-4 text-3xl pl-4 sm:pl-0 sm:text-5xl font-bold text-center'>
-            Hi there! Register for BTL
+          <h1 className='mt-2 text-3xl pl-4 sm:pl-0 sm:text-5xl font-bold text-center'>
+            Gateway to Zonal Level
           </h1>
           <div className='flex flex-col sm:flex-row sm:flex-wrap my-4 gap-4 sm:gap-12 justify-center'>
             {/* New Image on the Left */}
@@ -80,7 +80,7 @@ const Registration = () => {
       </div>
 
       {/* Important Information Section */}
-      <div className='flex flex-col justify-start text-left space-y-4 bg-white rounded-xl px-4 sm:px-6 w-[95%] sm:w-[90%] max-w-screen-lg mx-auto my-8 mb-16'>
+      {/* <div className='flex flex-col justify-start text-left space-y-4 bg-white rounded-xl px-4 sm:px-6 w-[95%] sm:w-[90%] max-w-screen-lg mx-auto my-8 mb-16'>
         <h2 className='text-2xl font-bold text-gray-800 mb-4 text-center'>Important Information</h2>
         <p className='text-lg text-gray-600 leading-relaxed'>
           1. Participation is for groups only. Each team must consist of either 2/3/4 members.
@@ -101,9 +101,19 @@ const Registration = () => {
           <li><strong>Level 2:</strong> Zonal - Rs. 349 /- per head (Juniors) & Rs. 449 /- per head (Seniors) [Selected Participants]</li>
           <li><strong>Level 3:</strong> Final – Free for Finalists</li>
         </ul>
+      </div> */}
+
+      <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify pl-10 sm:pl-24'>
+        <ul className="list-none space-y-4 pl-4 sm:pl-16">
+          <li className="flex">
+            <span className='lg:ml-6'>
+              <span className='font-bold text-[20px]'>NOTE : </span>The amount paid is non-refundable under any circumstances. By proceeding with the payment, you agree to this policy.
+            </span>
+          </li>
+        </ul>
       </div>
 
-      <div className='relative w-full h-auto'>
+      <div className='relative w-full h-auto mt-12'>
         <Footer />
       </div>
     </div>

@@ -90,7 +90,9 @@ const RazorpayPayment = () => {
       currency: 'INR',
       name: 'Bharat Tech League',
       description: 'Registration Fee',
-      order_id: currentOrderId,
+      order_id: currentOrderId,  
+      success_url: `${window.location.origin}/payment-success?payment_id={payment_id}`,
+      cancel_url: `${window.location.origin}/payment-failure`,
       handler: async function (response) {
         console.log('Payment successful:', response);
         Swal.fire({

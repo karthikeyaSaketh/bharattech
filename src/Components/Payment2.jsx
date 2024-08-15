@@ -132,7 +132,7 @@ const RazorpayPayment2 = () => {
                 participants[1],
                 participants[2],
                 participants[3],
-                'JUNIOR',
+                'SENIOR',
                 institutionName, // Include institution name as 3rd column
                 response.razorpay_payment_id,
                 response.razorpay_order_id,
