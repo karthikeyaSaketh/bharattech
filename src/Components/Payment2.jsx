@@ -3,9 +3,9 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../Components/Footer';
-import Junior from '../data/junior.jpg';
+import Junior from '../data/senior.jpg';
 
-const RazorpayPayment = () => {
+const RazorpayPayment2 = () => {
   const [participants, setParticipants] = useState(['', '', '', '']);
   const [amount, setAmount] = useState(0);
   const [orderId, setOrderId] = useState('');
@@ -196,21 +196,21 @@ const RazorpayPayment = () => {
     <div className='flex flex-col'>
       <div className="flex flex-col-reverse lg:flex-row-reverse justify-between items-center bg-white mt-4">
         <div className="flex flex-col items-center justify-center lg:w-[40%] h-full text-center order-1 lg:order-none lg:mt-16">
-          <h1 className="block lg:hidden text-5xl font-bold mt-10">JUNIOR LEVEL</h1>
+          <h1 className="block lg:hidden text-5xl font-bold mt-10">SENIOR LEVEL</h1>
           <div className="m-6 lg:m-10 flex justify-center items-center w-[285px] h-[285px] xl:w-[385px] xl:h-[385px] rounded-xl" style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
             <img src={Junior} alt="junior" className="w-[90%] h-[90%]" />
           </div>
         </div>
 
         <div className="flex flex-col lg:w-[60%] items-center justify-center lg:p-8 gap-12 mb-16 lg:mb-0">
-          <h1 className="hidden lg:block text-5xl font-bold lg:mt-10">JUNIOR LEVEL</h1>
+          <h1 className="hidden lg:block text-5xl font-bold lg:mt-10">SENIOR LEVEL</h1>
           <div className="w-[90%] lg:w-[80%] mx-auto">
             <div className="flex flex-wrap lg:flex-nowrap justify-between lg:mb-6">
               <input
                 id="name1"
                 type="text"
                 placeholder="Enter name of 1st participant"
-                className="appearance-none border-2 border-[#F16600] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
+                className="appearance-none border-2 border-[#0077B5] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
                 name={`participant1.name`}
                 value={participants[0]}
                 onChange={(e) => handleChange(0, e.target.value)}
@@ -220,7 +220,7 @@ const RazorpayPayment = () => {
                 id="name2"
                 type="text"
                 placeholder="Enter name of 2nd participant"
-                className="appearance-none border-2 border-[#F16600] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
+                className="appearance-none border-2 border-[#0077B5] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
                 name={`participant2.name`}
                 value={participants[1]}
                 onChange={(e) => handleChange(1, e.target.value)}
@@ -232,7 +232,7 @@ const RazorpayPayment = () => {
                 id="name3"
                 type="text"
                 placeholder="Enter name of 3rd participant"
-                className="appearance-none border-2 border-[#F16600] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
+                className="appearance-none border-2 border-[#0077B5] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
                 name={`participant3.name`}
                 value={participants[2]}
                 onChange={(e) => handleChange(2, e.target.value)}
@@ -241,7 +241,7 @@ const RazorpayPayment = () => {
                 id="name4"
                 type="text"
                 placeholder="Enter name of 4th participant"
-                className="appearance-none border-2 border-[#F16600] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
+                className="appearance-none border-2 border-[#0077B5] rounded-xl w-full lg:w-[48%] py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
                 name={`participant4.name`}
                 value={participants[3]}
                 onChange={(e) => handleChange(3, e.target.value)}
@@ -251,8 +251,8 @@ const RazorpayPayment = () => {
               <input
                 id="institution"
                 type="text"
-                placeholder="Enter name of Institution/School"
-                className="appearance-none border-2 border-[#F16600] rounded-xl w-full py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
+                placeholder="Enter name of Institution/College"
+                className="appearance-none border-2 border-[#0077B5] rounded-xl w-full py-3 px-3 text-center text-gray-700 leading-tight focus:outline-none focus:border-orange-900 font-normal mb-4"
                 name="institutionName"
                 value={institutionName}
                 onChange={handleInstitutionChange}
@@ -260,10 +260,10 @@ const RazorpayPayment = () => {
               />
             </div>
             <div className="flex justify-between items-center">
-              <div className="font-semibold text-2xl lg:text-3xl text-orange-900">Amount: ₹{amount}</div>
+              <div className="font-semibold text-2xl lg:text-3xl text-blue-900">Amount: ₹{amount}</div>
               <button
                 type="button"
-                className="text-white text-2xl lg:text-3xl py-2 px-10 rounded-xl bg-orange-600"
+                className="text-white text-2xl lg:text-3xl py-2 px-10 rounded-xl bg-blue-600"
                 onClick={handlePayment}
                 disabled={loading}
               >
@@ -291,5 +291,5 @@ const RazorpayPayment = () => {
   );
 };
 
-export default RazorpayPayment;
+export default RazorpayPayment2;
 

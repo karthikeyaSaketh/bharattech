@@ -2,6 +2,8 @@ import React from 'react';
 import Footer from '../Components/Footer';
 import junior from '../data/junior.jpg';
 import senior from '../data/senior.jpg';
+import newImageLeft from '../data/prize1.png'; // New image on the left
+import newImageRight from '../data/prize2.png'; // New image on the right
 import { NavLink } from 'react-router-dom';
 
 const Registration = () => {
@@ -12,7 +14,14 @@ const Registration = () => {
           <h1 className='mt-4 text-3xl pl-4 sm:pl-0 sm:text-5xl font-bold text-center'>
             Hi there! Register for BTL
           </h1>
-          <div className='flex flex-col sm:flex-row my-4 gap-4 sm:gap-12 lg:gap-32 xl:gap-64'>
+          <div className='flex flex-col sm:flex-row sm:flex-wrap my-4 gap-4 sm:gap-12 justify-center'>
+            {/* New Image on the Left */}
+            <div className='hidden sm:flex flex-col items-center my-4 sm:gap-4 lg:gap-6 rounded-xl w-[250px] h-[350px] sm:h-[390px] lg:w-[320px] lg:h-[460px]'
+              style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+              <img src={newImageLeft} alt='new-left' className='h-full w-[98%] p-2' />
+            </div>
+
+            {/* Junior Level */}
             <NavLink
               to='/bharattech/Registration/Juniors'
               className='flex flex-col items-center my-4 sm:gap-4 lg:gap-6 rounded-xl w-[250px] h-[350px] sm:h-[390px] lg:w-[320px] lg:h-[460px]'
@@ -34,6 +43,7 @@ const Registration = () => {
               </div>
             </NavLink>
 
+            {/* Senior Level */}
             <NavLink
               to='/bharattech/Registration/Seniors'
               className='flex flex-col items-center my-4 sm:gap-4 lg:gap-6 rounded-xl w-[250px] h-[360px] sm:h-[390px] lg:w-[320px] lg:h-[460px]'
@@ -54,6 +64,17 @@ const Registration = () => {
                 </p>
               </div>
             </NavLink>
+
+            <div className='flex sm:hidden flex-col items-center my-4 sm:gap-4 lg:gap-6 rounded-xl w-[250px] h-[350px] sm:h-[390px] lg:w-[320px] lg:h-[460px]'
+              style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+              <img src={newImageLeft} alt='new-left' className='h-full w-[98%] p-2' />
+            </div>
+
+            {/* New Image on the Right */}
+            <div className='flex flex-col items-center my-4 sm:gap-4 lg:gap-6 rounded-xl w-[250px] h-[350px] sm:h-[390px] lg:w-[320px] lg:h-[460px]'
+              style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}>
+              <img src={newImageRight} alt='new-right' className='h-full w-[98%] p-2' />
+            </div>
           </div>
         </div>
       </div>
