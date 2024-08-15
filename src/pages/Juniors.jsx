@@ -150,8 +150,8 @@ const RazorpayPayment = () => {
 
               Swal.fire({
                 icon: 'success',
-                title: 'Details Submitted',
-                text: 'Your payment and details have been successfully submitted!',
+                title: 'Payment Successful',
+                text: 'Your payment details have been successfully submitted!',
               }).then(() => {
                 navigate('/');
               });
