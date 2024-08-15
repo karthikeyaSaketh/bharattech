@@ -93,7 +93,6 @@ const RazorpayPayment = () => {
       order_id: currentOrderId,
       handler: async function (response) {
         console.log('Payment successful:', response);
-
         Swal.fire({
           title: 'Verifying Payment',
           text: 'Please wait while we verify your payment details.',
@@ -274,12 +273,10 @@ const RazorpayPayment = () => {
         </div>
       </div>
       <div className='flex flex-col items-start justify-center w-[80%] gap-6 leading-8 text-justify pl-10 sm:pl-24'>
-        <p className='text-[20px] font-bold text-left'>NOTE : </p>
         <ul className="list-none space-y-4 pl-4 sm:pl-16">
           <li className="flex">
-            <span className="mr-4">-</span>
-            <span>
-              The amount paid is non-refundable under any circumstances. By proceeding with the payment, you agree to this policy.
+            <span className='lg:ml-6'>
+              <span className='font-bold text-[20px]'>NOTE : </span>The amount paid is non-refundable under any circumstances. By proceeding with the payment, you agree to this policy.
             </span>
           </li>
         </ul>
