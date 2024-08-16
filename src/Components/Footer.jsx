@@ -26,14 +26,14 @@ const Footer = () => {
                         </h1>
                         <div className='flex justify-between align-center gap-8 text-base font-medium'>
                             <div className='flex flex-col gap-4'>
-                                <NavLink to='/bharattech' onClick={() => handleItemClick(0)}>Home</NavLink>
-                                <NavLink to='/bharattech/AboutBTL' onClick={() => handleItemClick(1)}>About BTL</NavLink>
-                                <NavLink to='/bharattech/Events' onClick={() => handleItemClick(2)}>Events</NavLink>
+                                <NavLink to='/bharatteck' onClick={() => handleItemClick(0)}>Home</NavLink>
+                                <NavLink to='/bharatteck/AboutBTL' onClick={() => handleItemClick(1)}>About BTL</NavLink>
+                                <NavLink to='/bharatteck/Events' onClick={() => handleItemClick(2)}>Events</NavLink>
                             </div>
                             <div className='flex flex-col gap-4'>
-                                <NavLink to='/bharattech/Gallery' onClick={() => handleItemClick(3)}>Gallery</NavLink>
-                                <NavLink to='/bharattech/Registration' onClick={() => handleItemClick(4)}>Registration</NavLink>
-                                <NavLink to='/bharattech/ContactUs' onClick={() => handleItemClick(5)}>Contact Us</NavLink>
+                                <NavLink to='/bharatteck/Gallery' onClick={() => handleItemClick(3)}>Gallery</NavLink>
+                                <NavLink to='/bharatteck/Registration' onClick={() => handleItemClick(4)}>Registration</NavLink>
+                                <NavLink to='/bharatteck/ContactUs' onClick={() => handleItemClick(5)}>Contact Us</NavLink>
                             </div>
                         </div>
                     </div>

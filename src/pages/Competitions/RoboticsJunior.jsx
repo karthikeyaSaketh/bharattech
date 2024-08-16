@@ -31,7 +31,7 @@ const RoboticsJunior = () => {
   };
   
   const handleClick = () => {
-    navigate('/bharattech/Events');
+    navigate('/bharatteck/Events');
   };
 
   return (

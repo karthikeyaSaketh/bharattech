@@ -10,7 +10,7 @@ const RenewableEnergy = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/bharattech/Events');
+    navigate('/bharatteck/Events');
   };
 
   return (

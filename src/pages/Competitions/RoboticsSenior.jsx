@@ -17,7 +17,7 @@ const RoboticsSenior = () => {
 
 
   const handleClick = () => {
-    navigate('/bharattech/Events');
+    navigate('/bharatteck/Events');
   };
   const handleSampleRobotClick = () => {
     // Calculate the offset position with 70px padding

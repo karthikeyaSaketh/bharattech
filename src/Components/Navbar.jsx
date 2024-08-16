@@ -18,12 +18,12 @@ const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
-    { label: 'HOME', path: '/bharattech' },
-    { label: 'ABOUT BTL', path: '/bharattech/AboutBTL' },
-    { label: 'EVENTS', path: '/bharattech/Events' },
-    { label: 'GALLERY', path: '/bharattech/Gallery' },
-    { label: 'REGISTRATION', path: '/bharattech/Registration' },
-    { label: 'CONTACT US', path: '/bharattech/ContactUs' }
+    { label: 'HOME', path: '/' },
+    { label: 'ABOUT BTL', path: '/bharatteck/AboutBTL' },
+    { label: 'EVENTS', path: '/bharatteck/Events' },
+    { label: 'GALLERY', path: '/bharatteck/Gallery' },
+    { label: 'REGISTRATION', path: '/bharatteck/Registration' },
+    { label: 'CONTACT US', path: '/bharatteck/ContactUs' }
   ];
 
   useEffect(() => {
@@ -31,21 +31,21 @@ const Navbar = () => {
 
     const activeIndex = navItems.findIndex(item =>
       item.path === path ||
-      (item.path === '/bharattech/Registration' && (
-        path.startsWith('/bharattech/Registration/Juniors') ||
-        path.startsWith('/bharattech/Registration/Seniors') ||
-        path.startsWith('/bharattech/Registration/Juniors/Confirmation') ||
-        path.startsWith('/bharattech/Registration/Seniors/Confirmation')
+      (item.path === '/bharatteck/Registration' && (
+        path.startsWith('/bharatteck/Registration/Juniors') ||
+        path.startsWith('/bharatteck/Registration/Seniors') ||
+        path.startsWith('/bharatteck/Registration/Juniors/Confirmation') ||
+        path.startsWith('/bharatteck/Registration/Seniors/Confirmation')
       )) ||
-      (item.path === '/bharattech/Events' && (
-        path.startsWith('/bharattech/Events/3dprinting') ||
-        path.startsWith('/bharattech/Events/roboticsjunior') ||
-        path.startsWith('/bharattech/Events/dronejunior') ||
-        path.startsWith('/bharattech/Events/cleanEnergy') ||
-        path.startsWith('/bharattech/Events/AISenior') ||
-        path.startsWith('/bharattech/Events/roboticsSenior') ||
-        path.startsWith('/bharattech/Events/droneSenior') ||
-        path.startsWith('/bharattech/Events/iot')
+      (item.path === '/bharatteck/Events' && (
+        path.startsWith('/bharatteck/Events/3dprinting') ||
+        path.startsWith('/bharatteck/Events/roboticsjunior') ||
+        path.startsWith('/bharatteck/Events/dronejunior') ||
+        path.startsWith('/bharatteck/Events/cleanEnergy') ||
+        path.startsWith('/bharatteck/Events/AISenior') ||
+        path.startsWith('/bharatteck/Events/roboticsSenior') ||
+        path.startsWith('/bharatteck/Events/droneSenior') ||
+        path.startsWith('/bharatteck/Events/iot')
       )) );
 
     if (activeIndex !== -1) {

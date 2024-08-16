@@ -41,7 +41,7 @@ const Eventpage = () => {
               <img src={img1} alt="img1" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>3D Printing</p>
-                <NavLink to='/bharattech/Events/3dprinting'>
+                <NavLink to='/bharatteck/Events/3dprinting'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>
@@ -50,7 +50,7 @@ const Eventpage = () => {
               <img src={img2} alt="img2" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Robotics</p>
-                <NavLink to='/bharattech/Events/roboticsjunior'>
+                <NavLink to='/bharatteck/Events/roboticsjunior'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>
@@ -62,7 +62,7 @@ const Eventpage = () => {
               <img src={img3} alt="img3" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Drone Technology</p>
-                <NavLink to='/bharattech/Events/dronejunior'>
+                <NavLink to='/bharatteck/Events/dronejunior'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>
@@ -71,7 +71,7 @@ const Eventpage = () => {
               <img src={img4} alt="img4" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Clean Energy</p>
-                <NavLink to='/bharattech/Events/cleanEnergy'>
+                <NavLink to='/bharatteck/Events/cleanEnergy'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>
@@ -90,7 +90,7 @@ const Eventpage = () => {
               <img src={img5} alt="img5" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Artificial Intelligence</p>
-                <NavLink to='/bharattech/Events/AISenior'>
+                <NavLink to='/bharatteck/Events/AISenior'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>
@@ -99,7 +99,7 @@ const Eventpage = () => {
               <img src={img6} alt="img6" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Robotics</p>
-                <NavLink to='/bharattech/Events/roboticsSenior'>
+                <NavLink to='/bharatteck/Events/roboticsSenior'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>
@@ -111,7 +111,7 @@ const Eventpage = () => {
               <img src={img7} alt="img7" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Drone Technology</p>
-                <NavLink to='/bharattech/Events/droneSenior'>
+                <NavLink to='/bharatteck/Events/droneSenior'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>
@@ -120,7 +120,7 @@ const Eventpage = () => {
               <img src={img8} alt="img8" className='w-[280px] h-[280px] rounded-[20px]' />
               <div className='flex justify-between items-center px-2'>
                 <p className='text-[16px]'>Internet of Things</p>
-                <NavLink to='/bharattech/Events/iot'>
+                <NavLink to='/bharatteck/Events/iot'>
                   <img src={arrow} alt="arrow" className='h-[40px] w-[40px] rounded-[50%]' />
                 </NavLink>
               </div>

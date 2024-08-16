@@ -11,7 +11,7 @@ const DroneSenior = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/bharattech/Events');
+    navigate('/bharatteck/Events');
   };
   const sampleRobotRef = useRef(null);
 

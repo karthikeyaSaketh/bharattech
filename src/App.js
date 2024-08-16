@@ -32,26 +32,25 @@ const App = () => {
         <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/bharattech' element={<Home />} />
-          <Route path='/bharattech/AboutBTL' element={<AboutBtl />} />
-          <Route path='/bharattech/Events' element={<Eventpage />} />
+          <Route path='/bharatteck/AboutBTL' element={<AboutBtl />} />
+          <Route path='/bharatteck/Events' element={<Eventpage />} />
 
-          <Route path='/bharattech/Events/3dprinting' element={<Printing3d/>} />
-          <Route path='/bharattech/Events/roboticsjunior' element={<RoboticsJunior/>} />
-          <Route path='/bharattech/Events/dronejunior' element={<DroneJunior/>} />
-          <Route path='/bharattech/Events/cleanEnergy' element={<RenewableEnergy/>} />
-          <Route path='/bharattech/Events/AISenior' element={<AISenior/>} />
-          <Route path='/bharattech/Events/roboticsSenior' element={<RoboticsSenior/>} />
-          <Route path='/bharattech/Events/droneSenior' element={<DroneSenior/>} />
-          <Route path='/bharattech/Events/iot' element={<IotSenior/>} />
+          <Route path='/bharatteck/Events/3dprinting' element={<Printing3d/>} />
+          <Route path='/bharatteck/Events/roboticsjunior' element={<RoboticsJunior/>} />
+          <Route path='/bharatteck/Events/dronejunior' element={<DroneJunior/>} />
+          <Route path='/bharatteck/Events/cleanEnergy' element={<RenewableEnergy/>} />
+          <Route path='/bharatteck/Events/AISenior' element={<AISenior/>} />
+          <Route path='/bharatteck/Events/roboticsSenior' element={<RoboticsSenior/>} />
+          <Route path='/bharatteck/Events/droneSenior' element={<DroneSenior/>} />
+          <Route path='/bharatteck/Events/iot' element={<IotSenior/>} />
 
-          <Route path='/bharattech/Gallery' element={<Gallery />} />
-          <Route path='/bharattech/Registration' element={<Registration />} />
-          <Route path='/bharattech/ContactUs' element={<ContactUs />} />
-          <Route path='/bharattech/Registration/Juniors' element={<RazorpayPayment />} />
-          <Route path='/bharattech/Registration/Seniors' element={<RazorpayPayment2 />} />
-          <Route path='/bharattech/Registration/Juniors/Confirmation' element={<Confirmation1 />} />
-          <Route path='/bharattech/Registration/Seniors/Confirmation' element={<Confirmation2 />} />
+          <Route path='/bharatteck/Gallery' element={<Gallery />} />
+          <Route path='/bharatteck/Registration' element={<Registration />} />
+          <Route path='/bharatteck/ContactUs' element={<ContactUs />} />
+          <Route path='/bharatteck/Registration/Juniors' element={<RazorpayPayment />} />
+          <Route path='/bharatteck/Registration/Seniors' element={<RazorpayPayment2 />} />
+          <Route path='/bharatteck/Registration/Juniors/Confirmation' element={<Confirmation1 />} />
+          <Route path='/bharatteck/Registration/Seniors/Confirmation' element={<Confirmation2 />} />
         </Routes>
         <ScrollToTopButton />
       </BrowserRouter>

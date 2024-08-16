@@ -23,7 +23,7 @@ const Registration = () => {
 
             {/* Junior Level */}
             <NavLink
-              to='/bharattech/Registration/Juniors'
+              to='/bharatteck/Registration/Juniors'
               className='flex flex-col items-center my-4 sm:gap-4 lg:gap-6 rounded-xl w-[250px] h-[350px] sm:h-[390px] lg:w-[320px] lg:h-[460px]'
               style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}
             >
@@ -45,7 +45,7 @@ const Registration = () => {
 
             {/* Senior Level */}
             <NavLink
-              to='/bharattech/Registration/Seniors'
+              to='/bharatteck/Registration/Seniors'
               className='flex flex-col items-center my-4 sm:gap-4 lg:gap-6 rounded-xl w-[250px] h-[360px] sm:h-[390px] lg:w-[320px] lg:h-[460px]'
               style={{ boxShadow: '0px 0px 20px rgba(0,0,0, 0.25)' }}
             >
@@ -107,7 +107,7 @@ const Registration = () => {
         <ul className="list-none space-y-4 pl-4 sm:pl-16">
           <li className="flex">
             <span className='lg:ml-6'>
-              <span className='font-bold text-[20px]'>NOTE : </span>The amount paid is non-refundable under any circumstances. By proceeding with the payment, you agree to this policy.
+              <span className='font-bold text-[20px]'>NOTE : </span>The amount to be paid is included of all taxes(including  GST).The amount paid is non-refundable under any circumstances. By proceeding with the payment, you agree to this policy.
             </span>
           </li>
         </ul>

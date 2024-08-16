@@ -17,7 +17,7 @@ const Links = () => {
                 <img src={img3} alt='competitions' className='block sm:hidden w-full' />
                 <div className='flex flex-col justify-evenly items-center w-full p-8 sm:p-0 gap-4 sm:w-[40%]'>
                     <img src={div1} alt='text1' className='w-[60%]' />
-                    <NavLink to='/bharattech/Events' >
+                    <NavLink to='/bharatteck/Events' >
                         <img src={arrow1} alt='arrow' className='w-[80px] h-[30px]' />
                     </NavLink>
                 </div>
@@ -28,7 +28,7 @@ const Links = () => {
                 <img src={img4} alt='competitions' className='block sm:hidden w-full' />
                 <div className='flex flex-col justify-evenly items-center w-full p-8 sm:p-0 gap-4 sm:w-[40%]'>
                     <img src={div2} alt='text1' className='w-[60%]' />
-                    <NavLink to='/bharattech/Registration' >
+                    <NavLink to='/bharatteck/Registration' >
                         <img src={arrow2} alt='arrow' className='w-[80px] h-[30px]' />
                     </NavLink>
                 </div>
