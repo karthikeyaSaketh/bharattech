@@ -82,11 +82,11 @@ const RazorpayPayment = () => {
   };
 
   const handlePayment = async () => {
-    if (amount <= 0 || !institutionName.trim() || !selectedDistrict.trim() || !selectedState.trim()) {
+    if (amount <= 354 || !institutionName.trim() || !selectedDistrict.trim() || !selectedState.trim()) {
       Swal.fire({
         icon: 'warning',
         title: 'Warning',
-        text: 'Please enter at least one participant name, the institution name, state, and district to proceed.',
+        text: 'Please enter at least two participants names, the institution name, state, and district to proceed.',
       });
       return;
     }

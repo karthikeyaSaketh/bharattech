@@ -82,11 +82,11 @@ const RazorpayPayment2 = () => {
   };
 
   const handlePayment = async () => {
-    if (amount <= 0 || !institutionName.trim() || !selectedDistrict.trim() || !selectedState.trim()) {
+    if (amount <= 472 || !institutionName.trim() || !selectedDistrict.trim() || !selectedState.trim()) {
       Swal.fire({
         icon: 'warning',
         title: 'Warning',
-        text: 'Please enter at least one participant name, the institution name, state, and district to proceed.',
+        text: 'Please enter at least 2 participants names, the institution name, state, and district to proceed.',
       });
       return;
     }
@@ -238,6 +238,7 @@ const RazorpayPayment2 = () => {
                 name={`participant2.name`}
                 value={participants[1]}
                 onChange={(e) => handleChange(1, e.target.value)}
+                required
               />
             </div>
             <div className="flex flex-wrap lg:flex-nowrap justify-between lg:mb-6">
