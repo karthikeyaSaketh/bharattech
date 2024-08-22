@@ -146,7 +146,7 @@ const RazorpayPayment2 = () => {
                 participants[1],
                 participants[2],
                 participants[3],
-                'JUNIOR',
+                'SENIOR',
                 institutionName,
                 selectedState,
                 selectedDistrict,
