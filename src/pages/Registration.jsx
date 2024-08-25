@@ -5,7 +5,7 @@ import senior from '../data/senior.jpg';
 import newImageLeft from '../data/prize1.png'; // New image on the left
 import newImageRight from '../data/prize2.png'; // New image on the right
 import { NavLink } from 'react-router-dom';
-import result from '../data/documents/AIPhase1Results.pdf'
+import result from '../data/documents/TelanganaZonalResults.pdf'
 import result2 from '../data/documents/AIPhase2Results.pdf'
 
 const Registration = () => {
@@ -118,27 +118,34 @@ const Registration = () => {
 
       <div className="flex flex-col items-center justify-center my-10 px-4 bg-white">
         <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-center mb-4 sm:mb-8">
-          Artificial Intelligence (Seniors) - Preliminary Level Results
+          TELANGANA ZONAL LEVEL RESULTS ( 25-08-2024 )
         </h1>
-        <a href={result} download="AI Result Phase-1.pdf">
+        <a href={result} download="Telangana Zonal Results.pdf">
           <button
-            className="bg-blue-600 my-4 sm:text-[24px] lg:text-[28px] text-white font-semibold py-2 px-4 sm:py-4 sm:px-6 md:px-8 lg:px-10 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="bg-blue-600 my-4 sm:text-[24px] lg:text-[28px] text-white font-semibold py-2 px-10 sm:py-4 sm:px-10 md:px-12 lg:px-24 rounded-[20px] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           >
-            DOWNLOAD PHASE - 1 RESULTS PDF
-          </button>
-        </a>
-
-        <a href={result2} download="AI Result Phase-2.pdf">
-          <button
-            className="bg-blue-600 my-4 sm:text-[24px] lg:text-[28px] text-white font-semibold py-2 px-4 sm:py-4 sm:px-6 md:px-8 lg:px-10 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-          >
-            DOWNLOAD PHASE - 2 RESULTS PDF
+            DOWNLOAD TELANGANA <br />
+            ZONAL RESULTS PDF
           </button>
         </a>
         {/* <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mt-4 sm:mt-6 text-center w-[90%]">
           <b className='text-black'>Note :</b> Artificial Intelligence (Seniors) preliminary level phase-2 results will be out tomorrow at 9:00 PM. For any queries related to Artificial Intelligence competition, please reach us at +91 8886122889.
         </p> */}
+
       </div>
+
+      
+      <div className='flex flex-col items-center justify-center w-full gap-6 leading-8 text-justify'>
+          <ul className="list-none space-y-4">
+            <li className="flex">
+              <span className=''>
+                <span className='font-bold text-[20px]'>NOTE :</span> No additional fee for final qualified participants
+              </span>
+            </li>
+          </ul>
+        </div>
+
+
 
       <div className='relative w-full h-auto mt-12'>
         <Footer />
