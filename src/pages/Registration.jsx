@@ -137,7 +137,7 @@ const Registration = () => {
       
       <div className='flex flex-col items-center justify-center w-full gap-6 leading-8 text-justify'>
           <ul className="list-none space-y-4">
-            <li className="flex">
+            <li className="flex px-8 sm:px-0">
               <span className=''>
                 <span className='font-bold text-[20px]'>NOTE :</span> No additional fee for final qualified participants
               </span>
