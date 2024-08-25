@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2080257.css",
-    "main.js": "/static/js/main.3cef4f3d.js",
+    "main.css": "/static/css/main.ce649d5f.css",
+    "main.js": "/static/js/main.fe073fb5.js",
     "static/media/1.png": "/static/media/1.682ee71ed5971fd1389f.png",
     "static/media/1_1.png": "/static/media/1_1.25b2e222fdb46010d728.png",
     "static/media/2_1.png": "/static/media/2_1.20cbb24a796f438b7f52.png",
@@ -33,10 +33,10 @@
     "static/media/conf_img_1.jpg": "/static/media/conf_img_1.4aeac9a5ab06dadaebf8.jpg",
     "static/media/vr.jpg": "/static/media/vr.9e2e74d51135d5b7ef61.jpg",
     "static/media/img2.png": "/static/media/img2.c7cd2f80a23a361b1a57.png",
-    "static/media/AIPhase1Results.pdf": "/static/media/AIPhase1Results.7a28af1f15d9ae0a078d.pdf",
     "static/media/T1.jpg": "/static/media/T1.35a9d4fc83d1373828e4.jpg",
     "static/media/s2.jpg": "/static/media/s2.e0c9c5118bb873d5c791.jpg",
     "static/media/H1.jpg": "/static/media/H1.bf3255dba5f77cc620cc.jpg",
+    "static/media/TelanganaZonalResults.pdf": "/static/media/TelanganaZonalResults.b57897d282d102f803d1.pdf",
     "static/media/11.jpg": "/static/media/11.6a3c45366531bd6d5eb5.jpg",
     "static/media/logo.png": "/static/media/logo.4c13ab22c9ebab9cb331.png",
     "static/media/S8.jpg": "/static/media/S8.b9baea2ba0f5d67bf31d.jpg",
@@ -112,11 +112,11 @@
     "static/media/email.png": "/static/media/email.9082177d266cee25a57b.png",
     "static/media/pipe.jpeg": "/static/media/pipe.781fe81e2b5b0c8eca09.jpeg",
     "index.html": "/index.html",
-    "main.a2080257.css.map": "/static/css/main.a2080257.css.map",
-    "main.3cef4f3d.js.map": "/static/js/main.3cef4f3d.js.map"
+    "main.ce649d5f.css.map": "/static/css/main.ce649d5f.css.map",
+    "main.fe073fb5.js.map": "/static/js/main.fe073fb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2080257.css",
-    "static/js/main.3cef4f3d.js"
+    "static/css/main.ce649d5f.css",
+    "static/js/main.fe073fb5.js"
   ]
 }
