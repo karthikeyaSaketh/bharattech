@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from 'react-icons/bs';
-import image1 from '../data/image1.png';
-import image2 from '../data/image2.jpg';
-import image3 from '../data/image3.jpg';
-import image4 from '../data/image4.png';
-import img1 from '../data/img1.png'
-import img2 from '../data/img2.png'
-import img3 from '../data/img3.png'
-import img4 from '../data/img4.png'
+import image1 from '../data/image1.jpeg';
+import image2 from '../data/image2.jpeg';
+import image3 from '../data/image3.jpeg';
+import image4 from '../data/image4.jpeg';
+import img1 from '../data/img1.jpg'
+import img2 from '../data/img2.jpg'
+import img3 from '../data/img3.jpg'
+import img4 from '../data/img4.jpg'
 
 const ImgSlider = () => {
   const images = [image1, image2,image3,image4];

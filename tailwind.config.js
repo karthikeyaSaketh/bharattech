@@ -5,7 +5,7 @@ export default {
         extend: {
             animation: {
                 "loop-scroll": "loop-scroll 25s linear infinite",
-                "reverse-loop-scroll": "reverse-loop-scroll 25s linear infinite"
+                "reverse-loop-scroll": "reverse-loop-scroll 50s linear infinite"
             },
             keyframes: {
                 "loop-scroll": {

@@ -1,18 +1,14 @@
 import React from 'react'
 import Footer from '../Components/Footer'
 import img1 from '../data/aboutbtl/1.png'
-import img2 from '../data/aboutbtl/2.png'
-import img2_phone from '../data/aboutbtl/2_1.png'
 import img3 from '../data/aboutbtl/3.png'
 import img4 from '../data/aboutbtl/4.png'
 import img5 from '../data/aboutbtl/5.png'
-import logo from '../data/aboutbtl/logo.png'
-import ttl from '../data/aboutbtl/TTLZonal.jpg'
-import atl from '../data/aboutbtl/ATLZonal.jpg'
-import htl from '../data/aboutbtl/HTLZonal.jpg'
+import ttl from '../data/aboutbtl/TTLZonal.jpeg'
+import atl from '../data/aboutbtl/ATLZonal.jpeg'
 import ttl1 from '../data/aboutbtl/TTLZonal1.jpg'
 import atl1 from '../data/aboutbtl/ATLZonal1.jpg'
-import htl1 from '../data/aboutbtl/HTLZonal1.jpg'
+import final from '../data/aboutbtl/finalevent.png'
 
 const AboutBtl = () => {
   return (
@@ -107,14 +103,9 @@ const AboutBtl = () => {
 
 
       </div>
-
-      <div className="mb-16" style={{ background: "linear-gradient(90deg, rgba(255, 114, 31, 1) 0%, rgba(255, 114, 31, 1) 20%, rgba(1, 105, 193, 1) 40%, rgba(1, 105, 193, 1) 60%, rgba(27, 133, 52, 1) 80%, rgba(27, 133, 52, 1) 100%)", backgroundClip: "text", color: "transparent" }}>
-        <h1 className='text-[36px] sm:text-[48px] lg:text-[64px] font-bold text-center px-4 sm:px-0'>
-          FINAL EVENT VENUE<br />
-          WILL BE ANNOUNCED SHORTLY
-        </h1>
-      </div>
-
+<div className='flex items-center w-full justify-center'>
+      <img src={final} alt="final event" className=' w-[95%] xl:w-[50%] h-auto my-2 rounded-[20px]' />
+</div>
       <div className='flex flex-col my-10 w-full h-auto bg-top bg-contain p-8' style={{ backgroundImage: `url(${img1})` }}>
         <h1 className='text-center text-white text-[36px] sm:text-[48px] lg:text-[64px] xl:text-[96px] font-bold'>
           EVOLUTION OF BTL
