@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.628ff768.css",
-    "main.js": "/static/js/main.9bfac6d6.js",
+    "main.js": "/static/js/main.66e70e1f.js",
     "static/media/1.png": "/static/media/1.91dcdd783d8abf3e3d72.png",
     "static/media/finalevent.png": "/static/media/finalevent.922a67dbc45fb27f1237.png",
     "static/media/calender.png": "/static/media/calender.cd0ee87284241f43a1a2.png",
@@ -72,7 +72,7 @@
     "static/media/AP3.jpg": "/static/media/AP3.b7b743f19cd2f696692f.jpg",
     "static/media/2nd_7.png": "/static/media/2nd_7.8f4c825f617acd5b7c3c.png",
     "static/media/ACIC.jpg": "/static/media/ACIC.842dce6f1a14538384b0.jpg",
-    "static/media/RJYFINALLIST.pdf": "/static/media/RJYFINALLIST.b5075a4de6acd4e30f3b.pdf",
+    "static/media/RJYFINALLIST.pdf": "/static/media/RJYFINALLIST.ca90236a601d17f1d09e.pdf",
     "static/media/VSKPFINALLIST.pdf": "/static/media/VSKPFINALLIST.530b51b055408230b48d.pdf",
     "static/media/RRDrone(Junior).pdf": "/static/media/RRDrone(Junior).d56d4396d4387127c46e.pdf",
     "static/media/robot.jpg": "/static/media/robot.428023206b6ac13ce665.jpg",
@@ -110,10 +110,10 @@
     "static/media/pipe.jpeg": "/static/media/pipe.781fe81e2b5b0c8eca09.jpeg",
     "index.html": "/index.html",
     "main.628ff768.css.map": "/static/css/main.628ff768.css.map",
-    "main.9bfac6d6.js.map": "/static/js/main.9bfac6d6.js.map"
+    "main.66e70e1f.js.map": "/static/js/main.66e70e1f.js.map"
   },
   "entrypoints": [
     "static/css/main.628ff768.css",
-    "static/js/main.9bfac6d6.js"
+    "static/js/main.66e70e1f.js"
   ]
 }
