@@ -2,8 +2,8 @@ import React from 'react';
 import Footer from '../Components/Footer';
 import result from '../data/documents/TelanganaZonalResults.pdf'
 import result2 from '../data/documents/VSKPFINALLIST.pdf'
-import result3 from '..data/documents/RJYFINALLIST.pdf'
-import result4 from '..data/documents/NLRFINALLIST.pdf'
+import result3 from '../data/documents/RJYFINALLIST.pdf'
+import result4 from '../data/documents/NlrFinalList.pdf'
 
 const Registration = () => {
 
@@ -35,7 +35,7 @@ const Registration = () => {
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-center mb-4 sm:mb-8">
             ANDHRA PRADESH ZONAL LEVEL RESULTS
           </h1>
-          <a href={result} download="Telangana Zonal Results.pdf">
+          <a href={result2} download="Visakhapatnam Zonal Results.pdf">
             <button
               className="bg-blue-600 my-8 sm:text-[24px] text-white font-semibold rounded-[20px] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 w-[360px] sm:w-[500px] h-[80px] sm:h-[100px]"
             >
@@ -43,7 +43,7 @@ const Registration = () => {
               ZONAL RESULTS PDF
             </button>
           </a>
-          <a href={result} download="Telangana Zonal Results.pdf">
+          <a href={result3} download="Rajahmundry Zonal Results.pdf">
             <button
               className="bg-blue-600 my-8 sm:text-[24px] text-white font-semibold rounded-[20px] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 w-[360px] sm:w-[500px] h-[80px] sm:h-[100px]"
             >
@@ -51,7 +51,7 @@ const Registration = () => {
               ZONAL RESULTS PDF
             </button>
           </a>
-          <a href={result} download="Telangana Zonal Results.pdf">
+          <a href={result4} download="Nellore Zonal Results.pdf">
             <button
               className="bg-blue-600 my-8 sm:text-[24px] text-white font-semibold rounded-[20px] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 w-[360px] sm:w-[500px] h-[80px] sm:h-[100px]"
             >

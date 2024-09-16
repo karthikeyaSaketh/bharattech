@@ -22,7 +22,7 @@ const Navbar = () => {
     { label: 'ABOUT BTL', path: '/bharatteck/AboutBTL' },
     { label: 'EVENTS', path: '/bharatteck/Events' },
     { label: 'GALLERY', path: '/bharatteck/Gallery' },
-    { label: 'REGISTRATION', path: '/bharatteck/Registration' },
+    { label: 'RESULTS', path: '/bharatteck/Registration' },
     { label: 'CONTACT US', path: '/bharatteck/ContactUs' }
   ];
 
