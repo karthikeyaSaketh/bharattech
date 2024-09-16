@@ -3,7 +3,7 @@ import Footer from '../Components/Footer';
 import result from '../data/documents/TelanganaZonalResults.pdf'
 import result2 from '../data/documents/VSKPFINALLIST.pdf'
 import result3 from '../data/documents/RJYFINALLIST.pdf'
-import result4 from '../data/documents/NlrFinalList.pdf'
+import result4 from '../data/documents/NelloreZonalResults.pdf'
 
 const Registration = () => {
 
