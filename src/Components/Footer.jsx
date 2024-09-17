@@ -63,7 +63,7 @@ const Footer = () => {
                     <div className='flex items-baseline gap-5'>
                         <img src={mobile} alt='mobile' className='h-[20px] w-[20px]' />
                         <div className='font-bold text-lg sm:text-2xl'>
-                            <Link to="/bharattech/ContactUs#contact">
+                            <Link to="/bharatteck/ContactUs#contact">
                                 Contact Numbers
                             </Link>
                         </div>

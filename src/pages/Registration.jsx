@@ -7,6 +7,7 @@ import result4 from '../data/documents/NelloreZonalResults.pdf'
 import img1 from '../data/junior.png'
 import img2 from '../data/senior.png'
 import result5 from '../data/documents/SeniorFinalList.pdf'
+import result6 from '../data/documents/BzaFinalList.pdf'
 
 const Registration = () => {
 
@@ -53,6 +54,14 @@ const Registration = () => {
                   className="bg-[#F47923] my-8 sm:text-[24px] text-white font-semibold rounded-[20px] hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 w-[360px] sm:w-[500px] h-[80px] sm:h-[100px]"
                 >
                   DOWNLOAD RAJAHMUNDRY <br />
+                  ZONAL RESULTS PDF
+                </button>
+              </a>
+              <a href={result6} download="Vijayawada Zonal Results.pdf">
+                <button
+                  className="bg-[#F47923] my-8 sm:text-[24px] text-white font-semibold rounded-[20px] hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 w-[360px] sm:w-[500px] h-[80px] sm:h-[100px]"
+                >
+                  DOWNLOAD VIJAYAWADA <br />
                   ZONAL RESULTS PDF
                 </button>
               </a>
