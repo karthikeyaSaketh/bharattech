@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.6618be19.css",
-    "main.js": "/static/js/main.97660858.js",
+    "main.css": "/static/css/main.510dbe65.css",
+    "main.js": "/static/js/main.ae00f149.js",
     "static/media/1.png": "/static/media/1.91dcdd783d8abf3e3d72.png",
+    "static/media/final1.png": "/static/media/final1.922a67dbc45fb27f1237.png",
     "static/media/finalevent.png": "/static/media/finalevent.922a67dbc45fb27f1237.png",
+    "static/media/final.png": "/static/media/final.6134c7e8efd39172a3ee.png",
     "static/media/calender.png": "/static/media/calender.cd0ee87284241f43a1a2.png",
     "static/media/timeline1.png": "/static/media/timeline1.a7e15d435f81271c4f99.png",
     "static/media/timeline2.png": "/static/media/timeline2.0a3479c0c62db94c72b2.png",
@@ -42,6 +44,7 @@
     "static/media/2nd_9.png": "/static/media/2nd_9.79bf12fee025b2cf8a67.png",
     "static/media/9.jpg": "/static/media/9.3e8bee54b96a7c2c7779.jpg",
     "static/media/8.jpg": "/static/media/8.36b02f86c0f53698525d.jpg",
+    "static/media/Accomodations.pdf": "/static/media/Accomodations.a69284ad7b923567e399.pdf",
     "static/media/S11.jpg": "/static/media/S11.909a1315eebd1062509d.jpg",
     "static/media/S10.jpg": "/static/media/S10.cd514bd9b0a739fb7866.jpg",
     "static/media/s1.jpg": "/static/media/s1.699e7e5b4f0bea8945e9.jpg",
@@ -79,6 +82,7 @@
     "static/media/VSKPFINALLIST.pdf": "/static/media/VSKPFINALLIST.530b51b055408230b48d.pdf",
     "static/media/RRDrone(Junior).pdf": "/static/media/RRDrone(Junior).d56d4396d4387127c46e.pdf",
     "static/media/robot.jpg": "/static/media/robot.428023206b6ac13ce665.jpg",
+    "static/media/BtlGuidelines.pdf": "/static/media/BtlGuidelines.3d04affa6e02aa5aeb82.pdf",
     "static/media/PSCleanEnergy(Junior).pdf": "/static/media/PSCleanEnergy(Junior).0c091c1401ea5a3a0f62.pdf",
     "static/media/2nd_8.png": "/static/media/2nd_8.da661ed0b623a5cb22d1.png",
     "static/media/AIC.jpg": "/static/media/AIC.35a617fe4796b2ddbd2e.jpg",
@@ -112,11 +116,11 @@
     "static/media/email.png": "/static/media/email.9082177d266cee25a57b.png",
     "static/media/pipe.jpeg": "/static/media/pipe.781fe81e2b5b0c8eca09.jpeg",
     "index.html": "/index.html",
-    "main.6618be19.css.map": "/static/css/main.6618be19.css.map",
-    "main.97660858.js.map": "/static/js/main.97660858.js.map"
+    "main.510dbe65.css.map": "/static/css/main.510dbe65.css.map",
+    "main.ae00f149.js.map": "/static/js/main.ae00f149.js.map"
   },
   "entrypoints": [
-    "static/css/main.6618be19.css",
-    "static/js/main.97660858.js"
+    "static/css/main.510dbe65.css",
+    "static/js/main.ae00f149.js"
   ]
 }
