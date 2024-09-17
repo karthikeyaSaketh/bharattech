@@ -23,7 +23,9 @@ const Navbar = () => {
     { label: 'EVENTS', path: '/bharatteck/Events' },
     { label: 'GALLERY', path: '/bharatteck/Gallery' },
     { label: 'RESULTS', path: '/bharatteck/Registration' },
+    { label : 'FINAL EVENT', path: '/bharatteck/FinalEvent'},
     { label: 'CONTACT US', path: '/bharatteck/ContactUs' }
+    
   ];
 
   useEffect(() => {

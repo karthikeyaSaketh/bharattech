@@ -22,6 +22,7 @@ import AISenior from './pages/Competitions/AISenior'
 import RoboticsSenior from './pages/Competitions/RoboticsSenior';
 import DroneSenior from './pages/Competitions/DroneSenior'
 import IotSenior from './pages/Competitions/IotSenior'
+import FinalEvent from './pages/FinalEvent';
 
 const App = () => {
   return (
@@ -47,6 +48,7 @@ const App = () => {
           <Route path='/bharatteck/Gallery' element={<Gallery />} />
           <Route path='/bharatteck/Registration' element={<Registration />} />
           <Route path='/bharatteck/ContactUs' element={<ContactUs />} />
+          <Route path='/bharatteck/finalevent' element={<FinalEvent/>}/>
           <Route path='/bharatteck/Registration/Juniors' element={<RazorpayPayment />} />
           <Route path='/bharatteck/Registration/Seniors' element={<RazorpayPayment2 />} />
           <Route path='/bharatteck/Registration/Juniors/Confirmation' element={<Confirmation1 />} />
